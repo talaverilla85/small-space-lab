@@ -133,3 +133,68 @@ h3 { font-size: 22px; margin: 0 0 10px; }
   .planner-cta { align-items:flex-start; flex-direction:column; }
   .related-grid { grid-template-columns:1fr !important; }
 }
+
+
+/* Flagship 400 sq ft guide */
+.flagship-hero { max-width: 940px; }
+.flagship-layout { grid-template-columns: minmax(0, 800px) 260px; }
+.quick-answer {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 22px;
+  margin-bottom: 34px;
+}
+.quick-answer h2 { margin-top: 6px; }
+.flagship-plans { display: grid; gap: 30px; }
+.plan-option {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px;
+}
+.plan-option h2 { margin-top: 10px; }
+.plan-option-copy { margin-bottom: 16px; }
+.comparison-wrap { overflow-x: auto; }
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+.comparison-table th,
+.comparison-table td {
+  text-align: left;
+  padding: 13px 14px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.comparison-table th { background: #eef3ef; font-size: 14px; }
+.mistake-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.faq-list { display: grid; gap: 10px; }
+.faq-list details {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 15px 17px;
+}
+.faq-list summary { cursor: pointer; font-weight: 800; }
+.faq-list p { margin-bottom: 0; }
+.sidebar-stat {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--line);
+}
+.sidebar-stat:last-child { border-bottom: 0; }
+.sidebar-stat span { font-size: 24px; font-weight: 850; }
+
+@media (max-width: 860px) {
+  .flagship-layout { grid-template-columns: 1fr; }
+}
+@media (max-width: 620px) {
+  .mistake-grid { grid-template-columns: 1fr; }
+  .plan-option { padding: 16px; }
+}
