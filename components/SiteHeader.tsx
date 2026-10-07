@@ -4,11 +4,12 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="container nav">
-        <Link href="/" className="brand" aria-label="Small Space Lab home">
+        <Link href="/" className="brand" aria-label="Small Space Planner home">
           <span className="brand-mark" aria-hidden="true" />
-          <span>Small Space Lab</span>
+          <span>Small Space Planner</span>
         </Link>
         <nav className="nav-links" aria-label="Primary navigation">
+          <Link href="/studio-apartment-planner">Planner</Link>
           <Link href="/studio-apartment-layouts">Layouts</Link>
           <Link href="/small-apartment-storage">Storage</Link>
           <Link href="/furniture-layout">Furniture</Link>
