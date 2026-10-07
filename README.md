@@ -1,17 +1,18 @@
-# Small Space Lab
+# Small Space Planner
 
-Independent English-language content site focused on studio apartment layouts, compact-home storage and furniture placement.
+English-language content and planning-tool site focused on studio apartment layouts, compact-home storage and furniture placement.
 
 ## Stack
 - Next.js
 - TypeScript
 - Vercel
 
-## Advertising
-Google AdSense support is intentionally dormant until a permanent domain, publisher ID and consent-management setup are ready.
+## Launch controls
+The Vercel preview is intentionally blocked from indexing until the permanent domain is ready.
 
-Set these environment variables later:
+Environment variables:
 - `NEXT_PUBLIC_SITE_URL`
-- `NEXT_PUBLIC_ADSENSE_CLIENT`
+- `NEXT_PUBLIC_ALLOW_INDEXING=true` only when the permanent domain is ready for Google
+- `NEXT_PUBLIC_ADSENSE_CLIENT` after AdSense approval
 
-Ad slots render as placeholders until both a client and slot ID are configured.
+AdSense remains dormant until the permanent domain, consent setup and publisher account are ready.
