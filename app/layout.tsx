@@ -6,6 +6,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 
 const siteName = "Small Space Planner";
 const description = "Plan studio apartments and compact homes with practical layouts, storage guides and simple planning tools.";
+const allowIndexing = process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://small-space-lab-bgnb.vercel.app"),
@@ -13,6 +14,9 @@ export const metadata: Metadata = {
   description,
   applicationName: siteName,
   category: "home",
+  robots: allowIndexing
+    ? { index: true, follow: true }
+    : { index: false, follow: false, nocache: true },
   openGraph: { type: "website", siteName, title: siteName, description },
   twitter: { card: "summary_large_image", title: siteName, description },
 };
