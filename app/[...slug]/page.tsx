@@ -31,8 +31,17 @@ export default async function GuidePage({ params }: Props) {
     .map((item) => guides.find((candidate) => candidate.slug === item))
     .filter(Boolean);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": guide.category === "Legal" || guide.category === "About" ? "WebPage" : "Article",
+    headline: guide.title,
+    description: guide.description,
+    publisher: { "@type": "Organization", name: "Small Space Planner" },
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
       <article>
         <header className="container guide-hero">
           <div className="breadcrumb"><Link href="/">Home</Link> / {guide.category}</div>
@@ -47,7 +56,7 @@ export default async function GuidePage({ params }: Props) {
             {guide.floorPlan ? (
               <>
                 <FloorPlan title={guide.floorPlan.title} zones={guide.floorPlan.zones} />
-                <p style={{fontSize: "14px", color: "#68766f"}}>Concept only. Verify your own room dimensions, doors, windows and fixed services before buying furniture.</p>
+                <p className="concept-note">Concept only. Verify your own room dimensions, doors, windows and fixed services before buying furniture.</p>
               </>
             ) : null}
 
@@ -61,12 +70,23 @@ export default async function GuidePage({ params }: Props) {
               </section>
             ))}
 
-            {guide.takeaway ? <div className="callout"><strong>Small Space Lab takeaway</strong><br />{guide.takeaway}</div> : null}
+            {guide.takeaway ? <div className="callout"><strong>Small Space Planner takeaway</strong><br />{guide.takeaway}</div> : null}
+
+            {guide.category === "Layouts" ? (
+              <div className="planner-cta">
+                <div>
+                  <div className="kicker">Try your own dimensions</div>
+                  <h3>Turn this idea into your starting plan.</h3>
+                  <p>Use the free planner to compare your room size, bed choice and priorities.</p>
+                </div>
+                <Link className="button primary" href="/studio-apartment-planner">Open planner</Link>
+              </div>
+            ) : null}
 
             {related.length ? (
               <section>
                 <h2>Keep planning</h2>
-                <div className="grid" style={{gridTemplateColumns:"repeat(2, minmax(0,1fr))"}}>
+                <div className="grid related-grid">
                   {related.map((item) => item ? (
                     <Link href={`/${item.slug}`} className="card" key={item.slug}>
                       <div className="kicker">{item.category}</div>
@@ -82,6 +102,10 @@ export default async function GuidePage({ params }: Props) {
             <div className="sidebar-box">
               <strong>How to use this guide</strong>
               Measure your own space first. Treat layouts as starting points and adjust for doors, windows, utilities and lease rules.
+            </div>
+            <div className="sidebar-box">
+              <strong>Planning your own studio?</strong>
+              <Link href="/studio-apartment-planner">Use the free layout planner →</Link>
             </div>
             {guide.category !== "Legal" && guide.category !== "About" ? <AdSlot /> : null}
           </aside>
