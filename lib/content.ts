@@ -228,10 +228,10 @@ export const guides: Guide[] = [
   },
   {
     slug: "about",
-    title: "About Small Space Lab",
-    description: "Why Small Space Lab focuses on practical layouts, measured ideas and useful small-home systems.",
+    title: "About Small Space Planner",
+    description: "Why Small Space Planner focuses on practical layouts, measured ideas and useful small-home systems.",
     category: "About",
-    intro: "Small Space Lab is an independent publishing project focused on helping people make compact homes work better. We create practical planning guides, original concept layouts and clear storage frameworks.",
+    intro: "Small Space Planner is an independent publishing project focused on helping people make compact homes work better. We create practical planning guides, original concept layouts and clear storage frameworks.",
     sections: [
       { heading: "Our approach", paragraphs: ["We prefer specific, usable guidance over generic inspiration. Concept plans are clearly labeled as examples, and readers should verify their own measurements, building rules and product requirements before making permanent changes."] },
       { heading: "How we fund the site", paragraphs: ["We plan to support the site with display advertising and may use clearly disclosed affiliate links in the future. Advertising does not determine our editorial conclusions."] }
@@ -240,9 +240,9 @@ export const guides: Guide[] = [
   {
     slug: "contact",
     title: "Contact",
-    description: "How to contact Small Space Lab.",
+    description: "How to contact Small Space Planner.",
     category: "About",
-    intro: "Small Space Lab is currently in its launch phase. A dedicated contact address will be published when the permanent domain goes live.",
+    intro: "Small Space Planner is currently in its launch phase. A dedicated contact address will be published when the permanent domain goes live.",
     sections: [
       { heading: "Corrections and feedback", paragraphs: ["If you spot an error in a layout, measurement assumption or page, we want to know. The permanent contact channel will be added here before public launch."] }
     ]
@@ -250,7 +250,7 @@ export const guides: Guide[] = [
   {
     slug: "privacy",
     title: "Privacy policy",
-    description: "Privacy information for Small Space Lab.",
+    description: "Privacy information for Small Space Planner.",
     category: "Legal",
     intro: "This policy is a launch-stage summary and will be finalized for the permanent domain, analytics setup and advertising configuration before the site is submitted to advertising partners.",
     sections: [
@@ -260,7 +260,7 @@ export const guides: Guide[] = [
   {
     slug: "cookie-policy",
     title: "Cookie policy",
-    description: "Cookie information for Small Space Lab.",
+    description: "Cookie information for Small Space Planner.",
     category: "Legal",
     intro: "The launch version does not intentionally set advertising cookies. Before Google AdSense is enabled, the site will use an appropriate consent-management solution for visitors in regions where consent is required.",
     sections: [
@@ -270,9 +270,9 @@ export const guides: Guide[] = [
   {
     slug: "terms",
     title: "Terms of use",
-    description: "Terms for using Small Space Lab.",
+    description: "Terms for using Small Space Planner.",
     category: "Legal",
-    intro: "Small Space Lab provides general informational and planning content. Concept layouts are not architectural drawings and should not be used as a substitute for professional advice where structural, electrical, plumbing, accessibility or safety requirements apply.",
+    intro: "Small Space Planner provides general informational and planning content. Concept layouts are not architectural drawings and should not be used as a substitute for professional advice where structural, electrical, plumbing, accessibility or safety requirements apply.",
     sections: [
       { heading: "Use of information", paragraphs: ["Readers are responsible for verifying dimensions, lease restrictions, building requirements and product instructions before making purchases or permanent changes."] }
     ]
