@@ -541,3 +541,20 @@ body{background:var(--paper);color:var(--ink);}
   .library-grid,.shape-library,.hub-stats{grid-template-columns:1fr}
   .library-section{padding:60px 0}
 }
+
+/* Compact mobile navigation */
+.mobile-actions{display:none;align-items:center;gap:8px}
+.mobile-planner-link,.mobile-menu summary{min-height:40px;display:flex;align-items:center;padding:8px 11px;border:1px solid var(--ink);font-size:12px;font-weight:800}
+.mobile-planner-link{background:var(--ink);color:#fff}
+.mobile-menu{position:relative}
+.mobile-menu summary{cursor:pointer;list-style:none;background:var(--paper)}
+.mobile-menu summary::-webkit-details-marker{display:none}
+.mobile-menu[open] summary{background:#fff}
+.mobile-menu nav{position:absolute;right:0;top:48px;width:190px;background:#fff;border:1px solid var(--line);box-shadow:0 18px 40px rgba(17,19,15,.14);display:grid;padding:7px;z-index:60}
+.mobile-menu nav a{padding:10px 11px;border-bottom:1px solid var(--line);font-size:13px;font-weight:750}
+.mobile-menu nav a:last-child{border-bottom:0}
+@media(max-width:620px){
+  .nav{flex-wrap:nowrap;padding:10px 0}
+  .desktop-nav{display:none!important}
+  .mobile-actions{display:flex}
+}
