@@ -492,6 +492,425 @@ export const layoutVariants: LayoutVariant[] = [
       {q:"Can two people live comfortably in 20×20?",a:"The square footprint can make shared circulation and storage easier, though fixed kitchen and bathroom areas still matter."}
     ],
     related:["400-sq-ft","15x20","450-sq-ft"]
+  },
+  {
+    slug:"for-two-people",
+    title:"Studio Apartment Layout for Two People",
+    description:"Studio apartment layout ideas for couples and roommates, with shared storage, seating and privacy strategies.",
+    eyebrow:"TWO PEOPLE · ONE OPEN ROOM",
+    intro:"Two people can share a studio successfully, but the layout has to support two routines instead of simply fitting two bodies. Shared storage, places to sit, sleep access and small moments of personal space matter more than squeezing in extra furniture.",
+    quickTitle:"What changes when two people share a studio?",
+    quickAnswer:"The room needs two usable seats, realistic shared storage and a bed that both people can access without constant disruption. A single oversized sofa or dining table is less useful than balanced circulation and clear personal zones.",
+    plans:[
+      {
+        title:"Shared-center layout",
+        bestFor:"Couples with similar routines",
+        note:"The lounge and dining area become the social core while storage is grouped to reduce visual clutter.",
+        assumption:"Reference footprint: roughly 400–500 sq ft.",
+        zones:[
+          {x:66,y:62,w:235,h:145,label:"Queen Bed",tone:"green"},
+          {x:335,y:62,w:230,h:145,label:"2-Seat Living",tone:"warm"},
+          {x:66,y:238,w:235,h:100,label:"Shared Storage",tone:"neutral"},
+          {x:335,y:238,w:230,h:100,label:"Dining / Flex",tone:"green"},
+        ]
+      },
+      {
+        title:"Two-routine layout",
+        bestFor:"Different work or sleep schedules",
+        note:"A dedicated desk or quiet edge reduces the number of activities forced into the same shared zone.",
+        assumption:"Reference footprint: roughly 450–600 sq ft.",
+        zones:[
+          {x:66,y:62,w:220,h:145,label:"Sleep Zone",tone:"green"},
+          {x:320,y:62,w:245,h:145,label:"Living",tone:"warm"},
+          {x:66,y:238,w:205,h:100,label:"Storage",tone:"neutral"},
+          {x:305,y:238,w:260,h:100,label:"Desk / Quiet Zone",tone:"green"},
+        ]
+      },
+      {
+        title:"Privacy-first layout",
+        bestFor:"Roommates or couples needing more separation",
+        note:"Use a curtain or open shelf to create a visual boundary around sleep without fully enclosing the room.",
+        assumption:"Reference footprint: roughly 450 sq ft or more with good daylight.",
+        zones:[
+          {x:66,y:62,w:250,h:145,label:"Private Sleep",tone:"green"},
+          {x:350,y:62,w:215,h:145,label:"Shared Living",tone:"warm"},
+          {x:66,y:238,w:250,h:100,label:"Shared Storage",tone:"neutral"},
+          {x:350,y:238,w:215,h:100,label:"Dining / Work",tone:"green"},
+        ]
+      }
+    ],
+    rules:[
+      {title:"Give both people a real seat",text:"One sofa should actually fit both people comfortably, or pair a compact sofa with a useful chair."},
+      {title:"Split storage intentionally",text:"Shared wardrobes work better when each person has a clear section rather than one undivided pile."},
+      {title:"Create at least one quiet edge",text:"A desk, reading chair or screened sleep area can prevent every activity from happening in the same shared zone."}
+    ],
+    mistakes:[
+      {title:"One person controls the layout",text:"A room optimized for only one routine becomes irritating very quickly for the second person."},
+      {title:"No bedside access",text:"If one person must climb over the other every night, the layout is not truly working."},
+      {title:"Too much shared open storage",text:"Visible belongings from two people can make the room feel permanently cluttered."},
+      {title:"Only one work surface",text:"If both people regularly need a laptop, meals and paperwork at the same time, one tiny table may become a bottleneck."}
+    ],
+    takeaway:"For two people, the best studio layout is less about maximum capacity and more about reducing friction. Give both people access, storage and at least one comfortable shared zone.",
+    faq:[
+      {q:"What size studio is easiest for two people?",a:"Larger studios around 400–600 sq ft are easier, but shape, built-ins and lifestyle matter as much as total area."},
+      {q:"Should the bed touch a wall?",a:"If possible, leave access on both sides for two adults. In very small studios, one-side access may be an unavoidable compromise."},
+      {q:"How do you create privacy in one room?",a:"Curtains, open shelving, furniture orientation and separate lighting zones can help without blocking all daylight."}
+    ],
+    related:["450-sq-ft","600-sq-ft","20x20"]
+  },
+  {
+    slug:"with-desk",
+    title:"Studio Apartment Layout With a Desk",
+    description:"Studio apartment layout ideas with a dedicated desk, including compact, window-side and dual-purpose work zones.",
+    eyebrow:"STUDIO + DESK · WORK WITHOUT LOSING THE ROOM",
+    intro:"A desk can fit into a studio without turning the whole apartment into an office. The key is to decide whether the desk is a permanent daily workstation or an occasional surface, then give it only the floor depth it actually needs.",
+    quickTitle:"Where should a desk go in a studio apartment?",
+    quickAnswer:"The best desk position is usually on a shallow wall edge, near daylight but outside the main circulation route. In smaller studios, a 36–48 inch desk or a shared work-and-dining surface is often more practical than a deep office setup.",
+    plans:[
+      {
+        title:"Window-side desk",
+        bestFor:"Daily laptop work",
+        note:"Keep the desk near natural light while leaving the main path from entrance to living area clear.",
+        assumption:"Works best where the window wall has a free 3–5 ft section.",
+        zones:[
+          {x:66,y:62,w:215,h:145,label:"Bed",tone:"green"},
+          {x:315,y:62,w:250,h:145,label:"Living",tone:"warm"},
+          {x:66,y:238,w:200,h:100,label:"Storage",tone:"neutral"},
+          {x:300,y:238,w:265,h:100,label:"Window Desk",tone:"green"},
+        ]
+      },
+      {
+        title:"Desk-behind-sofa layout",
+        bestFor:"A clear separation between work and sleep",
+        note:"A shallow desk behind or beside the sofa can use an otherwise awkward strip without creating a new furniture island.",
+        assumption:"Reference footprint: 400 sq ft or more.",
+        zones:[
+          {x:66,y:62,w:225,h:145,label:"Sleep",tone:"green"},
+          {x:325,y:62,w:240,h:145,label:"Living",tone:"warm"},
+          {x:66,y:238,w:220,h:100,label:"Storage",tone:"neutral"},
+          {x:320,y:238,w:245,h:100,label:"Desk",tone:"green"},
+        ]
+      },
+      {
+        title:"Shared desk-and-dining surface",
+        bestFor:"Smaller studios",
+        note:"One table earns its footprint twice and avoids competing work and dining zones.",
+        assumption:"Best for roughly 250–400 sq ft.",
+        zones:[
+          {x:66,y:62,w:210,h:145,label:"Bed",tone:"green"},
+          {x:310,y:62,w:255,h:145,label:"Living",tone:"warm"},
+          {x:66,y:238,w:190,h:100,label:"Storage",tone:"neutral"},
+          {x:290,y:238,w:275,h:100,label:"Desk / Dining",tone:"green"},
+        ]
+      }
+    ],
+    rules:[
+      {title:"Choose desk depth carefully",text:"A shallow desk can preserve circulation much better than a traditional 30-inch-deep office desk."},
+      {title:"Keep work visually contained",text:"Use one lamp, one storage zone and cable management so the desk does not visually spread across the room."},
+      {title:"Use daylight without blocking it",text:"Place the desk near a window, not directly in front of the only usable daylight source if the furniture is tall or bulky."}
+    ],
+    mistakes:[
+      {title:"Putting the desk in the main path",text:"A chair needs pull-back room, so the true footprint is larger than the desktop alone."},
+      {title:"Oversized office chair",text:"Deep task chairs can dominate a compact studio more than the desk itself."},
+      {title:"Separate desk plus separate dining table",text:"In a very small studio, both may create duplicate surfaces and poor circulation."},
+      {title:"Ignoring video-call background",text:"If you work from home often, the view behind the desk may affect where it belongs."}
+    ],
+    takeaway:"A studio desk should feel permanent enough to work well but compact enough to disappear into the room when work ends.",
+    faq:[
+      {q:"How wide should a studio apartment desk be?",a:"Around 36–48 inches is enough for many laptop setups. Larger monitors or two-person work may need more."},
+      {q:"Can a desk double as a dining table?",a:"Yes, and in small studios that can be one of the most efficient uses of floor area."},
+      {q:"Should a desk face a wall or window?",a:"Both can work. Prioritize glare control, chair clearance and keeping the main circulation route open."}
+    ],
+    related:["350-sq-ft","450-sq-ft","12x20"]
+  },
+  {
+    slug:"with-king-bed",
+    title:"Studio Apartment Layout With a King Bed",
+    description:"Studio apartment layout ideas with a king bed, including circulation, storage and sofa trade-offs.",
+    eyebrow:"KING BED · BIG SLEEP FOOTPRINT",
+    intro:"A king bed can fit in many studios, but fitting it physically is not the same as creating a comfortable layout. A king takes about 6.3 × 6.7 feet before bedside access, so the rest of the room needs to become more disciplined.",
+    quickTitle:"Can a king bed work in a studio apartment?",
+    quickAnswer:"Yes, especially in studios around 450 sq ft and above or in wider footprints. The king should be treated as the main priority, with compact seating, concentrated storage and minimal duplicate surfaces around it.",
+    plans:[
+      {
+        title:"King-bed priority layout",
+        bestFor:"Sleep is the non-negotiable priority",
+        note:"Keep the sofa compact and use one shared desk/dining surface so the king does not force the room into several narrow leftover strips.",
+        assumption:"Reference footprint: roughly 450–550 sq ft.",
+        zones:[
+          {x:66,y:62,w:260,h:155,label:"King Bed",tone:"green"},
+          {x:360,y:62,w:205,h:155,label:"Compact Living",tone:"warm"},
+          {x:66,y:248,w:250,h:90,label:"Storage",tone:"neutral"},
+          {x:350,y:248,w:215,h:90,label:"Work / Dining",tone:"green"},
+        ]
+      },
+      {
+        title:"Wide-room king layout",
+        bestFor:"Square or wide studios",
+        note:"A wider footprint lets the bed sit in one quadrant while preserving a more normal living area.",
+        assumption:"Reference footprint: around 20 × 20 ft or similar.",
+        zones:[
+          {x:66,y:62,w:250,h:150,label:"King Bed",tone:"green"},
+          {x:350,y:62,w:215,h:150,label:"Living",tone:"warm"},
+          {x:66,y:242,w:250,h:100,label:"Storage",tone:"neutral"},
+          {x:350,y:242,w:215,h:100,label:"Dining / Desk",tone:"green"},
+        ]
+      }
+    ],
+    rules:[
+      {title:"Budget for access, not just mattress size",text:"The bed needs usable approach space; otherwise the room may technically fit but live badly."},
+      {title:"Shrink secondary furniture first",text:"A compact sofa and shallow storage usually make more sense than compromising access around the bed."},
+      {title:"Avoid extra bedside furniture",text:"Wall shelves or one small table may be enough where two full nightstands would consume too much width."}
+    ],
+    mistakes:[
+      {title:"Choosing king plus sectional",text:"Two oversized pieces often consume the room before storage or work needs are considered."},
+      {title:"Centering the bed for symmetry",text:"A perfectly centered bed can waste valuable wall space in a studio."},
+      {title:"Forgetting bed-frame dimensions",text:"Frames can add several inches beyond the mattress on every side."},
+      {title:"Adding two full nightstands",text:"The visual and physical footprint may be larger than expected."}
+    ],
+    takeaway:"If the king bed is the priority, let the rest of the studio admit that. Compact secondary furniture will create a better room than pretending every zone can remain full-size.",
+    faq:[
+      {q:"What studio size is best for a king bed?",a:"There is no universal minimum, but wider rooms and studios around 450 sq ft or more are generally easier to plan."},
+      {q:"Can a king bed work in 400 sq ft?",a:"Sometimes, but the sofa, storage and dining or work zones may need to be smaller or more flexible."},
+      {q:"Should the king bed go in a corner?",a:"That can save circulation space, but it makes access harder for two people. It is a trade-off rather than an automatic solution."}
+    ],
+    related:["450-sq-ft","600-sq-ft","20x20"]
+  },
+  {
+    slug:"with-murphy-bed",
+    title:"Studio Apartment Layout With a Murphy Bed",
+    description:"Studio apartment layout ideas using a Murphy bed to create more daytime living, work or dining space.",
+    eyebrow:"MURPHY BED · DAYTIME FLOOR SPACE",
+    intro:"A Murphy bed changes the studio more than almost any other furniture choice because the sleeping footprint can disappear during the day. The benefit is real, but only if the wall bed has a clear opening zone and the furniture in front of it can move easily.",
+    quickTitle:"When does a Murphy bed make sense?",
+    quickAnswer:"It is most useful when daytime living or work space matters more than having a permanently made bed. The floor in front of the unit must remain clear enough for the bed to open, so mobile or lightweight furniture is important.",
+    plans:[
+      {
+        title:"Living-first Murphy layout",
+        bestFor:"People who spend a lot of daytime hours at home",
+        note:"The closed bed leaves a larger lounge, while a movable coffee table keeps the opening zone clear.",
+        assumption:"Reference footprint: about 350–450 sq ft.",
+        zones:[
+          {x:66,y:62,w:180,h:145,label:"Murphy Bed",tone:"green"},
+          {x:280,y:62,w:285,h:145,label:"Large Living",tone:"warm"},
+          {x:66,y:238,w:180,h:100,label:"Storage",tone:"neutral"},
+          {x:280,y:238,w:285,h:100,label:"Dining / Work",tone:"green"},
+        ]
+      },
+      {
+        title:"Office-by-day layout",
+        bestFor:"Remote workers",
+        note:"The open bed zone becomes useful daytime floor area and can support a flexible office setup.",
+        assumption:"Best when desk furniture does not block the bed swing.",
+        zones:[
+          {x:66,y:62,w:180,h:145,label:"Wall Bed",tone:"green"},
+          {x:280,y:62,w:285,h:145,label:"Living",tone:"warm"},
+          {x:66,y:238,w:180,h:100,label:"Storage",tone:"neutral"},
+          {x:280,y:238,w:285,h:100,label:"Office / Flex",tone:"green"},
+        ]
+      }
+    ],
+    rules:[
+      {title:"Protect the opening zone",text:"The bed needs clear floor space every night, so heavy furniture should not live directly in front of it."},
+      {title:"Use lightweight flexible pieces",text:"Nesting tables, rolling desks and movable chairs make the daily transformation easier."},
+      {title:"Plan bedding storage",text:"Pillows and extra bedding still need a convenient home even when the bed is closed."}
+    ],
+    mistakes:[
+      {title:"Blocking the bed with a sofa",text:"Daily furniture moving becomes annoying quickly if the sofa is too heavy or too close."},
+      {title:"Ignoring ceiling and wall conditions",text:"Murphy beds can require specific mounting and clearances that must be verified with the manufacturer."},
+      {title:"No place for bedding",text:"A hidden bed does not eliminate the need for accessible sleep storage."},
+      {title:"Assuming it is always space-saving",text:"If the room already works well with a permanent bed, the cost and daily routine may not be worth it."}
+    ],
+    takeaway:"A Murphy bed is valuable when it genuinely unlocks a better daytime room. The best layout makes opening and closing it effortless rather than turning the transformation into a daily chore.",
+    faq:[
+      {q:"How much clear space does a Murphy bed need?",a:"It depends on the model and mattress orientation. Always use the manufacturer's exact opening dimensions."},
+      {q:"Can a sofa sit in front of a Murphy bed?",a:"Some systems are designed around integrated sofas, but a standard sofa may block the opening zone."},
+      {q:"Is a Murphy bed good for remote work?",a:"It can be, because the daytime floor area can support a more comfortable office or meeting setup."}
+    ],
+    related:["350-sq-ft","450-sq-ft","for-remote-work"]
+  },
+  {
+    slug:"with-balcony",
+    title:"Studio Apartment Layout With a Balcony",
+    description:"Studio apartment layout ideas that protect balcony access, daylight and indoor-outdoor flow.",
+    eyebrow:"BALCONY ACCESS · KEEP THE LIGHT MOVING",
+    intro:"A balcony can make a studio feel much larger, but only if the route to it stays open. The biggest layout mistake is treating the balcony door like an ordinary wall and allowing furniture to crowd the light source or block the indoor-outdoor path.",
+    quickTitle:"How should a balcony affect the studio layout?",
+    quickAnswer:"Treat balcony access as a primary circulation route. Keep deep furniture away from the door swing or slider, preserve the view line and use lower pieces near the glazing so daylight can travel into the room.",
+    plans:[
+      {
+        title:"Clear-balcony-axis layout",
+        bestFor:"Frequent balcony use",
+        note:"The main path runs directly toward the balcony while sleep and storage stay to the sides.",
+        assumption:"Reference studio with balcony on the far wall.",
+        zones:[
+          {x:66,y:62,w:220,h:145,label:"Sleep",tone:"green"},
+          {x:330,y:62,w:235,h:145,label:"Living",tone:"warm"},
+          {x:66,y:238,w:210,h:100,label:"Storage",tone:"neutral"},
+          {x:330,y:238,w:235,h:100,label:"Clear to Balcony",tone:"green"},
+        ]
+      },
+      {
+        title:"Balcony-as-living-extension",
+        bestFor:"Warm climates and regular outdoor use",
+        note:"Indoor seating faces toward the balcony so the exterior reads as a continuation of the living zone.",
+        assumption:"Best with a wide glazed opening or sliding door.",
+        zones:[
+          {x:66,y:62,w:205,h:145,label:"Bed",tone:"green"},
+          {x:305,y:62,w:260,h:145,label:"Living → Balcony",tone:"warm"},
+          {x:66,y:238,w:195,h:100,label:"Storage",tone:"neutral"},
+          {x:300,y:238,w:265,h:100,label:"Dining / Flex",tone:"green"},
+        ]
+      }
+    ],
+    rules:[
+      {title:"Protect door clearance",text:"A hinged balcony door needs swing space; a slider still needs a clean approach zone."},
+      {title:"Keep tall furniture away from glazing",text:"Wardrobes and shelving can steal daylight from the rest of the studio."},
+      {title:"Use the view as an anchor",text:"Orient the living zone so the balcony visually extends the room."}
+    ],
+    mistakes:[
+      {title:"Putting a desk directly in the access path",text:"The chair and cables can create a daily obstacle."},
+      {title:"Blocking the balcony with the sofa back",text:"Even if access remains possible, the room can feel visually closed."},
+      {title:"Tall storage beside the main window",text:"It can reduce daylight more than expected in a one-room apartment."},
+      {title:"Ignoring outdoor furniture sightlines",text:"A cluttered balcony can visually shrink the interior when it is always visible."}
+    ],
+    takeaway:"In a studio with a balcony, the view and access path are part of the floor plan. Protect them first and the entire room can feel larger.",
+    faq:[
+      {q:"Should the sofa face the balcony?",a:"Often that works well, especially when the view is good and the balcony is used frequently."},
+      {q:"Can a desk go near the balcony?",a:"Yes, provided it does not interfere with the door and glare can be controlled."},
+      {q:"Where should tall storage go?",a:"Usually on a darker internal wall away from the main glazed opening."}
+    ],
+    related:["with-desk","450-sq-ft","20x20"]
+  },
+  {
+    slug:"with-dining-table",
+    title:"Studio Apartment Layout With a Dining Table",
+    description:"Studio apartment layout ideas with a dining table, including round, drop-leaf and dual-purpose table strategies.",
+    eyebrow:"DINING TABLE · MAKE THE SURFACE EARN ITS SPACE",
+    intro:"A dining table can make a studio feel more complete, but it should earn its footprint. In a compact room, the smartest table is often one that also handles work, food prep, hobbies or guests without forcing circulation into narrow gaps.",
+    quickTitle:"What dining table works best in a studio?",
+    quickAnswer:"Round, drop-leaf and compact rectangular tables are usually easiest to plan around. A table around 30–36 inches wide can work well, but chair pull-out space matters as much as the tabletop.",
+    plans:[
+      {
+        title:"Round-table layout",
+        bestFor:"Two people and easier circulation",
+        note:"A small round table softens tight corners and is easier to walk around than a rectangular table with sharp ends.",
+        assumption:"Reference footprint: roughly 350–500 sq ft.",
+        zones:[
+          {x:66,y:62,w:215,h:145,label:"Bed",tone:"green"},
+          {x:315,y:62,w:250,h:145,label:"Living",tone:"warm"},
+          {x:66,y:238,w:200,h:100,label:"Storage",tone:"neutral"},
+          {x:330,y:238,w:180,h:100,label:"Round Dining",tone:"green"},
+        ]
+      },
+      {
+        title:"Drop-leaf layout",
+        bestFor:"Occasional dining and flexible floor area",
+        note:"The table stays narrow most of the time and expands only when needed.",
+        assumption:"Useful in studios under roughly 400 sq ft.",
+        zones:[
+          {x:66,y:62,w:210,h:145,label:"Bed",tone:"green"},
+          {x:310,y:62,w:255,h:145,label:"Living",tone:"warm"},
+          {x:66,y:238,w:190,h:100,label:"Storage",tone:"neutral"},
+          {x:330,y:238,w:160,h:100,label:"Drop-leaf",tone:"green"},
+        ]
+      },
+      {
+        title:"Dining-and-desk layout",
+        bestFor:"One surface doing two jobs",
+        note:"A comfortable chair and good lighting let the table serve as the work zone without adding another desk.",
+        assumption:"Best where dining and work schedules do not conflict.",
+        zones:[
+          {x:66,y:62,w:215,h:145,label:"Bed",tone:"green"},
+          {x:315,y:62,w:250,h:145,label:"Living",tone:"warm"},
+          {x:66,y:238,w:200,h:100,label:"Storage",tone:"neutral"},
+          {x:300,y:238,w:265,h:100,label:"Dining / Desk",tone:"green"},
+        ]
+      }
+    ],
+    rules:[
+      {title:"Count the chairs, not just the table",text:"Pull-back space can make the real dining footprint much larger than the tabletop."},
+      {title:"Use one table for multiple jobs",text:"Dining, work and hobby functions can often share one good surface."},
+      {title:"Keep the route around it obvious",text:"People should not need to squeeze between table edges and the sofa every day."}
+    ],
+    mistakes:[
+      {title:"Four-seat table for one person",text:"Unused seating can consume a disproportionate amount of the room."},
+      {title:"Heavy chairs that never tuck in",text:"Bulky chair backs can make a compact dining zone permanently larger."},
+      {title:"Table in the main path",text:"Even a small table becomes irritating when every route bends around it."},
+      {title:"Desk plus table with identical function",text:"Two similar surfaces may create more clutter than value."}
+    ],
+    takeaway:"In a studio, a dining table should be more than a place to eat. Choose a shape and position that supports several parts of daily life without dominating circulation.",
+    faq:[
+      {q:"Is a round table better for a studio?",a:"Often yes, because there are no sharp corners and circulation can feel easier, but the exact shape depends on the available wall and chair space."},
+      {q:"How many chairs should I keep?",a:"Keep the number you use regularly and add folding or stackable extras only when needed."},
+      {q:"Can my dining table replace a desk?",a:"Yes, if the height, lighting and chair comfort work for your actual work routine."}
+    ],
+    related:["with-desk","350-sq-ft","450-sq-ft"]
+  },
+  {
+    slug:"for-remote-work",
+    title:"Studio Apartment Layout for Remote Work",
+    description:"Studio apartment layout ideas for working from home, with desk placement, visual separation and work-life boundaries.",
+    eyebrow:"REMOTE WORK · ONE ROOM, TWO MODES",
+    intro:"Working from a studio means the office can easily spread into the whole apartment. A better layout gives work a defined edge, manages background and glare, and lets the room visually switch back to home mode when the workday ends.",
+    quickTitle:"How do you work from home in a studio without living in an office?",
+    quickAnswer:"Give the desk a permanent, compact zone; keep work storage contained; and avoid placing the chair in the main circulation route. If possible, use a different light, rug or orientation to make work feel like one part of the room rather than the whole room.",
+    plans:[
+      {
+        title:"Dedicated office edge",
+        bestFor:"Full-time remote work",
+        note:"A permanent desk sits on one wall with storage directly nearby, keeping work equipment out of the living zone.",
+        assumption:"Reference footprint: roughly 400–500 sq ft.",
+        zones:[
+          {x:66,y:62,w:215,h:145,label:"Bed",tone:"green"},
+          {x:315,y:62,w:250,h:145,label:"Living",tone:"warm"},
+          {x:66,y:238,w:195,h:100,label:"Home Storage",tone:"neutral"},
+          {x:295,y:238,w:270,h:100,label:"Office",tone:"green"},
+        ]
+      },
+      {
+        title:"Window-side work zone",
+        bestFor:"Daylight and video calls",
+        note:"The desk uses natural light while staying out of the main route between entrance, kitchen and bed.",
+        assumption:"Best with controllable glare and a usable window-side wall.",
+        zones:[
+          {x:66,y:62,w:205,h:145,label:"Sleep",tone:"green"},
+          {x:305,y:62,w:260,h:145,label:"Living",tone:"warm"},
+          {x:66,y:238,w:185,h:100,label:"Storage",tone:"neutral"},
+          {x:285,y:238,w:280,h:100,label:"Window Office",tone:"green"},
+        ]
+      },
+      {
+        title:"Convertible work layout",
+        bestFor:"Occasional remote work",
+        note:"A shared dining/work surface keeps a separate desk from occupying floor area all week.",
+        assumption:"Best for smaller studios or hybrid work schedules.",
+        zones:[
+          {x:66,y:62,w:210,h:145,label:"Bed",tone:"green"},
+          {x:310,y:62,w:255,h:145,label:"Living",tone:"warm"},
+          {x:66,y:238,w:190,h:100,label:"Storage",tone:"neutral"},
+          {x:290,y:238,w:275,h:100,label:"Work / Dining",tone:"green"},
+        ]
+      }
+    ],
+    rules:[
+      {title:"Make work visually containable",text:"Work storage, cables and equipment should have a clear home so the room can reset after hours."},
+      {title:"Plan the chair clearance",text:"The desk footprint includes the chair pulled back, not just the desktop."},
+      {title:"Think about calls",text:"Background, glare and noise can matter as much as the physical desk location."}
+    ],
+    mistakes:[
+      {title:"Using the sofa as the default office",text:"It blurs work and rest and is often poor ergonomically for daily use."},
+      {title:"Desk facing unavoidable glare",text:"A beautiful window position can be frustrating if screens become unreadable."},
+      {title:"Leaving office gear everywhere",text:"Visible work equipment can make the studio feel permanently unfinished."},
+      {title:"Blocking circulation with the chair",text:"A good desk position becomes bad if the pulled-back chair sits in the main path."}
+    ],
+    takeaway:"The best remote-work studio has two modes: work and home. The layout should help you switch between them without physically rebuilding the room every day.",
+    faq:[
+      {q:"Where is the best place for a desk in a studio?",a:"Usually on a shallow wall edge near daylight but outside the main circulation route."},
+      {q:"Should I use a room divider behind my desk?",a:"Only if it improves background or focus without blocking light or making circulation worse."},
+      {q:"Can a dining table be enough for remote work?",a:"For occasional or laptop-based work, yes. Full-time setups may benefit from a dedicated desk and better cable or equipment storage."}
+    ],
+    related:["with-desk","with-dining-table","450-sq-ft"]
   }
 ];
 
