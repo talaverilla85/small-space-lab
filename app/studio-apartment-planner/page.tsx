@@ -11,20 +11,41 @@ export const metadata: Metadata = {
 export default function StudioApartmentPlannerPage() {
   return (
     <>
-      <header className="container guide-hero planner-hero">
-        <div className="breadcrumb"><Link href="/">Home</Link> / Planner</div>
-        <span className="eyebrow">Free interactive tool</span>
-        <h1>Studio Apartment Layout Planner</h1>
-        <p className="lede">Tell us the room size and what needs to fit. We will turn those constraints into a practical starting layout you can adjust around your real doors, windows and fixed services.</p>
-      </header>
-      <section className="container planner-wrap"><StudioPlanner /></section>
-      <section className="container section planner-explainer">
-        <h2>What this planner does — and what it does not</h2>
-        <div className="grid">
-          <div className="card"><div className="kicker">Useful for</div><h3>Early layout decisions</h3><p>Compare priorities before buying furniture or adding storage.</p></div>
-          <div className="card"><div className="kicker">Based on</div><h3>Room footprint + needs</h3><p>Width, length, bed choice, work or dining needs and your main priority.</p></div>
-          <div className="card"><div className="kicker">Not a substitute for</div><h3>Measured floor plans</h3><p>Always verify doors, windows, utilities, lease rules and exact product dimensions.</p></div>
+      <header className="planner-page-hero">
+        <div className="container planner-page-head">
+          <div>
+            <div className="breadcrumb"><Link href="/">Home</Link> / Planner</div>
+            <span className="micro-label">FREE TOOL · NO SIGN-UP</span>
+            <h1>Plan the room you actually have.</h1>
+            <p className="lede">
+              Add your studio dimensions, choose the furniture that matters and tell us what the room
+              needs to do. You will get a practical starting layout — not a decorating moodboard.
+            </p>
+          </div>
+          <div className="planner-page-points">
+            <div><strong>1</strong><span>Enter room size</span></div>
+            <div><strong>2</strong><span>Choose priorities</span></div>
+            <div><strong>3</strong><span>Review the layout direction</span></div>
+          </div>
         </div>
+      </header>
+
+      <section className="container planner-wrap"><StudioPlanner /></section>
+
+      <section className="container planner-confidence">
+        <div>
+          <span className="micro-label">WHAT IT IS GOOD FOR</span>
+          <h2>A fast first decision before you move furniture around.</h2>
+        </div>
+        <div className="confidence-grid">
+          <div><strong>Compare priorities</strong><p>See how a desk, dining area or larger bed changes the balance of the room.</p></div>
+          <div><strong>Spot compromises</strong><p>The planner flags combinations that may make a compact room feel overloaded.</p></div>
+          <div><strong>Start a real floor plan</strong><p>Use the result as a direction, then add your actual doors, windows, kitchen and built-ins.</p></div>
+        </div>
+        <p className="planner-disclaimer">
+          Small Space Planner provides concept guidance, not architectural or construction drawings.
+          Always verify exact dimensions and fixed elements in your own home.
+        </p>
       </section>
     </>
   );
