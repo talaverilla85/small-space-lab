@@ -441,3 +441,20 @@ body{background:var(--paper);color:var(--ink);}
   .fit-badge{min-width:96px}
   .planner-metrics{grid-template-columns:1fr}
 }
+
+/* Quick planning tools */
+.tool-page{padding-bottom:88px}
+.tool-card b{display:inline-block;margin-top:20px;font-size:13px}
+.mini-tool{display:grid;grid-template-columns:1fr .85fr;gap:18px;align-items:stretch;margin:0 0 42px}
+.mini-tool-controls{background:#fff;border:1px solid var(--line);padding:22px;display:grid;gap:16px}
+.mini-tool-controls label{display:grid;gap:6px;font-weight:750;font-size:14px}
+.mini-tool-controls input,.mini-tool-controls select{min-height:46px;padding:10px 12px;border:1px solid #cbc7bb;background:#fff;font:inherit;color:var(--ink)}
+.mini-tool-result{padding:24px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}
+.mini-tool-result span{font-size:10px;text-transform:uppercase;letter-spacing:.15em;color:var(--muted)}
+.mini-tool-result strong{font-size:36px;line-height:1;margin:10px 0}
+.mini-tool-result p{margin:0;color:#53574f}
+.mini-tool-result.ok{background:#e4efe7;border-color:#bfd2c4}
+.mini-tool-result.warn{background:#f5ead7;border-color:#dfc9a2}
+.mini-tool-result.bad{background:#f3ddd8;border-color:#d9aca2}
+.tool-copy{max-width:820px}
+@media(max-width:760px){.mini-tool{grid-template-columns:1fr}}
