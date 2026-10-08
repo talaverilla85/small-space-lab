@@ -83,6 +83,28 @@ export default async function GuidePage({ params }: Props) {
               </div>
             ) : null}
 
+            {guide.category === "Storage" ? (
+              <div className="planner-cta">
+                <div>
+                  <div className="kicker">Storage system</div>
+                  <h3>Solve the whole apartment, not just this category.</h3>
+                  <p>Use the storage hub to work through clothes, kitchen, bathroom, entryway, cleaning tools and bikes.</p>
+                </div>
+                <Link className="button primary" href="/small-apartment-storage">Storage hub</Link>
+              </div>
+            ) : null}
+
+            {guide.category === "Furniture" ? (
+              <div className="planner-cta">
+                <div>
+                  <div className="kicker">Check the dimensions</div>
+                  <h3>Test fit and clearance before buying.</h3>
+                  <p>Use the free calculators for sofa fit, furniture clearance, rugs and TV distance.</p>
+                </div>
+                <Link className="button primary" href="/tools">Open tools</Link>
+              </div>
+            ) : null}
+
             {related.length ? (
               <section>
                 <h2>Keep planning</h2>
@@ -104,8 +126,14 @@ export default async function GuidePage({ params }: Props) {
               Measure your own space first. Treat layouts as starting points and adjust for doors, windows, utilities and lease rules.
             </div>
             <div className="sidebar-box">
-              <strong>Planning your own studio?</strong>
-              <Link href="/studio-apartment-planner">Use the free layout planner →</Link>
+              <strong>{guide.category === "Storage" ? "Working on storage?" : guide.category === "Furniture" ? "Checking furniture?" : "Planning your own studio?"}</strong>
+              {guide.category === "Storage" ? (
+                <Link href="/small-apartment-storage">Open the storage hub →</Link>
+              ) : guide.category === "Furniture" ? (
+                <Link href="/tools">Use the free planning tools →</Link>
+              ) : (
+                <Link href="/studio-apartment-planner">Use the free layout planner →</Link>
+              )}
             </div>
             {guide.category !== "Legal" && guide.category !== "About" ? <AdSlot /> : null}
           </aside>
