@@ -3,7 +3,7 @@ import { guides } from "@/lib/content";
 import { layoutVariants } from "@/lib/layoutVariants";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || "https://small-space-lab-bgnb.vercel.app";
+  const base = process.env.NEXT_PUBLIC_SITE_URL || "https://small-space-lab.vercel.app";
   const now = new Date();
 
   const specialRoutes = new Set([
