@@ -227,6 +227,51 @@ export const guides: Guide[] = [
     tags: ["rug", "living room", "layout"]
   },
   {
+    slug: "small-apartment-storage/clothes",
+    title: "Small apartment clothes storage without filling the room with wardrobes",
+    description: "A practical clothes-storage system for small apartments using one main clothing zone, under-bed space and seasonal rotation.",
+    category: "Storage",
+    intro: "Clothes storage becomes messy when everyday items, occasional items and seasonal items all compete for the same easy-access space. Give daily clothing the best zone, move seasonal pieces out of the way, and resist spreading small organizers around every wall.",
+    sections: [
+      { heading: "Build one main clothing zone", paragraphs: ["A single wardrobe run, closet wall or dresser-plus-hanging zone is easier to use than clothes stored in several unrelated corners. Keep the daily categories together so getting dressed and putting things away happen in one place."], bullets: ["Hang only what benefits from hanging.", "Fold dense categories such as T-shirts and knitwear.", "Use the highest shelves for seasonal or rare-use items.", "Keep laundry close enough that worn clothes do not migrate onto furniture."] },
+      { heading: "Use under-bed storage for the right things", paragraphs: ["Under-bed space is valuable because it is large but not especially convenient. Use it for bedding, off-season clothing or bulky items rather than the clothes you reach for every morning."] },
+      { heading: "Make the system easy to reset", paragraphs: ["The best clothing system is one you can restore in a few minutes. Overly precise folding, too many tiny bins and difficult lids create friction that eventually becomes clutter."] }
+    ],
+    takeaway: "Give daily clothes the easiest storage, seasonal clothes the least convenient storage and keep the whole system concentrated in one part of the room.",
+    tags: ["clothes storage", "small apartment", "wardrobe"],
+    related: ["small-apartment-storage", "small-apartment-storage/entryway", "studio-apartment-layouts/for-two-people"]
+  },
+  {
+    slug: "small-apartment-storage/vacuum",
+    title: "Where to store a vacuum in a small apartment",
+    description: "Practical places to store upright, stick and robot vacuums in a small apartment without blocking daily circulation.",
+    category: "Storage",
+    intro: "A vacuum is awkward because it is tall, irregular and used often enough that hiding it too well can make cleaning inconvenient. The right location depends on the vacuum type, charging needs and whether you can drill into walls.",
+    sections: [
+      { heading: "Match the storage spot to the vacuum", paragraphs: ["Stick vacuums work well on a wall dock or narrow utility zone. Upright vacuums need floor depth and are often best beside a wardrobe, inside a utility closet or behind a door where the handle does not interfere with movement. Robot vacuums need open charging access rather than hidden storage."], bullets: ["Stick vacuum: vertical wall or cabinet-side zone.", "Upright vacuum: closet, wardrobe side or dedicated narrow corner.", "Robot vacuum: low open charging bay with clear approach.", "Corded vacuum: store the cord so it does not spill into the walking path."] },
+      { heading: "Keep cleaning tools together", paragraphs: ["Mop, broom, dustpan and vacuum accessories are easier to manage as one utility category. A narrow vertical strip often stores more efficiently than several hooks spread through the apartment."] },
+      { heading: "Do not hide it behind daily obstacles", paragraphs: ["If using the vacuum requires moving a chair, laundry basket and suitcase first, the storage location is too inconvenient. Frequent-use cleaning tools should be quick to take out and quick to return."] }
+    ],
+    takeaway: "The best vacuum storage is narrow, vertical and immediately accessible. Convenience matters more than making the vacuum completely invisible.",
+    tags: ["vacuum storage", "cleaning tools", "small apartment"],
+    related: ["small-apartment-storage", "small-apartment-storage/entryway", "small-apartment-storage/clothes"]
+  },
+  {
+    slug: "small-apartment-storage/entryway",
+    title: "Small apartment entryway storage for shoes, bags and everyday clutter",
+    description: "Create a compact apartment entryway landing zone for shoes, bags, coats and keys without blocking the door.",
+    category: "Storage",
+    intro: "Even apartments without a real foyer need a landing zone. The entrance is where shoes, bags, keys and coats naturally collect, so giving those items a deliberate home prevents clutter from spreading into the rest of the room.",
+    sections: [
+      { heading: "Keep the landing zone shallow", paragraphs: ["Entry storage should not reduce the main route into the apartment. Use shallow shoe storage, wall hooks and a small tray or shelf rather than a deep cabinet that narrows the doorway."], bullets: ["Shoes: keep only the pairs used regularly near the door.", "Keys and wallet: use one small repeatable landing point.", "Bags: one strong hook is better than a pile on the floor.", "Coats: limit the visible hooks to current-season items."] },
+      { heading: "Create a clean boundary", paragraphs: ["A rug, narrow console or change in wall treatment can define the entry without adding a physical divider. The goal is to signal where outside items stop before they spread through the studio."] },
+      { heading: "Protect the door swing", paragraphs: ["Measure the full door arc before adding hooks, baskets or shoe storage. A good entryway system should make arrival easier, not turn opening the door into a puzzle."] }
+    ],
+    takeaway: "A small entryway works when every daily item has a one-motion landing place and the doorway remains completely easy to use.",
+    tags: ["entryway storage", "shoe storage", "small apartment"],
+    related: ["small-apartment-storage", "small-apartment-storage/clothes", "small-apartment-storage/bikes"]
+  },
+  {
     slug: "about",
     title: "About Small Space Planner",
     description: "Why Small Space Planner focuses on practical layouts, measured ideas and useful small-home systems.",
