@@ -20,14 +20,13 @@ export function SiteFooter() {
         <div className="footer-nav-group">
           <span>PROJECT</span>
           <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
           <Link href="/privacy">Privacy</Link>
           <Link href="/cookie-policy">Cookies</Link>
           <Link href="/terms">Terms</Link>
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>SMALL SPACE PLANNER / INDEPENDENT PUBLISHING PROJECT</span>
+        <span>SMALL SPACE PLANNER / PLANNING TOOLS FOR COMPACT HOMES</span>
         <span>PLAN MORE. FIT BETTER. LIVE BIGGER.</span>
       </div>
     </footer>
