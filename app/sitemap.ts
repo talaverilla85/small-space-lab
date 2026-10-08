@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "studio-apartment-layouts/300-sq-ft",
     "studio-apartment-layouts/400-sq-ft",
     "studio-apartment-layouts/500-sq-ft",
+    ...layoutVariants.map((item) => "studio-apartment-layouts/" + item.slug),
   ]);
 
   const toolRoutes = [
