@@ -422,3 +422,22 @@ body{background:var(--paper);color:var(--ink);}
   .home-section{padding:64px 0;}
   .clear-heading{grid-template-columns:1fr;}
 }
+
+
+/* Measured planner v2 */
+.fit-badge{min-width:112px;padding:10px 12px;border:1px solid var(--line);background:#fff;display:grid;gap:2px;text-align:right}
+.fit-badge span{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.fit-badge strong{font-size:16px}
+.fit-comfortable{background:#e4efe7;border-color:#bed2c4}
+.fit-workable{background:#f5ead7;border-color:#ddc69d}
+.fit-tight{background:#f3ddd8;border-color:#d8aaa1}
+.measured-plan{background:#f6f3eb}
+.planner-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}
+.planner-metrics>div{border:1px solid var(--line);background:#fff;padding:12px;display:grid;gap:3px}
+.planner-metrics span{font-size:10px;text-transform:uppercase;letter-spacing:.11em;color:var(--muted)}
+.planner-metrics strong{font-size:16px}
+@media(max-width:620px){
+  .planner-result-head{align-items:flex-start}
+  .fit-badge{min-width:96px}
+  .planner-metrics{grid-template-columns:1fr}
+}
