@@ -8,7 +8,17 @@ import { getGuide, guides } from "@/lib/content";
 type Props = { params: Promise<{ slug: string[] }> };
 
 export function generateStaticParams() {
-  return guides.map((guide) => ({ slug: guide.slug.split("/") }));
+  const explicitRoutes = new Set([
+    "studio-apartment-layouts",
+    "studio-apartment-layouts/300-sq-ft",
+    "studio-apartment-layouts/400-sq-ft",
+    "studio-apartment-layouts/500-sq-ft",
+    "small-apartment-storage",
+    "furniture-layout",
+  ]);
+  return guides
+    .filter((guide) => !explicitRoutes.has(guide.slug))
+    .map((guide) => ({ slug: guide.slug.split("/") }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
