@@ -37,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.82,
     })),
     ...guides
-      .filter((guide) => !specialRoutes.has(guide.slug))
+      .filter((guide) => !specialRoutes.has(guide.slug) && guide.slug !== "contact")
       .map((guide) => ({
         url: base + "/" + guide.slug,
         lastModified: now,
