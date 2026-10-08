@@ -458,3 +458,47 @@ body{background:var(--paper);color:var(--ink);}
 .mini-tool-result.bad{background:#f3ddd8;border-color:#d9aca2}
 .tool-copy{max-width:820px}
 @media(max-width:760px){.mini-tool{grid-template-columns:1fr}}
+
+/* Storage + furniture hubs */
+.storage-framework{display:grid;grid-template-columns:1.25fr .75fr;gap:34px;padding:28px 0 68px;align-items:start}
+.framework-main h2{font-size:clamp(42px,5vw,68px);margin:12px 0 26px}
+.framework-steps{border-top:1px solid var(--line)}
+.framework-steps>div{display:grid;grid-template-columns:44px 180px 1fr;gap:18px;padding:19px 0;border-bottom:1px solid var(--line);align-items:start}
+.framework-steps b,.sequence-item b{font:italic 18px Georgia,serif;color:var(--accent)}
+.framework-steps p{margin:0;color:var(--muted);font-size:14px}
+.storage-rule{background:#17372f;color:#fff;padding:28px;position:sticky;top:104px}
+.storage-rule strong{font-size:26px}
+.storage-rule p{color:#d8e1dc;font-size:17px}
+.storage-problem-grid{grid-template-columns:repeat(2,1fr)}
+.storage-cta{margin-top:42px}
+.storage-diagram{position:relative;min-height:360px;background:#ece9df;border:8px solid #c9c3b7;color:#11130f}
+.storage-wall,.storage-open,.storage-path{position:absolute;display:grid;place-items:center;font-size:10px;letter-spacing:.14em;font-weight:850}
+.storage-wall{left:5%;top:8%;bottom:8%;width:27%;background:#879a8f;color:#fff}
+.storage-open{right:6%;top:8%;width:54%;height:38%;border:1px solid #8c8e87;background:#faf8f2}
+.storage-path{right:6%;bottom:9%;width:54%;height:34%;border:1px dashed #8c8e87;background:#f4e1c9}
+.furniture-sequence{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);background:#fff;margin-bottom:40px}
+.sequence-item{min-height:190px;padding:18px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.sequence-item:last-child{border-right:0}
+.sequence-item strong{font-size:18px;margin-top:auto}
+.sequence-item span{font-size:12px;color:var(--muted)}
+.tape-demo{position:relative;min-height:430px;background:#d8c8b5;overflow:hidden}
+.tape-sofa,.tape-desk,.tape-route{position:absolute;border:3px dashed #fff8e8;display:grid;place-items:center;font-size:10px;letter-spacing:.14em;font-weight:850;color:#5e5549}
+.tape-sofa{left:10%;top:15%;width:55%;height:26%;background:rgba(115,140,126,.32)}
+.tape-desk{right:8%;bottom:12%;width:32%;height:24%;background:rgba(184,104,77,.28)}
+.tape-route{left:14%;bottom:12%;width:37%;height:34%;background:rgba(255,255,255,.18)}
+@media(max-width:900px){
+  .storage-framework{grid-template-columns:1fr}
+  .storage-rule{position:static}
+  .furniture-sequence{grid-template-columns:1fr 1fr}
+  .sequence-item{border-bottom:1px solid var(--line)}
+}
+@media(max-width:620px){
+  .storage-problem-grid,.furniture-sequence{grid-template-columns:1fr}
+  .framework-steps>div{grid-template-columns:36px 1fr}
+  .framework-steps p{grid-column:2}
+  .nav{flex-wrap:wrap;padding:10px 0}
+  .nav-links{display:flex!important;width:100%;overflow-x:auto;gap:8px;padding:2px 0 8px;scrollbar-width:none}
+  .nav-links::-webkit-scrollbar{display:none}
+  .nav-links a{white-space:nowrap;font-size:12px;padding:7px 9px;border:1px solid var(--line)}
+  .nav-links .nav-planner{border-color:var(--ink)}
+}
