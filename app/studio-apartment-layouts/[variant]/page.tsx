@@ -26,9 +26,20 @@ export default async function LayoutVariantPage({ params }: Props) {
   const item = getLayoutVariant(variant);
   if (!item) notFound();
 
-  const related = item.related
-    .map((slug) => layoutVariants.find((candidate) => candidate.slug === slug))
-    .filter(Boolean);
+  const coreTitles: Record<string,string> = {
+    "300-sq-ft": "300 Sq Ft Studio Apartment Layout Ideas",
+    "400-sq-ft": "400 Sq Ft Studio Apartment Layout Ideas",
+    "500-sq-ft": "500 Sq Ft Studio Apartment Layout Ideas",
+  };
+
+  const related = item.related.map((slug) => {
+    const variantItem = layoutVariants.find((candidate) => candidate.slug === slug);
+    return {
+      slug,
+      title: variantItem?.title || coreTitles[slug] || slug.replaceAll("-", " "),
+      description: variantItem?.description || "Compare this layout with another common studio size or shape.",
+    };
+  });
 
   return (
     <article>
@@ -112,13 +123,13 @@ export default async function LayoutVariantPage({ params }: Props) {
             <section>
               <h2>Compare nearby sizes and shapes</h2>
               <div className="grid related-grid">
-                {related.map((entry) => entry ? (
+                {related.map((entry) => (
                   <Link key={entry.slug} href={`/studio-apartment-layouts/${entry.slug}`} className="card">
                     <div className="kicker">Layout</div>
                     <h3>{entry.title}</h3>
                     <p>{entry.description}</p>
                   </Link>
-                ) : null)}
+                ))}
               </div>
             </section>
           ) : null}
