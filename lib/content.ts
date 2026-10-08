@@ -276,10 +276,10 @@ export const guides: Guide[] = [
     title: "About Small Space Planner",
     description: "Why Small Space Planner focuses on practical layouts, measured ideas and useful small-home systems.",
     category: "About",
-    intro: "Small Space Planner is an independent publishing project focused on helping people make compact homes work better. We create practical planning guides, original concept layouts and clear storage frameworks.",
+    intro: "Small Space Planner is an independent planning resource for people living in studios and compact homes. We build practical layout guides, original concept plans and simple tools that help turn measurements into better decisions.",
     sections: [
       { heading: "Our approach", paragraphs: ["We prefer specific, usable guidance over generic inspiration. Concept plans are clearly labeled as examples, and readers should verify their own measurements, building rules and product requirements before making permanent changes."] },
-      { heading: "How we fund the site", paragraphs: ["We plan to support the site with display advertising and may use clearly disclosed affiliate links in the future. Advertising does not determine our editorial conclusions."] }
+      { heading: "How the site stays independent", paragraphs: ["Small Space Planner may use clearly labeled advertising or affiliate links in the future. Commercial relationships do not determine our planning recommendations, and tools or guides are designed to remain useful without requiring a purchase."] }
     ]
   },
   {
@@ -297,9 +297,9 @@ export const guides: Guide[] = [
     title: "Privacy policy",
     description: "Privacy information for Small Space Planner.",
     category: "Legal",
-    intro: "This policy is a launch-stage summary and will be finalized for the permanent domain, analytics setup and advertising configuration before the site is submitted to advertising partners.",
+    intro: "Small Space Planner is currently operating without display advertising enabled. This policy explains the privacy approach used during the preview period and will be updated whenever analytics, advertising or other data-processing services change.",
     sections: [
-      { heading: "Analytics and advertising", paragraphs: ["The production site may use privacy-respecting analytics, Google services and advertising technology. Where required, visitors will be offered consent controls before advertising or measurement cookies are used."], bullets: ["We will disclose the services in use.", "We will provide consent controls where legally required.", "We will update this policy when the production domain and advertising IDs are configured."] }
+      { heading: "Analytics and advertising", paragraphs: ["Display advertising is not currently active. If analytics or advertising services are enabled, this policy will identify the services in use and, where required, visitors will be offered consent controls before non-essential cookies or similar technologies are used."], bullets: ["Services in use will be disclosed here.", "Consent controls will be provided where legally required.", "Advertising will not be enabled silently during the private preview."] }
     ]
   },
   {
@@ -307,7 +307,7 @@ export const guides: Guide[] = [
     title: "Cookie policy",
     description: "Cookie information for Small Space Planner.",
     category: "Legal",
-    intro: "The launch version does not intentionally set advertising cookies. Before Google AdSense is enabled, the site will use an appropriate consent-management solution for visitors in regions where consent is required.",
+    intro: "Small Space Planner does not currently enable display-advertising cookies. If advertising or non-essential measurement technologies are introduced, the cookie controls and categories on this page will be updated before those services are activated where consent is required.",
     sections: [
       { heading: "Advertising cookies", paragraphs: ["Advertising will remain disabled until the permanent domain, publisher account and consent setup are complete. This page will then list the cookie categories and controls available to visitors."] }
     ]
