@@ -12,11 +12,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "studio-apartment-layouts/500-sq-ft",
   ]);
 
+  const toolRoutes = [
+    "/tools",
+    "/tools/sofa-fit-calculator",
+    "/tools/furniture-clearance-calculator",
+    "/tools/rug-size-calculator",
+    "/tools/tv-distance-calculator",
+  ];
+
   return [
     { url: base, lastModified: now, changeFrequency: "weekly", priority: 1 },
-    { url: `${base}/studio-apartment-planner`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: base + "/studio-apartment-planner", lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    ...toolRoutes.map((route,index) => ({
+      url: base + route,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: index === 0 ? 0.78 : 0.8,
+    })),
     ...layoutVariants.map((item) => ({
-      url: `${base}/studio-apartment-layouts/${item.slug}`,
+      url: base + "/studio-apartment-layouts/" + item.slug,
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.82,
@@ -24,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...guides
       .filter((guide) => !specialRoutes.has(guide.slug))
       .map((guide) => ({
-        url: `${base}/${guide.slug}`,
+        url: base + "/" + guide.slug,
         lastModified: now,
         changeFrequency: "monthly" as const,
         priority: guide.category === "Legal" ? 0.2 : 0.7,
