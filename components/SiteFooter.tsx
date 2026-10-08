@@ -12,6 +12,7 @@ export function SiteFooter() {
         <div className="footer-nav-group">
           <span>EXPLORE</span>
           <Link href="/studio-apartment-planner">Studio Planner</Link>
+          <Link href="/tools">Planning Tools</Link>
           <Link href="/studio-apartment-layouts">Layout Library</Link>
           <Link href="/small-apartment-storage">Storage</Link>
           <Link href="/furniture-layout">Furniture</Link>
