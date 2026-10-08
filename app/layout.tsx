@@ -9,7 +9,7 @@ const description = "Plan studio apartments and compact homes with practical lay
 const allowIndexing = process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://small-space-lab-bgnb.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://small-space-lab.vercel.app"),
   title: { default: siteName, template: "%s | Small Space Planner" },
   description,
   applicationName: siteName,
