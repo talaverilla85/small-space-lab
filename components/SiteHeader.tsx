@@ -10,6 +10,7 @@ export function SiteHeader() {
         </Link>
         <nav className="nav-links" aria-label="Primary navigation">
           <Link className="nav-planner" href="/studio-apartment-planner">Planner ↗</Link>
+          <Link href="/tools">Tools</Link>
           <Link href="/studio-apartment-layouts">Layouts</Link>
           <Link href="/small-apartment-storage">Storage</Link>
           <Link href="/furniture-layout">Furniture</Link>
