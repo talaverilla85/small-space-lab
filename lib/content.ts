@@ -296,16 +296,6 @@ export const guides: Guide[] = [
     ]
   },
   {
-    slug: "contact",
-    title: "Contact",
-    description: "How to contact Small Space Planner.",
-    category: "About",
-    intro: "Small Space Planner is currently in its launch phase. A dedicated contact address will be published when the permanent domain goes live.",
-    sections: [
-      { heading: "Corrections and feedback", paragraphs: ["If you spot an error in a layout, measurement assumption or page, we want to know. The permanent contact channel will be added here before public launch."] }
-    ]
-  },
-  {
     slug: "privacy",
     title: "Privacy policy",
     description: "Privacy information for Small Space Planner.",
