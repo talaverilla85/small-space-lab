@@ -21,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tools/tv-distance-calculator",
   ];
 
+  const coreLayoutRoutes = [
+    "/studio-apartment-layouts/300-sq-ft",
+    "/studio-apartment-layouts/400-sq-ft",
+    "/studio-apartment-layouts/500-sq-ft",
+  ];
+
   return [
     { url: base, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: base + "/studio-apartment-planner", lastModified: now, changeFrequency: "monthly", priority: 0.9 },
@@ -29,6 +35,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: index === 0 ? 0.78 : 0.8,
+    })),
+    ...coreLayoutRoutes.map((route) => ({
+      url: base + route,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
     })),
     ...layoutVariants.map((item) => ({
       url: base + "/studio-apartment-layouts/" + item.slug,
