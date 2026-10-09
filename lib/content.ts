@@ -145,11 +145,13 @@ export const guides: Guide[] = [
     title: "Small apartment kitchen storage without adding bulky cabinets",
     description: "Use cabinet interiors, narrow gaps and vertical zones to gain kitchen storage without making a small kitchen feel crowded.",
     category: "Storage",
-    intro: "Small kitchens usually have enough total volume but poor access. Before adding a cart or cabinet, improve the storage you already have: shelf spacing, door backs, drawers and the dead air above short items.",
+    intro: "Small kitchens usually have enough total volume but poor access. Before adding a cart or cabinet, improve the storage you already have: shelf spacing, door backs, drawers and the dead air above short items. The goal is not to store more at any cost; it is to make the things you actually use easier to see, reach and put away.",
     sections: [
-      { heading: "Fix access before adding volume", paragraphs: ["A deep cabinet becomes more useful when items are grouped in removable bins or trays. A tall cabinet shelf becomes more useful when a riser creates a second level. The goal is to see and reach what you own."], bullets: ["Use shelf risers for short pantry items.", "Keep daily cookware in the easiest-to-reach zone.", "Use door-mounted storage only for light items and only if clearance allows."] }
+      { heading: "Fix access before adding volume", paragraphs: ["A deep cabinet becomes more useful when items are grouped in removable bins or trays. A tall cabinet shelf becomes more useful when a riser creates a second level. The goal is to see and reach what you own without unpacking half the cabinet."], bullets: ["Use shelf risers for short pantry items.", "Keep daily cookware in the easiest-to-reach zone.", "Use door-mounted storage only for light items and only if clearance allows.", "Put rarely used appliances in the least convenient zone, not on the counter."] },
+      { heading: "Use the narrow spaces deliberately", paragraphs: ["A narrow gap beside a refrigerator or cabinet can hold trays, cutting boards or a slim rolling rack, but only if the rack can be pulled out without blocking the main walkway. Measure the real gap at floor and handle height before buying anything.", "Countertop storage should earn its place. If an item is used less than several times a week, moving it off the counter usually improves both prep space and the visual calm of a small kitchen."] },
+      { heading: "Create one pantry logic", paragraphs: ["Group food by how you cook rather than by package shape. Breakfast, baking, quick meals and snacks are easier to maintain than a collection of unrelated containers. Put the most-used group between waist and eye level and use higher shelves for backups."], bullets: ["Decant only when it genuinely improves access.", "Label opaque bins so food does not disappear.", "Keep heavy items low.", "Leave a little empty space so the system can absorb a normal grocery shop."] }
     ],
-    takeaway: "The first extra shelf is often more useful than the first extra cabinet.",
+    takeaway: "The first extra shelf is often more useful than the first extra cabinet. Improve access, then add storage only where a specific category still has no home.",
     tags: ["kitchen storage", "small kitchen", "renters"]
   },
   {
@@ -157,11 +159,13 @@ export const guides: Guide[] = [
     title: "Small apartment bathroom storage that stays easy to use",
     description: "Practical storage zones for towels, toiletries, cleaning supplies and backups in a compact bathroom.",
     category: "Storage",
-    intro: "A small bathroom works best when the things used every day are visible or one motion away, while backups and cleaning products are stored higher or farther from the sink.",
+    intro: "A small bathroom works best when the things used every day are visible or one motion away, while backups and cleaning products are stored higher or farther from the sink. The room feels larger when the prime-access zone is intentionally limited rather than packed with organizers.",
     sections: [
-      { heading: "Separate daily items from backups", paragraphs: ["Keep the sink zone deliberately small: toothbrushes, daily skincare and hand soap. Backups, bulk packages and rarely used tools can move to an over-toilet cabinet, high shelf or another room."], bullets: ["Use narrow vertical storage rather than deep floor cabinets.", "Avoid storing too many categories on the countertop.", "Make towels easy to return after use."] }
+      { heading: "Separate daily items from backups", paragraphs: ["Keep the sink zone deliberately small: toothbrushes, daily skincare and hand soap. Backups, bulk packages and rarely used tools can move to an over-toilet cabinet, high shelf or another room."], bullets: ["Use narrow vertical storage rather than deep floor cabinets.", "Avoid storing too many categories on the countertop.", "Make towels easy to return after use.", "Keep medicines and products that require specific conditions according to their labels, not simply wherever space is available."] },
+      { heading: "Use moisture-friendly storage", paragraphs: ["Bathrooms are humid, so paper packaging, spare textiles and products that dislike moisture may be better stored outside the room. Closed containers can reduce visual clutter, but they should not trap wet towels or damp cleaning cloths.", "If you add storage above the toilet or door, check that it is securely fixed and does not create a head-height obstacle."] },
+      { heading: "Give cleaning supplies one compact zone", paragraphs: ["A small caddy under the sink or in a nearby utility area is easier to manage than bottles spread across several shelves. Keep the products you use in the bathroom together so cleaning the room does not require searching elsewhere."], bullets: ["Keep frequently used products in front.", "Store backups behind or above daily items.", "Use hooks only where they do not interfere with doors or towels.", "Leave the floor as clear as possible for easier cleaning."] }
     ],
-    takeaway: "A calm bathroom usually has fewer items in the prime-access zone, not more storage products.",
+    takeaway: "A calm bathroom usually has fewer items in the prime-access zone, not more storage products. Put daily items close, backups farther away and moisture-sensitive items where they will keep better.",
     tags: ["bathroom storage", "small bathroom", "organization"]
   },
   {
@@ -169,11 +173,13 @@ export const guides: Guide[] = [
     title: "Bike storage in a small apartment: floor, wall or vertical?",
     description: "How to choose an indoor bike storage method based on floor space, wall permission, bike weight and how often you ride.",
     category: "Storage",
-    intro: "The right bike storage method depends less on the apartment size than on how often you use the bike and what your lease allows. Daily riders need a solution that is fast enough to use without turning storage into a chore.",
+    intro: "The right bike storage method depends less on the apartment size than on how often you use the bike and what your lease allows. Daily riders need a solution that is fast enough to use without turning storage into a chore, while occasional riders can trade convenience for a smaller footprint.",
     sections: [
-      { heading: "Choose by frequency and permission", paragraphs: ["A vertical floor stand is renter-friendly and compact. A wall hook saves more floor space but requires secure fixing. A horizontal wall rack can turn the bike into a visual feature, but it uses more wall width."], bullets: ["Daily rider: prioritize fast access.", "Heavy e-bike: avoid high lifting positions.", "Rental: check drilling rules before wall mounting.", "Entryway: protect walls and floors from wet tires."] }
+      { heading: "Choose by frequency and permission", paragraphs: ["A vertical floor stand is renter-friendly and compact. A wall hook saves more floor space but requires secure fixing. A horizontal wall rack can turn the bike into a visual feature, but it uses more wall width."], bullets: ["Daily rider: prioritize fast access.", "Heavy e-bike: avoid high lifting positions.", "Rental: check drilling rules before wall mounting.", "Entryway: protect walls and floors from wet tires."] },
+      { heading: "Plan the real footprint", paragraphs: ["Measure the handlebars, pedals and wheel projection, not just the frame. A bike stored vertically may use little floor area but still project into a walkway at handlebar height.", "For a wall-mounted system, verify the wall construction and use fixings rated for the actual load. The rack manufacturer and your building or lease rules should take priority over a generic mounting recommendation."] },
+      { heading: "Make arrival and departure easy", paragraphs: ["A storage solution that looks compact but requires moving furniture every time will quickly become unused. Daily riders benefit from a route that goes door → bike → outside without crossing the bed or main seating zone."], bullets: ["Add a small mat or tray if tires are often wet.", "Keep helmet and lock near the bike.", "Avoid storing a hot or charging e-bike battery in ways that conflict with manufacturer guidance.", "Do not let pedals or handlebars narrow an emergency exit route."] }
     ],
-    takeaway: "The best bike rack is the one you will actually use every day without moving three other things first.",
+    takeaway: "The best bike rack is the one you will actually use every day without moving three other things first. Measure the full bike envelope and choose access before aesthetics.",
     tags: ["bike storage", "apartment", "renters"]
   },
   {
@@ -195,11 +201,13 @@ export const guides: Guide[] = [
     title: "Where to put a desk in a studio apartment",
     description: "Four practical desk locations for a studio apartment, with trade-offs for light, privacy, circulation and flexibility.",
     category: "Furniture",
-    intro: "A studio desk works best when it borrows an underused edge of the room rather than creating a new island of furniture. Window walls, the back of a sofa, shallow wall niches and convertible dining areas are the usual candidates.",
+    intro: "A studio desk works best when it borrows an underused edge of the room rather than creating a new island of furniture. Window walls, the back of a sofa, shallow wall niches and convertible dining areas are the usual candidates. The desk footprint also includes the chair when it is pulled back, so a seemingly small workstation can consume more circulation than expected.",
     sections: [
-      { heading: "Pick the location by work pattern", paragraphs: ["If you work all day, prioritize natural light and a permanent chair. If you only use a laptop occasionally, a dining table or console can do double duty and preserve more open space."], bullets: ["Window: best light, but watch glare.", "Behind sofa: creates zoning without a divider.", "Wall niche: keeps work visually contained.", "Dining table: best for occasional work."] }
+      { heading: "Pick the location by work pattern", paragraphs: ["If you work all day, prioritize a permanent chair, useful light and enough depth for the equipment you actually use. If you only use a laptop occasionally, a dining table or console can do double duty and preserve more open space."], bullets: ["Window: good daylight, but watch screen glare.", "Behind sofa: creates zoning without a divider.", "Wall niche: keeps work visually contained.", "Dining table: efficient for occasional work."] },
+      { heading: "Protect the chair zone", paragraphs: ["Measure the desk with the chair pulled back to a realistic working position. If that chair blocks the only route to the kitchen, balcony or bed, the location is not as efficient as it looks on a floor plan.", "A shallow desk can be more valuable than a wider one in a narrow studio because reducing depth protects the path through the room."] },
+      { heading: "Make work visually end", paragraphs: ["In a one-room home, work equipment can make the entire apartment feel like an office. Keep cables, notebooks and accessories in one contained zone, and use lighting that can be switched off separately when the workday ends."], bullets: ["Use vertical storage above the desk only if it does not make the wall feel heavy.", "Keep video-call backgrounds in mind if calls are frequent.", "Avoid placing the desk where a door opens directly into the chair.", "If two people share the studio, decide whether one permanent desk or two flexible work points reduce more friction."] }
     ],
-    takeaway: "Permanent work deserves a permanent ergonomic zone; occasional work does not always need a dedicated desk.",
+    takeaway: "Permanent work deserves a permanent ergonomic zone; occasional work does not always need a dedicated desk. The best position is the one that stays usable without stealing the room's main path.",
     tags: ["desk", "studio apartment", "work from home"]
   },
   {
@@ -207,11 +215,13 @@ export const guides: Guide[] = [
     title: "Sofa-to-TV distance in a small room: a practical starting point",
     description: "A simple way to think about sofa and TV placement in compact living rooms without sacrificing circulation.",
     category: "Furniture",
-    intro: "In a small room, viewing distance is only one constraint. You also need space to walk, open doors and use storage. Treat TV distance as a range rather than a single perfect number and test the layout before mounting anything.",
+    intro: "In a small room, viewing distance is only one constraint. You also need space to walk, open doors and use storage. Treat TV distance as a range rather than a single perfect number and test the layout before mounting anything. The goal is a comfortable viewing position that does not force the rest of the room into awkward gaps.",
     sections: [
-      { heading: "Start with the room, not the screen", paragraphs: ["Place the sofa where it preserves the best circulation. Then test the screen size and viewing comfort from that position. If the TV forces the sofa into the main walkway, the screen is controlling the room rather than serving it."], bullets: ["Tape the TV outline on the wall before mounting.", "Sit at your normal posture and check comfort.", "Protect the main walkway even if that means a slightly shorter viewing distance."] }
+      { heading: "Start with the room, not the screen", paragraphs: ["Place the sofa where it preserves the best circulation. Then test the screen size and viewing comfort from that position. If the TV forces the sofa into the main walkway, the screen is controlling the room rather than serving it."], bullets: ["Tape the TV outline on the wall before mounting.", "Sit at your normal posture and check comfort.", "Protect the main walkway even if that means a slightly shorter viewing distance.", "Check that cabinet doors and drawers can still open."] },
+      { heading: "Use a range, not one magic number", paragraphs: ["Viewing comfort changes with screen resolution, eyesight, content and personal preference. A calculator can give you a useful starting band, but the room should decide the final sofa position.", "If a larger TV demands a sofa position that blocks circulation, a smaller screen or a different wall can produce a better overall room even if the theoretical viewing distance is less dramatic."] },
+      { heading: "Plan the wall before drilling", paragraphs: ["Mark the screen center and outline with low-tack tape. Sit in the real sofa position and look at the screen center for a few minutes before mounting. Also check power, cable routing and the mount manufacturer's instructions."], bullets: ["Avoid mounting so high that normal viewing requires lifting your chin.", "Keep cables out of walking routes.", "Check glare at the times of day when you watch most often.", "If the sofa floats, leave enough room behind it for the path you actually use."] }
     ],
-    takeaway: "In a compact room, a comfortable walkway is more valuable than a theoretically perfect viewing distance.",
+    takeaway: "In a compact room, a comfortable walkway is more valuable than a theoretically perfect viewing distance. Let the room set the sofa position, then choose the screen size that works with it.",
     tags: ["TV", "sofa", "living room"]
   },
   {
@@ -219,11 +229,13 @@ export const guides: Guide[] = [
     title: "Rug placement in a small living room: three layouts that look intentional",
     description: "Three reliable rug placement strategies for compact living rooms and studio lounge zones.",
     category: "Furniture",
-    intro: "A rug should visually collect the seating area rather than float between pieces. In a small room, the easiest rule is to connect the rug to at least the front legs of the main seating.",
+    intro: "A rug should visually collect the seating area rather than float between pieces. In a small room, the easiest rule is to connect the rug to at least the front legs of the main seating. The rug should help the lounge read as one zone without interfering with doors, circulation or nearby furniture.",
     sections: [
-      { heading: "Three layouts that usually work", paragraphs: ["Use all furniture on the rug when the rug is large enough, front legs on when space is tight, or a smaller centered rug only when it still relates clearly to the seating. Avoid a tiny rug that sits like an island under the coffee table."], bullets: ["All legs on: most unified look.", "Front legs on: best small-room compromise.", "Centered small rug: use carefully and keep proportions deliberate."] }
+      { heading: "Three layouts that usually work", paragraphs: ["Use all furniture on the rug when the rug is large enough, front legs on when space is tight, or a smaller centered rug only when it still relates clearly to the seating. Avoid a tiny rug that sits like an island under the coffee table."], bullets: ["All legs on: most unified look.", "Front legs on: strong small-room compromise.", "Centered small rug: use carefully and keep proportions deliberate.", "No rug: sometimes better than a rug that makes the zone look undersized."] },
+      { heading: "Check the room edges", paragraphs: ["A rug does not need to be centered in the entire room. It needs to make sense with the seating group. In a studio, that often means the rug is offset toward the sofa while another zone — such as the bed or desk — remains on exposed flooring.", "Leave enough floor around the rug that doors open freely and the edge does not create a trip point in the main path."] },
+      { heading: "Test the footprint before ordering", paragraphs: ["Mark the rug dimensions with painter's tape or sheets of paper and place the sofa and coffee table around that outline. This is especially useful because product photos can make rugs look larger than they feel in a real room."], bullets: ["Check that the sofa relates to the rug width.", "Keep the coffee table comfortably inside the rug area.", "Avoid placing a rug edge exactly where people repeatedly step across it.", "Use a suitable rug pad where needed to reduce movement."] }
     ],
-    takeaway: "A rug should connect furniture visually; if it only connects to the coffee table, it is probably too small.",
+    takeaway: "A rug should connect furniture visually; if it only connects to the coffee table, it is probably too small. Choose the size that organizes the seating zone, not the size that merely fits between pieces.",
     tags: ["rug", "living room", "layout"]
   },
   {
@@ -278,8 +290,9 @@ export const guides: Guide[] = [
     category: "About",
     intro: "Small Space Planner is an independent planning resource for people living in studios and compact homes. We build practical layout guides, original concept plans and simple tools that help turn measurements into better decisions.",
     sections: [
-      { heading: "Our approach", paragraphs: ["We prefer specific, usable guidance over generic inspiration. Concept plans are clearly labeled as examples, and readers should verify their own measurements, building rules and product requirements before making permanent changes."] },
-      { heading: "How the site stays independent", paragraphs: ["Small Space Planner may use clearly labeled advertising or affiliate links in the future. Commercial relationships do not determine our planning recommendations, and tools or guides are designed to remain useful without requiring a purchase."] }
+      { heading: "Our approach", paragraphs: ["We prefer specific, usable guidance over generic inspiration. Concept plans are created for Small Space Planner and are clearly labeled as examples. We separate total apartment area from the open room or reference footprint whenever that distinction matters, and we use measured furniture footprints in our interactive planning tools.", "Readers should always verify their own walls, doors, windows, fixed services, lease restrictions, building rules and product instructions before making purchases or permanent changes."] },
+      { heading: "How we build the guides", paragraphs: ["Guides are organized around real constraints: square footage, room shape, circulation, storage, work, sleeping and shared living. We try to explain the trade-off behind each recommendation rather than present one layout as universally correct.", "When a dimension is presented as a practical target rather than a legal or accessibility requirement, we label it as planning guidance. Building codes, accessibility standards and manufacturer requirements can vary by location and product."] },
+      { heading: "How the site stays independent", paragraphs: ["Small Space Planner may use clearly labeled advertising or affiliate links. Commercial relationships do not determine our planning recommendations, and tools or guides are designed to remain useful without requiring a purchase."] }
     ]
   },
   {
@@ -297,9 +310,11 @@ export const guides: Guide[] = [
     title: "Privacy policy",
     description: "Privacy information for Small Space Planner.",
     category: "Legal",
-    intro: "Small Space Planner is currently operating without display advertising enabled. This policy explains the privacy approach used during the preview period and will be updated whenever analytics, advertising or other data-processing services change.",
+    intro: "Small Space Planner may use Google AdSense to fund the site. Advertising is not currently being served while the publisher account and consent setup are being completed. This policy describes the data practices that will apply when Google advertising is enabled and will be updated if additional analytics or advertising services are introduced.",
     sections: [
-      { heading: "Analytics and advertising", paragraphs: ["Display advertising is not currently active. If analytics or advertising services are enabled, this policy will identify the services in use and, where required, visitors will be offered consent controls before non-essential cookies or similar technologies are used."], bullets: ["Services in use will be disclosed here.", "Consent controls will be provided where legally required.", "Advertising will not be enabled silently during the private preview."] }
+      { heading: "Google advertising and third-party technologies", paragraphs: ["When Google AdSense is enabled, Google and other third-party vendors may use cookies, web beacons, IP addresses or similar identifiers to serve, measure and protect advertising on this site. Third parties may place or read cookies in your browser as a result of ad serving.", "Google may use information from this site in accordance with its policies for partner sites and apps, including for ad delivery, measurement, fraud prevention and, where permitted and consented to, personalization."], bullets: ["Google's explanation of partner-site data use is available at policies.google.com/technologies/partner-sites.", "Google advertising preferences can be managed through Google's ad settings.", "Where required, non-essential advertising technologies will be controlled through a consent-management platform before they are used."] },
+      { heading: "Consent and regional requirements", paragraphs: ["For visitors in regions where consent is required for advertising cookies or personal-data processing, Small Space Planner will use an appropriate consent-management platform and will respect the choices made through that interface."] },
+      { heading: "Changes to this policy", paragraphs: ["This policy will be updated when the services used by the site change. The current version should be read together with the Cookie Policy."] }
     ]
   },
   {
@@ -307,9 +322,11 @@ export const guides: Guide[] = [
     title: "Cookie policy",
     description: "Cookie information for Small Space Planner.",
     category: "Legal",
-    intro: "Small Space Planner does not currently enable display-advertising cookies. If advertising or non-essential measurement technologies are introduced, the cookie controls and categories on this page will be updated before those services are activated where consent is required.",
+    intro: "Small Space Planner does not currently serve display ads while the AdSense review and consent setup are being completed. If Google AdSense or other non-essential measurement technologies are enabled, this page explains the categories involved and the controls available to visitors.",
     sections: [
-      { heading: "Advertising cookies", paragraphs: ["Advertising will remain disabled until the permanent domain, publisher account and consent setup are complete. This page will then list the cookie categories and controls available to visitors."] }
+      { heading: "Advertising cookies and identifiers", paragraphs: ["Google AdSense may use cookies or similar technologies to serve and measure ads, limit repeated ads, detect fraud and, where permitted, personalize advertising. Google and its partners may also receive information such as the page URL, IP address and device or browser information when their services are used."] },
+      { heading: "Consent controls", paragraphs: ["Where consent is required, advertising and other non-essential technologies will be managed through a consent-management platform. Visitors will be able to make or change the choices offered by that platform."], bullets: ["Essential site functionality does not depend on accepting personalized advertising.", "Rejecting personalized advertising does not prevent access to the site's planning content.", "Google's advertising settings provide additional controls for Google-served ads."] },
+      { heading: "More information", paragraphs: ["More information about how Google uses data from partner sites and apps is available at policies.google.com/technologies/partner-sites. This Cookie Policy will be updated if the technologies used by Small Space Planner change."] }
     ]
   },
   {
