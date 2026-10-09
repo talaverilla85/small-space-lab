@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     : { index: false, follow: false, nocache: true },
   openGraph: { type: "website", siteName, title: siteName, description },
   twitter: { card: "summary_large_image", title: siteName, description },
+  other: { "google-adsense-account": "ca-pub-3617187484292577" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
