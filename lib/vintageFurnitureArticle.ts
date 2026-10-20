@@ -17,7 +17,30 @@ export const vintageFurnitureArticle: LearnArticle = {
     "source": "https://www.pexels.com/photo/retro-fashioned-cabinet-with-elegant-lamps-in-cozy-flat-5824530/"
   },
   "gallery": [
-    { "afterSection": 3, "src": "https://images.pexels.com/photos/5824530/pexels-photo-5824530.jpeg?auto=compress&cs=tinysrgb&w=1000", "alt": "Vintage sideboard styled in a compact living room", "caption": "Revisit the proportions: a vintage piece should still leave usable space around it.", "credit": "Charlotte May / Pexels", "source": "https://www.pexels.com/photo/retro-fashioned-cabinet-with-elegant-lamps-in-cozy-flat-5824530/" }
+    {
+      "afterSection": 1,
+      "src": "https://images.pexels.com/photos/5824521/pexels-photo-5824521.jpeg?auto=compress&cs=tinysrgb&w=1100",
+      "alt": "A vintage-inspired room with wooden furniture and a compact seating arrangement.",
+      "caption": "An entire room matters more than the statement piece: check how the furniture works together.",
+      "credit": "Charlotte May / Pexels",
+      "source": "https://www.pexels.com/photo/5824521/"
+    },
+    {
+      "afterSection": 4,
+      "src": "https://images.pexels.com/photos/5825540/pexels-photo-5825540.jpeg?auto=compress&cs=tinysrgb&w=1100",
+      "alt": "Close-up of a vintage wooden dresser with brass drawer handles.",
+      "caption": "Inspect drawers, handles, joints and surfaces before deciding that a piece is worth restoring.",
+      "credit": "Charlotte May / Pexels",
+      "source": "https://www.pexels.com/photo/5825540/"
+    },
+    {
+      "afterSection": 7,
+      "src": "https://images.pexels.com/photos/5824590/pexels-photo-5824590.jpeg?auto=compress&cs=tinysrgb&w=1100",
+      "alt": "Wooden dresser with lamp and woven basket in a sunlit living room.",
+      "caption": "A low cabinet can provide useful storage without dominating a small room.",
+      "credit": "Charlotte May / Pexels",
+      "source": "https://www.pexels.com/photo/5824590/"
+    }
   ],
   "illustration": {
     "src": "/illustrations/vintage-furniture-clearance-comparison.svg",

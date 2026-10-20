@@ -17,7 +17,30 @@ export const studioLaundryArticle: LearnArticle = {
     "source": "https://www.pexels.com/photo/clothes-on-metal-surface-7703664/"
   },
   "gallery": [
-    { "afterSection": 3, "src": "https://images.pexels.com/photos/7703664/pexels-photo-7703664.jpeg?auto=compress&cs=tinysrgb&w=1000", "alt": "Portable clothes drying rack in a home", "caption": "Check the full open footprint of the drying rack before choosing its location.", "credit": "cottonbro studio / Pexels", "source": "https://www.pexels.com/photo/clothes-on-metal-surface-7703664/" }
+    {
+      "afterSection": 2,
+      "src": "https://images.pexels.com/photos/31390649/pexels-photo-31390649.jpeg?auto=compress&cs=tinysrgb&w=1100",
+      "alt": "Woven laundry basket in a simple modern interior.",
+      "caption": "Give dirty clothes a dedicated, easy-to-reach landing zone.",
+      "credit": "Kader D. Kahraman / Pexels",
+      "source": "https://www.pexels.com/photo/31390649/"
+    },
+    {
+      "afterSection": 4,
+      "src": "https://images.pexels.com/photos/10565605/pexels-photo-10565605.jpeg?auto=compress&cs=tinysrgb&w=1100",
+      "alt": "Laundry drying rack and folded clothing in a bright home.",
+      "caption": "Test the rack at its fully open size and check ventilation before choosing a drying location.",
+      "credit": "Ron Lach / Pexels",
+      "source": "https://www.pexels.com/photo/10565605/"
+    },
+    {
+      "afterSection": 7,
+      "src": "https://images.pexels.com/photos/5902880/pexels-photo-5902880.jpeg?auto=compress&cs=tinysrgb&w=1100",
+      "alt": "Person sorting and folding laundry beside a basket.",
+      "caption": "A temporary folding surface helps complete the laundry cycle without permanent extra furniture.",
+      "credit": "cottonbro studio / Pexels",
+      "source": "https://www.pexels.com/photo/5902880/"
+    }
   ],
   "illustration": {
     "src": "/illustrations/studio-laundry-workflow-zones.svg",
