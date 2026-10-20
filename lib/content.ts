@@ -43,6 +43,25 @@ export const guides: Guide[] = [
         ]
       },
       {
+        "heading": "A practical 10-minute layout audit",
+        "paragraphs": [
+          "Sketch the room and mark the door swing, windows, sockets, heating outlets and the walking route. Measure furniture in its open or in-use position, not just its folded dimensions. Test the viewing position from the actual sofa before choosing a screen or stand.",
+          "Try three versions on paper: shared television, compact desk and movable station. For each, write down what must be moved before playing and where every item goes afterward. The strongest solution usually requires the fewest daily changes."
+        ],
+        "bullets": [
+          "Keep a comfortable, unobstructed route between doors and essential furniture; check local accessibility and fire-safety requirements rather than relying on a universal clearance number.",
+          "Check console ventilation, shelf load limits and reachable power outlets against manufacturer instructions.",
+          "Leave space to pull back the chair, open storage doors and clean around the setup."
+        ]
+      },
+      {
+        "heading": "When not to buy new gaming furniture",
+        "paragraphs": [
+          "If you already own a television, sofa and closed cabinet, start with a cable organizer, dedicated controller tray and a better location for charging. A new desk can make a small living room worse if it duplicates an existing screen or blocks circulation.",
+          "Treat IKEA and Xbox references as inspiration, not proof that any particular co-branded item is sold in your region. Confirm product names and specifications with the retailer before making purchasing claims."
+        ]
+      },
+      {
         "heading": "Make storage and cables disappear",
         "paragraphs": [
           "Keep controllers, headsets and chargers together near the point of use. Use reusable cable ties and a ventilated media unit; do not enclose consoles or power supplies contrary to manufacturer ventilation guidance. Avoid routing cables across walking paths or under rugs.",
@@ -102,6 +121,20 @@ export const guides: Guide[] = [
         "paragraphs": [
           "A washable throw, one textured cushion and a low-pile rug can soften a room without creating piles of objects. Repeat a restrained palette of warm neutrals, muted greens or earthy browns. You do not need to repaint to create a consistent feeling.",
           "Choose textiles for maintenance as well as appearance. In homes with pets, allergies or high humidity, easy-clean materials may be more practical than heavy layered fabrics."
+        ]
+      },
+      {
+        "heading": "A small-room palette that stays calm",
+        "paragraphs": [
+          "Choose one warm base color, one supporting natural shade and one darker accent. Repeat them across textiles, artwork and small objects so the room feels intentional rather than crowded. Existing neutral walls can remain unchanged.",
+          "Instead of buying a matching set, photograph the room in daylight and identify what already fits the palette. Keep the largest surfaces relatively quiet, then introduce texture through a throw, cushion cover or rug."
+        ]
+      },
+      {
+        "heading": "Before-and-after test: change the atmosphere, not the footprint",
+        "paragraphs": [
+          "Take two photos from exactly the same position. In the first, use the room's everyday lighting and arrangement. In the second, keep every large item in place but declutter surfaces, switch on safe warm lamps and add one tactile textile. The comparison reveals whether the transformation actually preserves usable space.",
+          "Judge the result by practical questions: can you still open drawers, work at the table and walk to the kitchen without moving decor? If not, remove or relocate accessories before adding anything else."
         ]
       },
       {
