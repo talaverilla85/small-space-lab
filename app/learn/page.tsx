@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
+import { LearnCardVisual } from "@/components/LearnCardVisual";
 import { learnArticles, learnCategories } from "@/lib/learnArticles";
 
 export const metadata: Metadata = {
@@ -68,7 +68,7 @@ export default function LearnPage() {
               <div className="learn-grid">
                 {items.map((article) => (
                   <Link className="learn-card" href={"/learn/" + article.slug} key={article.slug}>
-                    {article.photo ? <div style={{ marginBottom: "1rem", overflow: "hidden", borderRadius: "12px", aspectRatio: "16 / 10" }}>{/* eslint-disable-next-line @next/next/no-img-element */}<img src={article.photo.src} alt={article.photo.alt} loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div> : article.illustration ? <div style={{ marginBottom: "1rem", overflow: "hidden", borderRadius: "12px", aspectRatio: "16 / 10" }}><Image src={article.illustration.src} alt={article.illustration.alt} width={640} height={400} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div> : null}
+                    <LearnCardVisual article={article} />
                     <div className="learn-card-meta">
                       <span>{article.readTime}</span>
                       <span>Updated {article.updated}</span>

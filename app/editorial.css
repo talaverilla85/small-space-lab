@@ -1,0 +1,35 @@
+/* Small Space Planner editorial photo treatments - optimized, responsive cards */
+.learn-card>.learn-card-cover,.home-learning-card>.learn-card-cover{
+  position:relative;display:block;aspect-ratio:16/10;min-height:0;overflow:hidden;
+  margin:-22px -22px 20px;width:calc(100% + 44px);background:#d6d9cd;
+}
+.learn-card-cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.learn-card:hover .learn-card-cover img,.home-learning-card:hover .learn-card-cover img{transform:scale(1.035)}
+.learn-card-cover-label{position:absolute;left:14px;bottom:14px;z-index:1;
+  background:rgba(251,250,244,.94);color:#254536!important;border-radius:3px;padding:6px 9px;
+  font-size:10px;font-weight:850;letter-spacing:.09em;text-transform:uppercase}
+.learn-card-cover-fallback{background:linear-gradient(135deg,#b2c6b7,#e5dccb);display:grid!important;place-items:end start;padding:16px}
+.learn-card-cover-fallback span{background:#fff;letter-spacing:.12em;font-size:11px;padding:8px 10px}
+.learn-card h3,.home-learning-card h3{margin-top:12px}
+.home-learning-card>.learn-card-cover{display:block;flex-shrink:0}
+.home-editorial-photo{position:relative;aspect-ratio:1.05/1;overflow:hidden;margin:0;background:#d8c8b5}
+.home-editorial-photo>img{width:100%;height:100%;object-fit:cover;display:block}
+.home-editorial-photo figcaption{position:absolute;left:18px;right:18px;bottom:18px;
+  padding:11px 14px;background:rgba(19,35,28,.85);color:#fff;font-size:12px;line-height:1.5}
+.home-editorial-photo figcaption a{color:#fff;text-decoration:underline}
+.learn-hero-card{background:linear-gradient(180deg,rgba(13,38,28,.45),rgba(13,38,28,.91)),
+  url("https://images.pexels.com/photos/8092165/pexels-photo-8092165.jpeg?auto=compress&cs=tinysrgb&w=900") center/cover;
+  min-height:300px}
+.learn-prose>div>section{scroll-margin-top:96px}
+.learn-prose figure img{background:#e8e5dc}
+.learn-prose figure figcaption{line-height:1.5}
+@media (max-width:620px){
+ .learn-card>.learn-card-cover,.home-learning-card>.learn-card-cover{aspect-ratio:16/9}
+ .home-editorial-photo{aspect-ratio:4/5}
+ .home-editorial-photo figcaption{font-size:11px;left:10px;right:10px;bottom:10px}
+ .learn-hero-card{min-height:220px}
+}
+@media (prefers-reduced-motion:reduce){
+ .learn-card-cover img{transition:none}
+ .learn-card:hover .learn-card-cover img,.home-learning-card:hover .learn-card-cover img{transform:none}
+}

@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/AdSlot";
+import { getEditorialPhoto } from "@/lib/editorialPhotoLibrary";
+import { getEditorialGallery } from "@/lib/editorialGallery";
 import { getLearnArticle, learnArticles } from "@/lib/learnArticles";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -31,6 +33,8 @@ export default async function LearnArticlePage({ params }: Props) {
   const { slug } = await params;
   const article = getLearnArticle(slug);
   if (!article) notFound();
+  const coverPhoto = article.photo ?? getEditorialPhoto(article.slug);
+  const galleryPhotos = article.gallery ?? getEditorialGallery(article.slug);
 
   const related = (article.related || [])
     .map((relatedSlug) => learnArticles.find((candidate) => candidate.slug === relatedSlug))
@@ -82,13 +86,13 @@ export default async function LearnArticlePage({ params }: Props) {
               <p>{article.quickAnswer}</p>
             </section>
 
-            {article.photo ? (
+            {coverPhoto ? (
               <figure style={{ margin: "1.5rem 0 2rem" }}>
                 {/* Pexels CDN: photograph is licensed for commercial editorial use. */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={article.photo.src} alt={article.photo.alt} width={1200} height={800} loading="eager" decoding="async" style={{ display: "block", width: "100%", height: "auto", borderRadius: "16px", objectFit: "cover", maxHeight: "560px" }} />
+                <img src={coverPhoto.src} srcSet={`${coverPhoto.src.replace(/&w=\d+/, "")}&w=640 640w, ${coverPhoto.src.replace(/&w=\d+/, "")}&w=1000 1000w, ${coverPhoto.src.replace(/&w=\d+/, "")}&w=1200 1200w`} sizes="(max-width: 900px) 100vw, 760px" alt={coverPhoto.alt} width={1200} height={800} loading="eager" decoding="async" style={{ display: "block", width: "100%", height: "auto", borderRadius: "16px", objectFit: "cover", maxHeight: "560px" }} />
                 <figcaption style={{ fontSize: "0.9rem", opacity: 0.8, marginTop: "0.65rem" }}>
-                  {article.photo.caption} Photo: <a href={article.photo.source} target="_blank" rel="noopener noreferrer">{article.photo.credit}</a>.
+                  {coverPhoto.caption} Photo: <a href={coverPhoto.source} target="_blank" rel="noopener noreferrer">{coverPhoto.credit}</a>.
                 </figcaption>
               </figure>
             ) : null}
@@ -119,10 +123,10 @@ export default async function LearnArticlePage({ params }: Props) {
                     <figcaption style={{ fontSize: "0.9rem", opacity: 0.8, marginTop: "0.65rem" }}>{article.illustration.caption}</figcaption>
                   </figure>
                 ) : null}
-                {article.gallery?.filter((item) => item.afterSection === sectionIndex).map((item) => (
+                {galleryPhotos?.filter((item) => item.afterSection === sectionIndex).map((item) => (
                   <figure key={item.src + sectionIndex} style={{ margin: "2.25rem 0" }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={item.src} alt={item.alt} width={1000} height={650} loading="lazy" decoding="async" style={{ width: "100%", height: "auto", borderRadius: "16px", display: "block", objectFit: "cover" }} />
+                    <img src={item.src} srcSet={`${item.src.replace(/&w=\d+/, "")}&w=480 480w, ${item.src.replace(/&w=\d+/, "")}&w=800 800w, ${item.src.replace(/&w=\d+/, "")}&w=1100 1100w`} sizes="(max-width: 900px) 100vw, 760px" alt={item.alt} width={1000} height={650} loading="lazy" decoding="async" style={{ width: "100%", height: "auto", borderRadius: "16px", display: "block", objectFit: "cover" }} />
                     <figcaption style={{ fontSize: "0.9rem", opacity: 0.8, marginTop: "0.65rem" }}>{item.caption} Photo: <a href={item.source} target="_blank" rel="noopener noreferrer">{item.credit}</a>.</figcaption>
                   </figure>
                 ))}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import { LearnCardVisual } from "@/components/LearnCardVisual";
 import { FloorPlan } from "@/components/FloorPlan";
 import { learnArticles } from "@/lib/learnArticles";
 
@@ -81,15 +81,17 @@ export default function HomePage() {
             <div><b>03</b><span><strong>Place the biggest pieces</strong><small>Then solve work, dining and storage around them.</small></span></div>
           </div>
         </div>
-        <div className="lifestyle-panel" aria-label="Small-space planning principle">
-          <div className="lifestyle-sun"></div>
-          <div className="lifestyle-window"></div>
-          <div className="lifestyle-sofa"></div>
-          <div className="lifestyle-table"></div>
-          <div className="lifestyle-rug"></div>
-          <div className="lifestyle-plant"></div>
-          <div className="lifestyle-caption">A room can feel calm before it feels large.</div>
-        </div>
+        <figure className="home-editorial-photo">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="https://images.pexels.com/photos/6890403/pexels-photo-6890403.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            srcSet="https://images.pexels.com/photos/6890403/pexels-photo-6890403.jpeg?auto=compress&cs=tinysrgb&w=640 640w, https://images.pexels.com/photos/6890403/pexels-photo-6890403.jpeg?auto=compress&cs=tinysrgb&w=960 960w, https://images.pexels.com/photos/6890403/pexels-photo-6890403.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w"
+            sizes="(max-width: 900px) 100vw, 50vw"
+            alt="Bright compact living room with a neutral sofa, wooden table and natural light"
+            width={1200} height={900} loading="lazy" decoding="async"
+          />
+          <figcaption>A considered layout makes a small home feel calmer. Photo: <a href="https://www.pexels.com/photo/light-apartment-with-minimalist-furniture-and-comfortable-couch-6890403/" target="_blank" rel="noopener noreferrer">Max Vakhtbovych / Pexels</a>.</figcaption>
+        </figure>
       </section>
 
       <section className="layout-gallery-section softer-gallery">
@@ -181,7 +183,7 @@ export default function HomePage() {
           <div className="home-learning-grid">
             {learnArticles.slice(0, 6).map((article) => (
               <Link className="home-learning-card" href={"/learn/" + article.slug} key={article.slug}>
-                {article.photo ? <div style={{ marginBottom: "1rem", overflow: "hidden", borderRadius: "12px", aspectRatio: "16 / 10" }}>{/* eslint-disable-next-line @next/next/no-img-element */}<img src={article.photo.src} alt={article.photo.alt} loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div> : article.illustration ? <div style={{ marginBottom: "1rem", overflow: "hidden", borderRadius: "12px", aspectRatio: "16 / 10" }}><Image src={article.illustration.src} alt={article.illustration.alt} width={640} height={400} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div> : null}
+                <LearnCardVisual article={article} />
                 <div><span>{article.category}</span><b>{article.readTime}</b></div>
                 <h3>{article.title}</h3>
                 <p>{article.description}</p>
