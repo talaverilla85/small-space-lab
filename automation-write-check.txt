@@ -1,0 +1,1 @@
+Automation write verification — 2026-10-20. This branch is not deployed to production.
