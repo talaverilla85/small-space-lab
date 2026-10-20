@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { guides } from "@/lib/content";
 import { layoutVariants } from "@/lib/layoutVariants";
+import { learnArticles } from "@/lib/learnArticles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = process.env.NEXT_PUBLIC_SITE_URL || "https://small-space-lab.vercel.app";
@@ -30,6 +31,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: base, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: base + "/studio-apartment-planner", lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: base + "/learn", lastModified: now, changeFrequency: "weekly", priority: 0.88 },
+    { url: base + "/editorial-policy", lastModified: now, changeFrequency: "yearly", priority: 0.35 },
+    ...learnArticles.map((article) => ({
+      url: base + "/learn/" + article.slug,
+      lastModified: new Date(article.updated),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
     ...toolRoutes.map((route,index) => ({
       url: base + route,
       lastModified: now,
