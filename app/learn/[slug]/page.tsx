@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/AdSlot";
 import { getLearnArticle, learnArticles } from "@/lib/learnArticles";
@@ -80,6 +81,13 @@ export default async function LearnArticlePage({ params }: Props) {
               <span>QUICK ANSWER</span>
               <p>{article.quickAnswer}</p>
             </section>
+
+            {article.illustration ? (
+              <figure style={{ margin: "1.5rem 0 2rem" }}>
+                <Image src={article.illustration.src} alt={article.illustration.alt} width={960} height={520} style={{ display: "block", width: "100%", height: "auto", borderRadius: "16px" }} />
+                <figcaption style={{ fontSize: "0.9rem", opacity: 0.8, marginTop: "0.65rem" }}>{article.illustration.caption}</figcaption>
+              </figure>
+            ) : null}
 
             <section className="article-outline">
               <strong>In this guide</strong>

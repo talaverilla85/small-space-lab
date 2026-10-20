@@ -15,6 +15,7 @@ export type LearnArticle = {
   checklist?: string[];
   sources?: { label: string; url: string }[];
   related?: string[];
+  illustration?: { src: string; alt: string; caption: string };
 };
 
 export const learnArticles: LearnArticle[] = [
@@ -1020,6 +1021,154 @@ export const learnArticles: LearnArticle[] = [
       { label: "US CPSC — Universal charger fire hazard warning", url: "https://www.cpsc.gov/Newsroom/News-Releases/2024/CPSC-Urges-Consumers-to-Not-Buy-or-Use-Universal-Chargers-with-Micromobility-Products-Due-to-Fire-Hazard" }
     ],
     related: ["small-entryway-storage-system", "renter-friendly-storage-without-drilling", "furniture-measuring-checklist"]
+  },
+  {
+    "slug": "cordless-lamps-small-apartments",
+    "title": "Cordless Lamps for Small Apartments: A Practical Buying Guide",
+    "description": "Do cordless table lamps actually help in a studio? Compare brightness, battery runtime, charging space and placement before buying.",
+    "category": "Living Well",
+    "updated": "2026-10-20",
+    "readTime": "9 min",
+    "intro": "The 2026 'little lamps' trend puts small pools of light on shelves, dining tables and unexpected corners. That can be especially useful in a studio, where one room has to work for dinner, work and winding down. But a portable lamp that looks good in a photo may be too dim for reading, awkward to charge or just another object on a crowded surface.",
+    "quickAnswer": "A cordless lamp makes sense when you need movable ambient light and have a clear place to recharge it. Check brightness in lumens, battery life at the brightness you will actually use, base footprint and charging instructions. For long daily desk sessions, a plugged-in task lamp is often the more practical choice.",
+    "illustration": {
+      "src": "/images/cordless-lamps-small-apartments.svg",
+      "alt": "Original three-part diagram comparing ambient glow, focused task lighting and a dedicated charging spot for a small-apartment lamp.",
+      "caption": "A portable lamp solves placement, not every lighting job. Plan its purpose and charging home before buying."
+    },
+    "sections": [
+      {
+        "heading": "Why little lamps are showing up in small homes",
+        "paragraphs": [
+          "Interior design coverage in 2026 has highlighted small decorative lamps used beyond the bedside table: on bookshelves, sideboards and compact dining surfaces. The useful part of the trend is not collecting more lamps. It is directing a modest amount of light to a specific spot without rearranging the room.",
+          "For renters, a rechargeable model can put light in a corner with no convenient socket. It can also move from a dining table to a shelf when you need the surface back. It will not replace the general lighting needed to move around the home safely."
+        ]
+      },
+      {
+        "heading": "Decide which of three jobs you actually need",
+        "paragraphs": [
+          "Start with the activity, not the silhouette. A decorative glow, a reading lamp and a work light are different purchases even when their product photos look similar."
+        ],
+        "bullets": [
+          "Ambient or accent light: a small warm pool of light on a shelf, table or sideboard; softness and glare control matter more than maximum output.",
+          "Short dining or evening use: a stable, dimmable lamp that does not block sightlines across the table.",
+          "Reading or desk work: a directed beam that illuminates the page or work surface; verify output and beam placement rather than assuming a tiny decorative lamp is enough.",
+          "Emergency backup: check the product's instructions and realistic runtime; a decorative lamp is not automatically a certified emergency light."
+        ]
+      },
+      {
+        "heading": "Compare cordless, plug-in and clamp lights",
+        "paragraphs": [
+          "Cordless table lamps are flexible and avoid a trailing power cord during use, but require charging and usually have limited runtime. A plug-in desk lamp can serve long work sessions without battery management, but needs an outlet and safe cable routing. A clamp light can preserve a tiny desk or nightstand surface, although the clamp must fit the furniture and may still need a cable.",
+          "Choose by the problem you are solving: an awkward socket location favors cordless; a crowded tabletop may favor a clamp; several hours of daily reading or computer work often favors a dependable plug-in task light."
+        ],
+        "bullets": [
+          "Cordless: best for moving light between two or three occasional-use spots; watch charging frequency and battery serviceability.",
+          "Plug-in: best for fixed, repeated tasks; plan the cable route and accessible switch.",
+          "Clamp: best where surface footprint matters most; check jaw opening, furniture finish and stability."
+        ]
+      },
+      {
+        "heading": "Read the specifications instead of the marketing photo",
+        "paragraphs": [
+          "Lumens describe light output; color temperature in kelvin describes the appearance of the light. The US Department of Energy describes about 2700 K as a warm appearance common in homes. Neither number alone tells you whether a lamp will illuminate a book comfortably: shade design, direction and placement also matter.",
+          "As an illustration from published manufacturer specifications, IKEA's PS 2026 portable lamp lists 160 lumens and up to 9 hours at full brightness, while its LAMPAN portable model lists 80 lumens and roughly 8 hours at full brightness. These are two different products, not a controlled performance test. Specifications and availability may change by market."
+        ],
+        "bullets": [
+          "Check luminous flux (lumens) and whether the shade directs light onto the intended surface.",
+          "Check warm/cool appearance (kelvin) and whether the color can be adjusted.",
+          "Check the full base diameter, height, weight and whether the lamp is stable on your narrow shelf.",
+          "Check whether the battery, light source, charging cable and adapter are included or replaceable."
+        ]
+      },
+      {
+        "heading": "Do the battery-runtime calculation for your routine",
+        "paragraphs": [
+          "Do not compare a brand's 'up to' runtime at its dimmest setting with the hours you need at full brightness. The PS 2026 listing, for example, distinguishes up to 9 hours at full output from more than 28 hours at 30% output. The LAMPAN listing likewise reports roughly 8 hours at full brightness and more than 24 hours at 30%. Those published figures illustrate why the brightness setting matters.",
+          "Try this planning example: if you want three hours of light on each of five evenings, you need 15 hours between charges at your chosen setting. A lamp rated for 9 hours at full output would need at least one recharge during that period. This is arithmetic from a hypothetical routine, not a measured battery test. Real runtime may vary with age, settings and use."
+        ],
+        "bullets": [
+          "Your weekly hours = hours per evening × evenings between charging opportunities.",
+          "Compare the result with the manufacturer's runtime at the brightness you intend to use.",
+          "Add the time and space needed to charge; a lamp that occupies your only desk socket every night may not simplify the room."
+        ]
+      },
+      {
+        "heading": "Plan the charging home before the display spot",
+        "paragraphs": [
+          "A cordless lamp has no cable while it is in use, but its charger still needs an outlet and a safe, reachable location. Decide where it will live during charging. If the lamp must be moved across the room and balanced beside the sink every evening, the setup is not working.",
+          "Use only the battery type, charging equipment and placement allowed by the product instructions. Keep charging equipment away from liquids, excessive heat and obstructions. The US Consumer Product Safety Commission has issued recalls of specific rechargeable portable lamps due to battery overheating; that is a reason to check the model and current recall notices, not evidence that all cordless lamps are unsafe."
+        ]
+      },
+      {
+        "heading": "Test placement in a studio: three scenarios",
+        "paragraphs": [
+          "Scenario A — a sofa with no outlet nearby: a cordless accent lamp on a stable sideboard can add evening light without a floor cable. Scenario B — a 24-inch-deep desk: a clamp lamp may be better because it leaves more working surface free. Scenario C — a two-person dining table: a low-profile rechargeable lamp can move away after dinner, but first check that its shade does not block conversation or take up the serving space.",
+          "For each spot, mark the base footprint with paper, sit or stand in the real position, and check glare, reach and whether doors or drawers still open. If the lamp only works by shifting another object each time, reconsider its location."
+        ]
+      },
+      {
+        "heading": "A five-minute purchase scorecard",
+        "paragraphs": [
+          "Rate each candidate from 0 (poor) to 2 (good) in five categories: useful light at your intended task, footprint and stability, runtime at the intended setting, convenient charging, and ease of moving or repairing it. Add the scores for a maximum of 10. This is a decision aid devised for this guide, not a laboratory rating or a universal product ranking.",
+          "For example, a decorative cordless lamp might score 2 + 2 + 1 + 1 + 2 = 8 for occasional dining light, yet score only 0 + 2 + 1 + 1 + 2 = 6 for daily desk work because its light is too diffuse. Change the first score when the job changes. Reject any product that fails basic safety, electrical compatibility or stability regardless of total."
+        ],
+        "bullets": [
+          "0–2: useful brightness and beam direction",
+          "0–2: footprint and stability in your actual space",
+          "0–2: runtime at the setting you need",
+          "0–2: charging convenience and instructions",
+          "0–2: portability, serviceability and longevity"
+        ]
+      },
+      {
+        "heading": "When the best decision is not to buy one",
+        "paragraphs": [
+          "If the room already has a suitable desk lamp and an accessible outlet, moving that lamp or improving its placement may solve the problem for free. If you need a full-room light source, a tiny portable lamp is not a substitute. If the only spare surface is the kitchen preparation counter, preserving that space may be more valuable than adding decorative light.",
+          "For the whole-room strategy, start with our three-layer lighting guide. Then use the studio planner to check whether the lamp, table and walking route can coexist before spending money."
+        ]
+      }
+    ],
+    "checklist": [
+      "Named the actual lighting task",
+      "Measured the base and placement surface",
+      "Compared brightness and beam direction",
+      "Checked runtime at intended brightness",
+      "Chosen a safe charging location",
+      "Checked instructions and any applicable recalls",
+      "Compared against a plug-in or clamp alternative"
+    ],
+    "sources": [
+      {
+        "label": "House Beautiful — Why designers are using little lamps in 2026",
+        "url": "https://www.housebeautiful.com/design-inspiration/a71086461/little-lamps-trending-2026/"
+      },
+      {
+        "label": "Real Simple — The small, unexpected lamps trend (2026)",
+        "url": "https://www.realsimple.com/small-unexpected-lamps-trend-11976618"
+      },
+      {
+        "label": "US Department of Energy — Light output and color temperature",
+        "url": "https://www.energy.gov/cmei/femp/purchasing-energy-efficient-light-bulbs"
+      },
+      {
+        "label": "IKEA — PS 2026 portable lamp specifications",
+        "url": "https://www.ikea.com/es/en/p/ikea-ps-2026-led-portable-lamp-battery-operated-dimmable-red-light-blue-40608548/"
+      },
+      {
+        "label": "IKEA — LAMPAN portable lamp specifications",
+        "url": "https://www.ikea.com/es/en/p/lampan-led-portable-lamp-battery-operated-adjustable-colour-outdoor-white-60594606/"
+      },
+      {
+        "label": "US CPSC — Portable lamp battery recall example",
+        "url": "https://www.cpsc.gov/Recalls/2025/Rechargeable-Portable-Lamps-with-Lithium-Ion-Batteries-Recalled-Due-to-Fire-and-Burn-Hazards-Imported-by-BlockBlueLight"
+      }
+    ],
+    "related": [
+      "small-apartment-lighting-layers",
+      "remote-work-zone-in-a-studio-apartment",
+      "how-to-zone-a-studio-apartment"
+    ]
   }
 ];
 

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+<title id="title">Three decisions before buying a cordless lamp</title><desc id="desc">Three illustrated panels: ambient light on a shelf, focused light for work, and a safe dedicated charging location.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f5f4ee"/><stop offset="1" stop-color="#e7eee8"/></linearGradient><linearGradient id="glow" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#f7d77d" stop-opacity=".65"/><stop offset="1" stop-color="#f7d77d" stop-opacity="0"/></linearGradient></defs>
+<rect width="960" height="520" rx="24" fill="url(#bg)"/>
+<text x="48" y="62" font-family="Arial,Helvetica,sans-serif" font-size="18" letter-spacing="2" font-weight="700" fill="#31605b">SMALL SPACE PLANNER · DECISION GUIDE</text>
+<text x="48" y="108" font-family="Arial,Helvetica,sans-serif" font-size="36" font-weight="700" fill="#183e39">One little lamp. Three questions.</text>
+<text x="48" y="142" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#4d6964">Choose a job, check the light, and give charging a home.</text>
+<g font-family="Arial,Helvetica,sans-serif">
+<rect x="48" y="176" width="270" height="280" rx="18" fill="#fff" stroke="#d5e2d9"/>
+<rect x="345" y="176" width="270" height="280" rx="18" fill="#fff" stroke="#d5e2d9"/>
+<rect x="642" y="176" width="270" height="280" rx="18" fill="#fff" stroke="#d5e2d9"/>
+<ellipse cx="183" cy="291" rx="79" ry="62" fill="url(#glow)"/>
+<path d="M141 278 Q183 222 225 278Z" fill="#d3a95b" stroke="#9a7b47" stroke-width="2"/><rect x="178" y="277" width="10" height="70" rx="5" fill="#48635e"/><rect x="153" y="346" width="60" height="8" rx="4" fill="#48635e"/>
+<rect x="100" y="360" width="165" height="10" rx="5" fill="#b5c9b7"/>
+<text x="183" y="398" font-size="20" font-weight="700" text-anchor="middle" fill="#193f3a">01 · AMBIENCE</text>
+<text x="183" y="425" font-size="15" text-anchor="middle" fill="#4b6862">Soft light where you relax</text>
+<rect x="393" y="345" width="172" height="11" rx="5" fill="#b5c9b7"/>
+<path d="M425 340 L457 280 L485 280 L507 340" fill="none" stroke="#48635e" stroke-width="9" stroke-linecap="round"/>
+<path d="M454 281 Q468 249 497 277 L488 295 L454 295Z" fill="#d3a95b"/>
+<path d="M479 300 L462 338 L513 338Z" fill="url(#glow)"/>
+<text x="480" y="398" font-size="20" font-weight="700" text-anchor="middle" fill="#193f3a">02 · TASK</text>
+<text x="480" y="425" font-size="15" text-anchor="middle" fill="#4b6862">Light aimed at the work</text>
+<rect x="733" y="306" width="91" height="49" rx="10" fill="#c4d8d1" stroke="#62827a" stroke-width="2"/>
+<rect x="748" y="316" width="59" height="22" rx="6" fill="#fff"/><path d="M779 316 V338" stroke="#8fa8a0" stroke-width="2"/>
+<path d="M826 330 C864 327 855 286 873 283" fill="none" stroke="#48635e" stroke-width="5" stroke-linecap="round"/>
+<rect x="861" y="266" width="23" height="24" rx="4" fill="#48635e"/>
+<circle cx="770" cy="327" r="4" fill="#e8b65f"/>
+<text x="777" y="398" font-size="20" font-weight="700" text-anchor="middle" fill="#193f3a">03 · CHARGING</text>
+<text x="777" y="425" font-size="15" text-anchor="middle" fill="#4b6862">A safe, accessible spot</text>
+</g><text x="48" y="488" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#65817b">Original planning illustration · Not a product or performance test</text>
+</svg>
