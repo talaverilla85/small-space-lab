@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FloorPlan } from "@/components/FloorPlan";
+import { learnArticles } from "@/lib/learnArticles";
 
 export default function HomePage() {
   return (
@@ -161,6 +162,31 @@ export default function HomePage() {
           <Link href="/small-apartment-storage"><span>STORAGE</span><h3>I have nowhere sensible to put everyday things.</h3><b>Explore →</b></Link>
           <Link href="/furniture-layout/rug-placement-small-living-room"><span>LIVING</span><h3>The room feels disconnected or visually messy.</h3><b>Explore →</b></Link>
           <Link href="/studio-apartment-layouts"><span>LAYOUT</span><h3>I do not know where the main furniture should go.</h3><b>Explore →</b></Link>
+        </div>
+      </section>
+
+      <section className="home-learning-section">
+        <div className="container">
+          <div className="home-learning-head">
+            <div>
+              <span className="micro-label">FREE LEARNING LIBRARY</span>
+              <h2>Learn the decisions behind a better small space.</h2>
+            </div>
+            <div>
+              <p>Practical guides for measuring, furniture fit, storage, renting and everyday small-space living. No course to buy.</p>
+              <Link className="text-link" href="/learn">Browse all guides <span>→</span></Link>
+            </div>
+          </div>
+          <div className="home-learning-grid">
+            {learnArticles.slice(0, 6).map((article) => (
+              <Link className="home-learning-card" href={"/learn/" + article.slug} key={article.slug}>
+                <div><span>{article.category}</span><b>{article.readTime}</b></div>
+                <h3>{article.title}</h3>
+                <p>{article.description}</p>
+                <strong>Read guide →</strong>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
