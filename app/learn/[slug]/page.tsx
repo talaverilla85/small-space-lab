@@ -82,6 +82,17 @@ export default async function LearnArticlePage({ params }: Props) {
               <p>{article.quickAnswer}</p>
             </section>
 
+            {article.photo ? (
+              <figure style={{ margin: "1.5rem 0 2rem" }}>
+                {/* Pexels CDN: photograph is licensed for commercial editorial use. */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={article.photo.src} alt={article.photo.alt} width={1200} height={800} loading="eager" decoding="async" style={{ display: "block", width: "100%", height: "auto", borderRadius: "16px", objectFit: "cover", maxHeight: "560px" }} />
+                <figcaption style={{ fontSize: "0.9rem", opacity: 0.8, marginTop: "0.65rem" }}>
+                  {article.photo.caption} Photo: <a href={article.photo.source} target="_blank" rel="noopener noreferrer">{article.photo.credit}</a>.
+                </figcaption>
+              </figure>
+            ) : null}
+
             {article.illustration ? (
               <figure style={{ margin: "1.5rem 0 2rem" }}>
                 <Image src={article.illustration.src} alt={article.illustration.alt} width={960} height={520} style={{ display: "block", width: "100%", height: "auto", borderRadius: "16px" }} />

@@ -9,6 +9,13 @@ export const studioLaundryArticle: LearnArticle = {
   "readTime": "10 min",
   "intro": "Compact laundry rooms are getting renewed design attention in October 2026, but most studio renters cannot add a whole utility room. Here is a measurement-first way to handle dirty clothes, drying, folding and storage using the space you actually have.",
   "quickAnswer": "Build a three-step laundry station, not a mini laundry room: one carryable dirty-clothes zone, one permitted and ventilated drying solution, and one temporary folding surface. Measure every item in use, protect walking routes and check indoor humidity before buying organizers or appliances.",
+  "photo": {
+    "src": "https://images.pexels.com/photos/7703664/pexels-photo-7703664.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "alt": "Clothes arranged on a portable drying rack inside a home.",
+    "caption": "A folding rack creates a temporary drying zone, but it must not obstruct circulation or worsen indoor moisture.",
+    "credit": "cottonbro studio / Pexels",
+    "source": "https://www.pexels.com/photo/clothes-on-metal-surface-7703664/"
+  },
   "illustration": {
     "src": "/illustrations/studio-laundry-workflow-zones.svg",
     "alt": "Original schematic showing a portable hamper, a temporary drying zone and a folding surface, with a separate unobstructed circulation route. Diagram is not to scale.",

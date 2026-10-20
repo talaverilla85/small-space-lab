@@ -19,6 +19,7 @@ export type LearnArticle = {
   sources?: { label: string; url: string }[];
   related?: string[];
   illustration?: { src: string; alt: string; caption: string };
+  photo?: { src: string; alt: string; caption: string; credit: string; source: string };
 };
 
 export const learnArticles: LearnArticle[] = [
