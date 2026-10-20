@@ -17,6 +17,129 @@ export type Guide = {
 
 export const guides: Guide[] = [
   {
+    "slug": "ikea-xbox-small-apartment-gaming-setup",
+    "title": "IKEA × Xbox inspiration: a gaming setup that fits a small apartment",
+    "description": "Create a living-room gaming zone without a dedicated gaming room: flexible furniture, cable control, storage and measured layouts.",
+    "category": "Furniture",
+    "eyebrow": "GAMING + SMALL SPACES",
+    "intro": "A dedicated gaming room is a luxury many apartment dwellers do not have. Whether you are looking at IKEA gaming furniture, an Xbox console or a simple laptop setup, the useful question is the same: how can the room switch between playing, relaxing and everyday living without becoming cluttered?",
+    "sections": [
+      {
+        "heading": "Start with the room, not the gaming gear",
+        "paragraphs": [
+          "Measure the available wall, the sofa-to-screen distance and the route between the door, kitchen and seating. Draw the TV unit, chair and any rolling furniture at their full operating footprint. A foldable or mobile desk saves space only if it has a convenient parking spot when not in use.",
+          "Treat branded launches and product availability separately from the layout advice: verify each product's current dimensions, regional availability and price on the manufacturer's website before purchasing."
+        ]
+      },
+      {
+        "heading": "Three layouts that work in small apartments",
+        "paragraphs": [
+          "For a studio, use the existing television as the gaming display and keep controllers in one closed drawer. In a narrow living room, place a shallow media console against the long wall and avoid deep shelving opposite the sofa. For a work-and-play corner, use one desk with an adjustable display and a chair that tucks fully underneath."
+        ],
+        "bullets": [
+          "Shared-TV setup: least additional furniture, but shared screen time needs planning.",
+          "Rolling gaming station: flexible positioning, but wheels and cables need safe management.",
+          "Desk setup: supports work and gaming, but chair pull-back space is essential."
+        ]
+      },
+      {
+        "heading": "Make storage and cables disappear",
+        "paragraphs": [
+          "Keep controllers, headsets and chargers together near the point of use. Use reusable cable ties and a ventilated media unit; do not enclose consoles or power supplies contrary to manufacturer ventilation guidance. Avoid routing cables across walking paths or under rugs.",
+          "A slim storage cabinet may outperform a large gaming desk if the biggest problem is clutter rather than screen size."
+        ]
+      },
+      {
+        "heading": "What to check before buying IKEA gaming furniture",
+        "paragraphs": [
+          "Compare the actual product width, depth, assembly clearance and maximum load with your measurements. Check local IKEA listings rather than assuming a newly discussed collaboration or collection is available in your country. For a compact apartment, prioritize furniture that still serves a purpose when the console is switched off."
+        ]
+      },
+      {
+        "heading": "Plan a day-to-night conversion",
+        "paragraphs": [
+          "Try a simple test: can you switch from a tidy living room to gaming mode in two or three actions, without moving heavy furniture? If not, simplify the setup. Measure your own room and experiment with the free Small Space Planner at /studio-apartment-planner before committing to a new unit."
+        ]
+      }
+    ],
+    "takeaway": "The best small-apartment gaming setup borrows space from your living room without permanently taking it over.",
+    "tags": [
+      "IKEA",
+      "Xbox",
+      "small gaming setup",
+      "studio apartment"
+    ],
+    "related": [
+      "furniture-layout",
+      "studio-apartment-layouts",
+      "small-apartment-storage"
+    ]
+  },
+  {
+    "slug": "burrowcore-small-apartment-decor",
+    "title": "Burrowcore for small apartments: make a tiny home feel cozy, not crowded",
+    "description": "A practical guide to burrowcore-inspired decor for studios: warm light, layered textures, compact furniture and clutter-free comfort.",
+    "category": "Decor",
+    "eyebrow": "COZY INTERIORS",
+    "intro": "Burrowcore is a useful name for a familiar desire: a home that feels like a soft, welcoming retreat. In a small apartment, that feeling comes less from filling every corner with cushions and more from carefully chosen light, texture and places to rest.",
+    "sections": [
+      {
+        "heading": "What does burrowcore mean in a small home?",
+        "paragraphs": [
+          "Think warm, low-glare lighting, tactile blankets, natural-looking materials, muted colors and a comfortable corner where you can unwind. The aesthetic is about atmosphere rather than a required shopping list. You can achieve it with pieces you already own.",
+          "A cozy room should still be easy to clean, ventilate and walk through. A studio becomes less restful when decorative objects block storage or everyday routines."
+        ]
+      },
+      {
+        "heading": "Layer lighting instead of adding more furniture",
+        "paragraphs": [
+          "Start with a warm table or floor lamp where you read or relax, plus task lighting where you work or cook. Use dimmable bulbs if compatible with the fixture. Avoid covering lamps with fabric, and follow the fixture's bulb and heat specifications.",
+          "In a room with one window, keep tall furniture and heavy textiles away from the main daylight path. Cozy should not mean gloomy all day."
+        ]
+      },
+      {
+        "heading": "Choose three textures, not thirty accessories",
+        "paragraphs": [
+          "A washable throw, one textured cushion and a low-pile rug can soften a room without creating piles of objects. Repeat a restrained palette of warm neutrals, muted greens or earthy browns. You do not need to repaint to create a consistent feeling.",
+          "Choose textiles for maintenance as well as appearance. In homes with pets, allergies or high humidity, easy-clean materials may be more practical than heavy layered fabrics."
+        ]
+      },
+      {
+        "heading": "Build a cozy corner within the existing floor plan",
+        "paragraphs": [
+          "Place a reading light beside the sofa or bed, use a small side table that fits a book and drink, and leave the primary route clear. If you need separation in a studio, try a rug and lighting change before introducing a divider.",
+          "For a 300 sq ft studio, the sofa can be the reading nook and guest seat; there is no need to squeeze in a second lounge chair just to achieve the aesthetic."
+        ]
+      },
+      {
+        "heading": "Burrowcore on a budget: a one-hour reset",
+        "paragraphs": [
+          "Clear visible surfaces, relocate rarely used items, swap harsh overhead lighting for appropriate warm task lighting, fold a favorite throw over the sofa and move a plant or framed print to create one focal point. Photograph the room before and after from the same angle.",
+          "If the room still feels busy, remove one accessory rather than buying another. Comfort is the result, not the quantity of decor."
+        ]
+      },
+      {
+        "heading": "Make the look work beyond autumn",
+        "paragraphs": [
+          "Avoid seasonal novelty items as the foundation of the room. Neutral lighting, durable textiles and an uncluttered layout remain useful year-round. Before buying a rug, lamp or side table, check its footprint with your existing furniture and use the free planner at /studio-apartment-planner to protect circulation."
+        ]
+      }
+    ],
+    "takeaway": "Cozy is a feeling you design through light, texture and a functional layout—not a reason to overcrowd a tiny apartment.",
+    "tags": [
+      "burrowcore",
+      "cozy apartment",
+      "small space decor",
+      "studio decorating"
+    ],
+    "related": [
+      "studio-apartment-layouts",
+      "small-apartment-storage",
+      "furniture-layout"
+    ]
+  },
+
+  {
     slug: "studio-apartment-layouts",
     title: "Studio apartment layouts that make small spaces work harder",
     description: "A practical starting point for planning a studio apartment around sleep, storage, work and everyday movement.",
