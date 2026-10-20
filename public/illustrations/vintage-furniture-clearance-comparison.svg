@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+<title id="title">Vintage furniture depth comparison in a small room</title>
+<desc id="desc">Two illustrative 240 centimeter wide rooms with a 95 centimeter sofa. A shallow 45 centimeter sideboard leaves 100 centimeters of circulation; a deep 65 centimeter cabinet leaves 80 centimeters. These are not code clearance recommendations.</desc>
+<rect width="960" height="520" fill="#f5f7f5"/>
+<text x="48" y="54" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#183a38">Vintage furniture: measure the depth</text>
+<text x="48" y="83" font-family="Arial,sans-serif" font-size="16" fill="#48635e">Illustrative 240 cm room cross-sections — not a building-code standard</text>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+<rect x="45" y="120" width="410" height="315" rx="16" fill="#fff" stroke="#d7e0dc" stroke-width="2"/>
+<text x="250" y="153" font-size="20" font-weight="700" fill="#1b5149">SHALLOW SIDEBOARD</text>
+<rect x="100" y="193" width="98" height="160" rx="7" fill="#9cb6a8" stroke="#597b70" stroke-width="2"/>
+<text x="149" y="270" font-size="16" fill="#17372f">SOFA</text><text x="149" y="291" font-size="15" fill="#17372f">95 cm</text>
+<rect x="350" y="193" width="46" height="160" rx="5" fill="#b58b60" stroke="#8c603e" stroke-width="2"/>
+<text x="373" y="380" font-size="14" fill="#7d5638">45 cm</text>
+<line x1="198" y1="320" x2="350" y2="320" stroke="#2d8070" stroke-width="4"/>
+<path d="M198 320 l12 -7 v14 z M350 320 l-12 -7 v14 z" fill="#2d8070"/>
+<text x="274" y="298" font-size="22" font-weight="700" fill="#226c5d">100 cm</text>
+<text x="250" y="414" font-size="16" fill="#33574e">Illustrative free route</text>
+<rect x="505" y="120" width="410" height="315" rx="16" fill="#fff" stroke="#d7e0dc" stroke-width="2"/>
+<text x="710" y="153" font-size="20" font-weight="700" fill="#1b5149">DEEP CABINET</text>
+<rect x="560" y="193" width="98" height="160" rx="7" fill="#9cb6a8" stroke="#597b70" stroke-width="2"/>
+<text x="609" y="270" font-size="16" fill="#17372f">SOFA</text><text x="609" y="291" font-size="15" fill="#17372f">95 cm</text>
+<rect x="785" y="193" width="68" height="160" rx="5" fill="#b58b60" stroke="#8c603e" stroke-width="2"/>
+<text x="819" y="380" font-size="14" fill="#7d5638">65 cm</text>
+<line x1="658" y1="320" x2="785" y2="320" stroke="#b06e40" stroke-width="4"/>
+<path d="M658 320 l12 -7 v14 z M785 320 l-12 -7 v14 z" fill="#b06e40"/>
+<text x="722" y="298" font-size="22" font-weight="700" fill="#a05c31">80 cm</text>
+<text x="710" y="414" font-size="16" fill="#6b5845">20 cm less room to move</text>
+</g>
+<text x="48" y="478" font-family="Arial,sans-serif" font-size="16" fill="#48635e">Formula: room width − sofa depth − cabinet depth = illustrative clear width.</text>
+<text x="48" y="501" font-family="Arial,sans-serif" font-size="14" fill="#64736d">Original Small Space Planner diagram · verify doors, drawers, mobility needs and local rules.</text>
+</svg>

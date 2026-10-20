@@ -1,3 +1,5 @@
+import { vintageFurnitureArticle } from "./vintageFurnitureArticle";
+import { studioLaundryArticle } from "./studioLaundryArticle";
 import { seasonalClosetArticle } from "./seasonalClosetArticle";
 export type LearnArticle = {
   slug: string;
@@ -20,6 +22,8 @@ export type LearnArticle = {
 };
 
 export const learnArticles: LearnArticle[] = [
+  vintageFurnitureArticle,
+  studioLaundryArticle,
   seasonalClosetArticle,
   {
     slug: "compare-two-studio-apartment-layouts",

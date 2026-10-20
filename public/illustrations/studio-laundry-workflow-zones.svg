@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+<title id="title">A three-step laundry workflow for a studio apartment</title>
+<desc id="desc">Three illustrated zones for a portable hamper, a temporary drying rack and a folding surface. A clear walking route is shown separately. Conceptual schematic, not to scale.</desc>
+<rect width="960" height="540" fill="#f5f7f5"/>
+<text x="44" y="56" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#1b4540">Laundry without a laundry room</text>
+<text x="44" y="88" font-family="Arial,sans-serif" font-size="17" fill="#54726b">Three jobs. One repeatable route. No dedicated utility room required.</text>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+<rect x="44" y="128" width="270" height="276" rx="18" fill="#fff" stroke="#c7d9d1" stroke-width="2"/>
+<rect x="345" y="128" width="270" height="276" rx="18" fill="#fff" stroke="#c7d9d1" stroke-width="2"/>
+<rect x="646" y="128" width="270" height="276" rx="18" fill="#fff" stroke="#c7d9d1" stroke-width="2"/>
+<text x="179" y="168" font-size="22" font-weight="700" fill="#1c5449">1. SORT &amp; CARRY</text>
+<text x="480" y="168" font-size="22" font-weight="700" fill="#1c5449">2. DRY SAFELY</text>
+<text x="781" y="168" font-size="22" font-weight="700" fill="#1c5449">3. FOLD &amp; STORE</text>
+<rect x="127" y="215" width="104" height="116" rx="13" fill="#b7c9be" stroke="#4e7867" stroke-width="4"/>
+<path d="M146 214 C146 177 212 177 212 214" fill="none" stroke="#4e7867" stroke-width="8"/>
+<path d="M141 254 H216 M141 279 H216" stroke="#6c9784" stroke-width="4"/>
+<path d="M408 325 L450 213 L505 325 M550 325 L508 213 L453 325" fill="none" stroke="#4e7867" stroke-width="8" stroke-linecap="round"/>
+<path d="M430 262 H529 M416 298 H542" stroke="#4e7867" stroke-width="5"/>
+<path d="M438 243 Q451 260 466 243 Q478 259 493 243 Q507 259 522 243" fill="none" stroke="#b78d63" stroke-width="8"/>
+<rect x="707" y="242" width="148" height="15" rx="5" fill="#ad8862"/>
+<path d="M723 257 V333 M840 257 V333" stroke="#7c654b" stroke-width="7"/>
+<path d="M736 224 H826 M748 212 H814 M762 200 H802" stroke="#668e82" stroke-width="6" stroke-linecap="round"/>
+<text x="179" y="370" font-size="15" fill="#536b65">Portable hamper</text>
+<text x="480" y="370" font-size="15" fill="#536b65">Ventilation + humidity check</text>
+<text x="781" y="370" font-size="15" fill="#536b65">Use an existing surface</text>
+<path d="M315 260 H342 M616 260 H643" stroke="#2d8574" stroke-width="5" stroke-linecap="round"/>
+<path d="M332 252 L342 260 L332 268 M633 252 L643 260 L633 268" fill="none" stroke="#2d8574" stroke-width="4"/>
+</g>
+<rect x="44" y="431" width="872" height="53" rx="14" fill="#d9e9df"/>
+<path d="M77 456 H872" stroke="#337866" stroke-width="5" stroke-dasharray="16 12"/>
+<text x="480" y="455" font-family="Arial,sans-serif" font-size="17" font-weight="700" text-anchor="middle" fill="#1d5448" stroke="#d9e9df" stroke-width="7" paint-order="stroke">Keep essential walking routes clear</text>
+<text x="44" y="518" font-family="Arial,sans-serif" font-size="14" fill="#54726b">Original Small Space Planner schematic · not to scale · follow appliance, lease and safety requirements.</text>
+</svg>
