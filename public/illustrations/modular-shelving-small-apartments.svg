@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+<title id="title">Two ways to use a narrow wall for small-apartment storage</title>
+<desc id="desc">A comparison of one tall fixed bookcase and two lower modular units with a movable gap for a desk or window. The drawing is schematic, not to scale.</desc>
+<rect width="960" height="520" rx="24" fill="#f4f6f1"/>
+<text x="48" y="54" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#20372e">One wall, two storage strategies</text>
+<text x="48" y="84" font-family="Arial,sans-serif" font-size="16" fill="#4d665b">Illustrative layouts — verify real product dimensions, access and anchoring</text>
+<rect x="48" y="115" width="418" height="336" rx="16" fill="#fff" stroke="#c9d8cf" stroke-width="2"/>
+<rect x="494" y="115" width="418" height="336" rx="16" fill="#fff" stroke="#c9d8cf" stroke-width="2"/>
+<text x="75" y="153" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#20372e">A · Fixed bookcase</text>
+<text x="521" y="153" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#20372e">B · Modular shelving</text>
+<line x1="76" y1="404" x2="437" y2="404" stroke="#71897d" stroke-width="3"/>
+<line x1="521" y1="404" x2="882" y2="404" stroke="#71897d" stroke-width="3"/>
+<rect x="191" y="190" width="136" height="214" fill="#e0e8e0" stroke="#557564" stroke-width="5"/>
+<line x1="193" y1="245" x2="325" y2="245" stroke="#557564" stroke-width="5"/>
+<line x1="193" y1="300" x2="325" y2="300" stroke="#557564" stroke-width="5"/>
+<line x1="193" y1="355" x2="325" y2="355" stroke="#557564" stroke-width="5"/>
+<rect x="559" y="300" width="126" height="104" fill="#d5e5da" stroke="#557564" stroke-width="5"/>
+<line x1="561" y1="352" x2="683" y2="352" stroke="#557564" stroke-width="4"/>
+<rect x="740" y="247" width="110" height="157" fill="#d5e5da" stroke="#557564" stroke-width="5"/>
+<line x1="742" y1="300" x2="848" y2="300" stroke="#557564" stroke-width="4"/>
+<line x1="742" y1="352" x2="848" y2="352" stroke="#557564" stroke-width="4"/>
+<path d="M692 345h39" stroke="#c37b40" stroke-width="3" stroke-dasharray="7 5"/>
+<path d="M722 338l9 7-9 7" fill="none" stroke="#c37b40" stroke-width="3"/>
+<text x="76" y="430" font-family="Arial,sans-serif" font-size="15" fill="#405b4e">One footprint; fewer layout options</text>
+<text x="521" y="430" font-family="Arial,sans-serif" font-size="15" fill="#405b4e">Separate units; adaptable arrangement</text>
+<text x="48" y="488" font-family="Arial,sans-serif" font-size="15" fill="#53675c">Tip-over restraints and permitted configurations still apply to both approaches.</text>
+</svg>
