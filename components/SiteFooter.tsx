@@ -16,10 +16,12 @@ export function SiteFooter() {
           <Link href="/studio-apartment-layouts">Layout Library</Link>
           <Link href="/small-apartment-storage">Storage</Link>
           <Link href="/furniture-layout">Furniture</Link>
+          <Link href="/learn">Learning Library</Link>
         </div>
         <div className="footer-nav-group">
           <span>PROJECT</span>
           <Link href="/about">About</Link>
+          <Link href="/editorial-policy">Editorial Policy</Link>
           <Link href="/privacy">Privacy</Link>
           <Link href="/cookie-policy">Cookies</Link>
           <Link href="/terms">Terms</Link>
