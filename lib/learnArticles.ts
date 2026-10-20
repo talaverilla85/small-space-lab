@@ -1,3 +1,4 @@
+import { seasonalClosetArticle } from "./seasonalClosetArticle";
 export type LearnArticle = {
   slug: string;
   title: string;
@@ -19,6 +20,7 @@ export type LearnArticle = {
 };
 
 export const learnArticles: LearnArticle[] = [
+  seasonalClosetArticle,
   {
     slug: "compare-two-studio-apartment-layouts",
     title: "How to compare two studio apartment layouts",
