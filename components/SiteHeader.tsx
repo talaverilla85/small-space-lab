@@ -15,6 +15,7 @@ export function SiteHeader() {
           <Link href="/studio-apartment-layouts">Layouts</Link>
           <Link href="/small-apartment-storage">Storage</Link>
           <Link href="/furniture-layout">Furniture</Link>
+          <Link href="/learn">Learn</Link>
           <Link href="/about">About</Link>
         </nav>
 
@@ -27,6 +28,7 @@ export function SiteHeader() {
               <Link href="/studio-apartment-layouts">Layouts</Link>
               <Link href="/small-apartment-storage">Storage</Link>
               <Link href="/furniture-layout">Furniture</Link>
+              <Link href="/learn">Learn</Link>
               <Link href="/about">About</Link>
             </nav>
           </details>
