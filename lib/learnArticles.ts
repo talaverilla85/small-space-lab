@@ -19,6 +19,41 @@ export type LearnArticle = {
 
 export const learnArticles: LearnArticle[] = [
   {
+    slug: "compare-two-studio-apartment-layouts",
+    title: "How to compare two studio apartment layouts",
+    description: "Use a weighted layout scorecard to compare circulation, furniture access, routines, storage and daylight before moving anything.",
+    category: "Planning", updated: "2026-10-20", readTime: "7 min",
+    intro: "Two layouts can hold exactly the same furniture yet feel very different to live in. Compare what happens when you walk, open drawers, work, sleep and reach storage rather than judging the plan by empty floor alone.",
+    quickAnswer: "Reject any option that blocks essential access or violates a fixed clearance first. Then score the remaining layouts on circulation (30 points), usable furniture access (25), daily routines (20), storage (15) and daylight (10). Test the higher-scoring option with floor tape before committing.",
+    sections: [
+      { heading: "Start with non-negotiable constraints", paragraphs: ["Draw both options to the same scale. Include door swings, kitchen fronts, windows, heating equipment and furniture in its open or pulled-out position. A score cannot compensate for a blocked exit or unusable door.", "Use the actual manufacturer instructions and building requirements for any fixed equipment. Do not substitute a generic clearance number."] },
+      { heading: "Score five real-life functions", paragraphs: ["Rate each category from zero (does not work) to five (works comfortably). Multiply each rating by its weight divided by five. The weights are editorial planning priorities, not measured research findings."], bullets: ["Circulation: 30 points — can you move between entrance, bathroom, kitchen and bed without detours?", "Furniture access: 25 points — can drawers, wardrobe doors and chairs operate?", "Daily routines: 20 points — can you cook, sleep, work and get dressed?", "Storage: 15 points — are frequently used items accessible?", "Daylight: 10 points — do tall pieces block the main window or working position?"] },
+      { heading: "Work through an illustrative comparison", paragraphs: ["Layout A receives ratings of 4, 3, 3, 4 and 3: 24 + 15 + 12 + 12 + 6 = 69 out of 100. Layout B receives 3, 5, 4, 3 and 4: 18 + 25 + 16 + 9 + 8 = 76. These scores are hypothetical, not evidence that B will suit every household.", "If your main priority is mobility or a wheelchair turning area, treat the relevant access requirements as mandatory rather than something that can be offset by storage or daylight points."] },
+      { heading: "Run a one-day movement test", paragraphs: ["Mark the furniture outlines with painter's tape, including the pulled-out chair and open wardrobe door. Walk through a morning, working day and bedtime sequence. If an awkward movement repeats, revisit the score.", "When two options are close, prefer the one that can adapt to a future desk, guest or different furniture size without buying more pieces."] }
+    ],
+    checklist: ["Both layouts drawn to one scale", "Door swings and furniture movement included", "Non-negotiable access checked", "Five categories rated 0–5", "Weighted totals calculated", "Tape test completed"],
+    related: ["how-to-measure-a-studio-apartment", "how-to-zone-a-studio-apartment", "furniture-measuring-checklist"]
+  },
+  {
+    slug: "vacuum-storage-in-a-small-apartment",
+    title: "Where to store a vacuum in a small apartment",
+    description: "Compare cordless stick, canister and robot vacuum storage by retrieval space, accessories and charging access.",
+    category: "Storage", updated: "2026-10-20", readTime: "7 min",
+    intro: "A vacuum that fits behind a door may still be impossible to pull out without moving three things. In a compact apartment, the best location is the one where the entire cleaning kit can be retrieved, used and put away easily.",
+    quickAnswer: "Measure the vacuum in its stored position and the extra space needed to retrieve it. Favor a closet edge or utility corner near cleaning supplies. For charging models, follow the exact manufacturer's docking and electrical instructions instead of hiding the dock in an unventilated or obstructed space.",
+    sections: [
+      { heading: "Measure two footprints, not one", paragraphs: ["Record the stored width, depth and height, including the handle, dock, hose or charger. Then simulate the movement required to lift, roll or tilt the vacuum out.", "For example, a 14-inch-wide floor head may fit inside a 16-inch gap, leaving one inch on either side. That is only a static fit: the handle angle, wheels and retrieval direction may still make the gap impractical."] },
+      { heading: "Choose a location by vacuum type", paragraphs: ["A cordless stick may fit vertically on a permitted dock or stand, with its attachments together. A canister needs space for the hose and a rolling exit route. A robot needs an unobstructed approach to its base and any model-specific side or front clearances."], bullets: ["Stick: test height, dock access and whether the handle can lift clear.", "Canister: allow for the hose, floor head and turning radius.", "Robot: verify the base location against your exact model's manual, not a universal clearance rule."] },
+      { heading: "Keep cleaning accessories in the same zone", paragraphs: ["Store the crevice tool, spare heads and washable accessories in a labeled basket beside the vacuum. An awkward accessory location often turns a quick clean into a search.", "Do not store wet attachments against electrical charging contacts; clean and dry parts according to the manufacturer's instructions."] },
+      { heading: "Renters should plan for reversibility", paragraphs: ["Before mounting a charging dock, check the lease, wall construction and supplied mounting instructions. A freestanding compatible stand or a shelf can be easier to take to the next apartment, but only if the product is stable and its charger can be used as directed.", "Avoid pinching charging cables behind doors or under furniture."] },
+      { heading: "Try the ten-second retrieval test", paragraphs: ["With the vacuum fully stored, time how many actions it takes to retrieve it and put it back. You do not need a target number: compare candidate locations using the same sequence. Choose the one with fewer obstacles that still meets the manual's requirements.", "If no position works, reconsider whether a different vacuum form factor would fit the apartment better before buying extra organizers."] }
+    ],
+    checklist: ["Stored dimensions measured", "Retrieval movement tested", "Accessories have one home", "Charger and dock instructions checked", "Lease and mounting restrictions checked", "Main walking route stays clear"],
+    sources: [{ label: "Roborock: positioning a robot vacuum dock", url: "https://support.roborock.com/hc/en-us/articles/19981309375001-Where-should-I-position-my-device" }, { label: "Roborock: additional device positioning guidance", url: "https://support.roborock.com/hc/en-us/articles/34112966527001-Where-should-I-position-my-device" }],
+    related: ["small-apartment-storage-audit", "renter-friendly-storage-without-drilling", "small-entryway-storage-system"]
+  },
+
+  {
     slug: "how-to-measure-a-studio-apartment",
     title: "How to measure a studio apartment before you buy furniture",
     description: "A practical measuring sequence for studios: walls, doors, windows, fixed services, routes and furniture envelopes.",
