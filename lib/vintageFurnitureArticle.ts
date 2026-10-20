@@ -16,6 +16,9 @@ export const vintageFurnitureArticle: LearnArticle = {
     "credit": "Charlotte May / Pexels",
     "source": "https://www.pexels.com/photo/retro-fashioned-cabinet-with-elegant-lamps-in-cozy-flat-5824530/"
   },
+  "gallery": [
+    { "afterSection": 3, "src": "https://images.pexels.com/photos/5824530/pexels-photo-5824530.jpeg?auto=compress&cs=tinysrgb&w=1000", "alt": "Vintage sideboard styled in a compact living room", "caption": "Revisit the proportions: a vintage piece should still leave usable space around it.", "credit": "Charlotte May / Pexels", "source": "https://www.pexels.com/photo/retro-fashioned-cabinet-with-elegant-lamps-in-cozy-flat-5824530/" }
+  ],
   "illustration": {
     "src": "/illustrations/vintage-furniture-clearance-comparison.svg",
     "alt": "Original illustrative cross-section of a 240 cm room: a 45 cm deep sideboard leaves 100 cm between it and a 95 cm deep sofa, while a 65 cm deep cabinet leaves 80 cm. Not a code clearance standard.",

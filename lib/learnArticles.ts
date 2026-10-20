@@ -20,6 +20,7 @@ export type LearnArticle = {
   related?: string[];
   illustration?: { src: string; alt: string; caption: string };
   photo?: { src: string; alt: string; caption: string; credit: string; source: string };
+  gallery?: { afterSection: number; src: string; alt: string; caption: string; credit: string; source: string }[];
 };
 
 export const learnArticles: LearnArticle[] = [

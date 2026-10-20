@@ -93,13 +93,6 @@ export default async function LearnArticlePage({ params }: Props) {
               </figure>
             ) : null}
 
-            {article.illustration ? (
-              <figure style={{ margin: "1.5rem 0 2rem" }}>
-                <Image src={article.illustration.src} alt={article.illustration.alt} width={960} height={520} style={{ display: "block", width: "100%", height: "auto", borderRadius: "16px" }} />
-                <figcaption style={{ fontSize: "0.9rem", opacity: 0.8, marginTop: "0.65rem" }}>{article.illustration.caption}</figcaption>
-              </figure>
-            ) : null}
-
             <section className="article-outline">
               <strong>In this guide</strong>
               <ol>
@@ -111,14 +104,29 @@ export default async function LearnArticlePage({ params }: Props) {
 
             <AdSlot />
 
-            {article.sections.map((section) => {
+            {article.sections.map((section, sectionIndex) => {
               const id = section.heading.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
               return (
-                <section id={id} key={section.heading}>
+                <div key={section.heading}>
+                <section id={id}>
                   <h2>{section.heading}</h2>
                   {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                   {section.bullets ? <ul>{section.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul> : null}
                 </section>
+                {sectionIndex === 2 && article.illustration ? (
+                  <figure style={{ margin: "2.25rem 0" }}>
+                    <Image src={article.illustration.src} alt={article.illustration.alt} width={960} height={520} style={{ display: "block", width: "100%", height: "auto", borderRadius: "16px" }} />
+                    <figcaption style={{ fontSize: "0.9rem", opacity: 0.8, marginTop: "0.65rem" }}>{article.illustration.caption}</figcaption>
+                  </figure>
+                ) : null}
+                {article.gallery?.filter((item) => item.afterSection === sectionIndex).map((item) => (
+                  <figure key={item.src + sectionIndex} style={{ margin: "2.25rem 0" }}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={item.src} alt={item.alt} width={1000} height={650} loading="lazy" decoding="async" style={{ width: "100%", height: "auto", borderRadius: "16px", display: "block", objectFit: "cover" }} />
+                    <figcaption style={{ fontSize: "0.9rem", opacity: 0.8, marginTop: "0.65rem" }}>{item.caption} Photo: <a href={item.source} target="_blank" rel="noopener noreferrer">{item.credit}</a>.</figcaption>
+                  </figure>
+                ))}
+                </div>
               );
             })}
 

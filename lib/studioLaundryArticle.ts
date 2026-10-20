@@ -16,6 +16,9 @@ export const studioLaundryArticle: LearnArticle = {
     "credit": "cottonbro studio / Pexels",
     "source": "https://www.pexels.com/photo/clothes-on-metal-surface-7703664/"
   },
+  "gallery": [
+    { "afterSection": 3, "src": "https://images.pexels.com/photos/7703664/pexels-photo-7703664.jpeg?auto=compress&cs=tinysrgb&w=1000", "alt": "Portable clothes drying rack in a home", "caption": "Check the full open footprint of the drying rack before choosing its location.", "credit": "cottonbro studio / Pexels", "source": "https://www.pexels.com/photo/clothes-on-metal-surface-7703664/" }
+  ],
   "illustration": {
     "src": "/illustrations/studio-laundry-workflow-zones.svg",
     "alt": "Original schematic showing a portable hamper, a temporary drying zone and a folding surface, with a separate unobstructed circulation route. Diagram is not to scale.",
