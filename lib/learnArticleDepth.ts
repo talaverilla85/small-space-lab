@@ -246,6 +246,43 @@ export const learnArticleDepth: Record<string, LearnDepth> = {
     workedExample: "Example only: if one layout scores higher because it adds storage but forces the desk chair into the entrance route, circulation should be treated as a failed constraint rather than something extra storage can compensate for. A weighted score is useful only after hard constraints pass.",
     decisionRule: "Eliminate impossible layouts first; score preferences second.",
     avoid: "Do not let a single total score hide a failure in an essential route, required clearance or daily routine."
+  },
+  "indoor-air-quality-in-a-small-apartment": {
+    purpose: "This guide is about layout and source-control decisions that a renter can make without pretending that furniture placement can diagnose or repair a building problem.",
+    measureFirst: [
+      "Which supply and return vents must remain unobstructed",
+      "Where cooking and shower moisture enters the room",
+      "Whether furniture blocks windows, vents or exhaust paths",
+      "Where persistent dampness, odors or condensation appear"
+    ],
+    workedExample: "Example only: if a tall cabinet is placed directly over a return vent, moving it may improve airflow through that opening. But recurring dampness, combustion concerns or water damage still require the building owner, manager or a qualified professional; a layout change is not a diagnosis.",
+    decisionRule: "Remove avoidable sources and airflow obstructions first, then escalate persistent building or moisture problems instead of masking them.",
+    avoid: "Do not present plants, fragrances, storage changes or furniture rearrangement as a substitute for ventilation, leak repair, combustion safety or professional assessment."
+  },
+  "vacuum-storage-in-a-small-apartment": {
+    purpose: "Vacuum storage is a retrieval problem as much as a footprint problem. The useful location is the one where the machine, attachments and charging setup can be reached and returned without moving unrelated furniture.",
+    measureFirst: [
+      "Stored width, depth and height including the dock or hose",
+      "The movement needed to roll, tilt or lift the vacuum out",
+      "Where accessories can stay with the machine",
+      "Cable, charging and mounting requirements for the exact model"
+    ],
+    workedExample: "Example only: a 14-inch floor head may fit inside a 16-inch niche, but the handle can still need a much wider angle to come out. Tape the stored footprint, then physically mimic the retrieval motion before treating the niche as usable storage.",
+    decisionRule: "Compare candidate locations by the whole retrieval sequence, not by static width alone.",
+    avoid: "Do not hide a charging dock where cables are pinched, airflow is obstructed or the manufacturer does not permit installation."
+  },
+  "how-to-measure-a-studio-apartment": {
+    purpose: "A room measurement becomes useful only when it records the parts of the room furniture cannot occupy. The objective is a usable-space map, not a single square-foot number.",
+    measureFirst: [
+      "Perimeter walls in one consistent unit",
+      "Door width, swing and distance from nearby corners",
+      "Window width, sill height and any radiator or heater below it",
+      "Columns, kitchen fronts, outlets and built-in storage",
+      "The movement envelope of drawers, chairs and wardrobe doors"
+    ],
+    workedExample: "Example only: a 10-foot wall with a 36-inch door starting 12 inches from one corner does not provide 10 feet for a sofa. The uninterrupted wall segment on that side is much shorter once the opening and its approach are considered. Shop against the usable segment, not the room's headline width.",
+    decisionRule: "Convert every fixed obstacle into the drawing before assigning furniture envelopes.",
+    avoid: "Do not rely on listing square footage or one wall-to-wall measurement when buying a large piece."
   }
 };
 
