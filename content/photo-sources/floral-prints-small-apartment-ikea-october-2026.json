@@ -1,0 +1,49 @@
+{
+  "article": "floral-prints-small-apartment-ikea-october-2026",
+  "verified_on": "2026-10-21",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "license_summary": "Commercial editorial website use and resizing permitted; photographer credit added inline; no standalone resale, stock redistribution, or implication of IKEA/photographer endorsement. Images are independent illustrative photographs, not IKEA products.",
+  "delivery": "Pexels CDN auto=compress and responsive width variants 480/640/800/1000/1100/1200; secondary images lazy loaded by existing LearnArticle template.",
+  "photos": [
+    {
+      "id": 19977531,
+      "source": "https://www.pexels.com/photo/pillow-on-couch-19977531/",
+      "photographer": "Gonzalo Facello",
+      "cdn": "https://images.pexels.com/photos/19977531/pexels-photo-19977531.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": 30705308,
+      "source": "https://www.pexels.com/photo/cozy-bedroom-with-pink-floral-bedding-30705308/",
+      "photographer": "Alexander F Ungerer",
+      "cdn": "https://images.pexels.com/photos/30705308/pexels-photo-30705308.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": 35160130,
+      "source": "https://www.pexels.com/photo/cozy-indoor-living-room-with-sunlit-window-35160130/",
+      "photographer": "Fidan Nazim qizi",
+      "cdn": "https://images.pexels.com/photos/35160130/pexels-photo-35160130.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    }
+  ],
+  "sources": [
+    {
+      "label": "IKEA Spain — Nature-inspired October 2026 textile collection (2 October 2026)",
+      "url": "https://www.ikea.com/es/es/newsroom/corporate-news/ikea-llena-de-vida-los-hogares-con-estampados-inspirados-en-la-naturaleza-pub381a60f0/"
+    },
+    {
+      "label": "IKEA Canada — A Home in Constant Bloom (1 October, updated 6 October 2026)",
+      "url": "https://www.ikea.com/ca/en/newsroom/range-news/a-home-in-constant-bloom-pub4bbeec30/"
+    },
+    {
+      "label": "Cose di Casa — IKEA October 2026 textiles and home trends (17 October 2026)",
+      "url": "https://www.cosedicasa.com/arredamento/novita-ikea-ottobre-2026-tendenze-89807"
+    }
+  ],
+  "competition_checked": [
+    "https://www.thenordroom.com/new-ikea-products-october-2026/",
+    "https://www.cosedicasa.com/arredamento/novita-ikea-ottobre-2026-tendenze-89807",
+    "https://planete-deco.be/2026/09/01/ikea-nouveautes-octobre-2026-la-collection-florale-a-decouvrir/"
+  ],
+  "search_intent": "How to use the new floral-print textile trend in a studio or small apartment without visual clutter or extra furniture.",
+  "editorial_distinction": "Original one-print-anchor decision framework and studio-specific surface selection, not a product roundup."
+}
