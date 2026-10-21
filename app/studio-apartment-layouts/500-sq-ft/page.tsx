@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "500 Sq Ft Studio Apartment Layout Ideas: 4 Spacious Plans",
   description: "Four original 500 sq ft studio apartment layout ideas for separation, couples, work from home and storage.",
   alternates: { canonical: "/studio-apartment-layouts/500-sq-ft" },
+  authors: [{ name: "Small Space Planner Editorial Team" }],
 };
 
 const plans = [
@@ -96,6 +97,7 @@ export default function FiveHundredSqFtPage(){
       <aside className="sidebar">
         <div className="sidebar-box"><strong>Best use of extra area</strong>More circulation and clearer zones, not simply bigger furniture.</div>
         <div className="sidebar-box"><strong>Worth considering</strong>A soft divider for the bed if it does not block the main window.</div>
+        <div className="sidebar-box"><strong>Editorial method</strong><Link href="/editorial-policy">How we research layouts →</Link><br/><Link href="/learn/make-a-small-apartment-feel-bigger">Use sightlines and visual weight →</Link></div>
         <div className="sidebar-box"><strong>Different dimensions?</strong><Link href="/studio-apartment-planner">Use the measured planner →</Link></div>
       </aside>
     </section>
