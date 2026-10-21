@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FeaturedIdeas } from "@/components/FeaturedIdeas";
 import { LearnCardVisual } from "@/components/LearnCardVisual";
 import { FloorPlan } from "@/components/FloorPlan";
 import { learnArticles } from "@/lib/learnArticles";
@@ -167,6 +168,8 @@ export default function HomePage() {
           <Link href="/studio-apartment-layouts"><span>LAYOUT</span><h3>I do not know where the main furniture should go.</h3><b>Explore →</b></Link>
         </div>
       </section>
+
+      <FeaturedIdeas />
 
       <section className="home-learning-section">
         <div className="container">

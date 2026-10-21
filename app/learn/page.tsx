@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { FeaturedIdeas } from "@/components/FeaturedIdeas";
 import { LearnCardVisual } from "@/components/LearnCardVisual";
 import { learnArticles, learnCategories } from "@/lib/learnArticles";
 
@@ -52,6 +53,8 @@ export default function LearnPage() {
           <article><b>03</b><strong>Keep it practical</strong><p>Guides are written to help you make a decision, not to keep you scrolling for an answer.</p></article>
         </div>
       </section>
+
+      <FeaturedIdeas />
 
       <section id="library" className="container learn-library">
         {learnCategories.map((category) => {

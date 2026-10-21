@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Fragment } from "react";
+import { getTrendGuidePhotos } from "@/lib/trendGuidePhotos";
 import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/AdSlot";
 import { FloorPlan } from "@/components/FloorPlan";
@@ -36,6 +38,7 @@ export default async function GuidePage({ params }: Props) {
   const { slug } = await params;
   const guide = getGuide(slug);
   if (!guide) notFound();
+  const trendPhotos = getTrendGuidePhotos(guide.slug);
 
   const related = (guide.related || [])
     .map((item) => guides.find((candidate) => candidate.slug === item))
@@ -63,6 +66,16 @@ export default async function GuidePage({ params }: Props) {
 
         <div className="container guide-layout">
           <div className="prose">
+            {trendPhotos?.hero ? (
+              <figure className="trend-guide-photo trend-guide-lead">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={trendPhotos.hero.src} alt={trendPhotos.hero.alt} width={1200} height={800} loading="eager" decoding="async" />
+                <figcaption>{trendPhotos.hero.caption} Photo: <a href={trendPhotos.hero.source} target="_blank" rel="noopener noreferrer">{trendPhotos.hero.credit}</a>.</figcaption>
+              </figure>
+            ) : null}
+            {guide.slug === "ikea-xbox-small-apartment-gaming-setup" ? (
+              <p className="trend-guide-disclaimer">Independent layout inspiration. This is not official IKEA or Xbox campaign photography or a claim of a co-branded product release.</p>
+            ) : null}
             {guide.floorPlan ? (
               <>
                 <FloorPlan title={guide.floorPlan.title} zones={guide.floorPlan.zones} />
@@ -72,12 +85,21 @@ export default async function GuidePage({ params }: Props) {
 
             {guide.category !== "Legal" && guide.category !== "About" ? <AdSlot /> : null}
 
-            {guide.sections.map((section) => (
-              <section key={section.heading}>
+            {guide.sections.map((section, sectionIndex) => (
+              <Fragment key={section.heading}>
+              <section>
                 <h2>{section.heading}</h2>
                 {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                 {section.bullets ? <ul>{section.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul> : null}
               </section>
+              {trendPhotos?.gallery.filter(photo => photo.afterSection === sectionIndex).map(photo => (
+                <figure className="trend-guide-photo" key={photo.src}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={photo.src} alt={photo.alt} width={1200} height={750} loading="lazy" decoding="async" />
+                  <figcaption>{photo.caption} Photo: <a href={photo.source} target="_blank" rel="noopener noreferrer">{photo.credit}</a>.</figcaption>
+                </figure>
+              ))}
+              </Fragment>
             ))}
 
             {guide.takeaway ? <div className="callout"><strong>Small Space Planner takeaway</strong><br />{guide.takeaway}</div> : null}
