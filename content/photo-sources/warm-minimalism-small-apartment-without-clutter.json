@@ -1,0 +1,39 @@
+{
+  "article": "warm-minimalism-small-apartment-without-clutter",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "verified_on": "2026-10-21",
+  "license_summary": "Website/editorial and commercial use permitted. No endorsement implied. Attribution provided on each image.",
+  "photos": [
+    {
+      "id": 28576394,
+      "local": "/images/editorial/warm-minimalism-natural-light.webp",
+      "source": "https://www.pexels.com/photo/modern-minimalist-living-room-with-beige-sofa-28576394/",
+      "photographer": "Dmitry Zvolskiy",
+      "sha256": "f01ae20643168a5419271cea70e0e278e69697af59c5d91298b01b72553c7a31",
+      "width": 825,
+      "height": 1100,
+      "bytes": 82984
+    },
+    {
+      "id": 30243611,
+      "local": "/images/editorial/warm-minimalism-textiles.webp",
+      "source": "https://www.pexels.com/photo/cozy-minimalist-interior-with-beige-sofa-30243611/",
+      "photographer": "Cemrecan Yurtman",
+      "sha256": "484cb3d44f02599eb827c1212f46e0800fcfbadf7f1c3f72cb6407d3303db67d",
+      "width": 733,
+      "height": 1100,
+      "bytes": 111660
+    },
+    {
+      "id": 5662652,
+      "local": "/images/editorial/warm-minimalism-curved-sofa.webp",
+      "source": "https://www.pexels.com/photo/green-plant-near-a-sofa-5662652/",
+      "photographer": "Dmitry Zvolskiy",
+      "sha256": "4086ec020b7ee3246c0c39e427ead892081b25d011d42d61c8231c2130af37ab",
+      "width": 825,
+      "height": 1100,
+      "bytes": 26586
+    }
+  ]
+}

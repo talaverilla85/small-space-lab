@@ -90,7 +90,7 @@ export default async function LearnArticlePage({ params }: Props) {
               <figure style={{ margin: "1.5rem 0 2rem" }}>
                 {/* Pexels CDN: photograph is licensed for commercial editorial use. */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={coverPhoto.src} srcSet={`${coverPhoto.src.replace(/&w=\d+/, "")}&w=640 640w, ${coverPhoto.src.replace(/&w=\d+/, "")}&w=1000 1000w, ${coverPhoto.src.replace(/&w=\d+/, "")}&w=1200 1200w`} sizes="(max-width: 900px) 100vw, 760px" alt={coverPhoto.alt} width={1200} height={800} loading="eager" decoding="async" style={{ display: "block", width: "100%", height: "auto", borderRadius: "16px", objectFit: "cover", maxHeight: "560px" }} />
+                <img src={coverPhoto.src} srcSet={coverPhoto.src.startsWith("https://images.pexels.com/") ? `${coverPhoto.src.replace(/&w=\d+/, "")}&w=640 640w, ${coverPhoto.src.replace(/&w=\d+/, "")}&w=1000 1000w, ${coverPhoto.src.replace(/&w=\d+/, "")}&w=1200 1200w` : undefined} sizes="(max-width: 900px) 100vw, 760px" alt={coverPhoto.alt} width={coverPhoto.src.startsWith("/") ? 825 : 1200} height={coverPhoto.src.startsWith("/") ? 1100 : 800} loading="eager" decoding="async" style={{ display: "block", width: "100%", height: "auto", borderRadius: "16px", objectFit: "cover", maxHeight: "560px" }} />
                 <figcaption style={{ fontSize: "0.9rem", opacity: 0.8, marginTop: "0.65rem" }}>
                   {coverPhoto.caption} Photo: <a href={coverPhoto.source} target="_blank" rel="noopener noreferrer">{coverPhoto.credit}</a>.
                 </figcaption>
@@ -126,7 +126,7 @@ export default async function LearnArticlePage({ params }: Props) {
                 {galleryPhotos?.filter((item) => item.afterSection === sectionIndex).map((item) => (
                   <figure key={item.src + sectionIndex} style={{ margin: "2.25rem 0" }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={item.src} srcSet={`${item.src.replace(/&w=\d+/, "")}&w=480 480w, ${item.src.replace(/&w=\d+/, "")}&w=800 800w, ${item.src.replace(/&w=\d+/, "")}&w=1100 1100w`} sizes="(max-width: 900px) 100vw, 760px" alt={item.alt} width={1000} height={650} loading="lazy" decoding="async" style={{ width: "100%", height: "auto", borderRadius: "16px", display: "block", objectFit: "cover" }} />
+                    <img src={item.src} srcSet={item.src.startsWith("https://images.pexels.com/") ? `${item.src.replace(/&w=\d+/, "")}&w=480 480w, ${item.src.replace(/&w=\d+/, "")}&w=800 800w, ${item.src.replace(/&w=\d+/, "")}&w=1100 1100w` : undefined} sizes="(max-width: 900px) 100vw, 760px" alt={item.alt} width={item.src.startsWith("/") ? 800 : 1000} height={item.src.startsWith("/") ? 1100 : 650} loading="lazy" decoding="async" style={{ width: "100%", height: "auto", maxHeight: "620px", borderRadius: "16px", display: "block", objectFit: "cover" }} />
                     <figcaption style={{ fontSize: "0.9rem", opacity: 0.8, marginTop: "0.65rem" }}>{item.caption} Photo: <a href={item.source} target="_blank" rel="noopener noreferrer">{item.credit}</a>.</figcaption>
                   </figure>
                 ))}
