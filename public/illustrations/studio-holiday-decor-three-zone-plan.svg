@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+<title id="title">Studio holiday decoration three-zone plan</title><desc id="desc">Conceptual top-down room plan showing the clear daily route, a holiday focal point and a usable table. Not to scale.</desc>
+<rect width="960" height="520" fill="#f7f4ed"/>
+<text x="42" y="56" font-family="Arial,sans-serif" font-weight="700" font-size="28" fill="#253b36">One festive focal point. Zero blocked routes.</text>
+<text x="42" y="84" font-family="Arial,sans-serif" font-size="16" fill="#52605b">Conceptual studio layout — test your actual room measurements</text>
+<rect x="70" y="125" width="560" height="320" rx="18" fill="#fff" stroke="#50675b" stroke-width="8"/>
+<rect x="200" y="117" width="150" height="16" fill="#acd3dd"/><text x="227" y="112" font-family="Arial" font-size="14" fill="#315c67">WINDOW</text>
+<rect x="70" y="305" width="13" height="95" fill="#f7f4ed"/><path d="M83 400 A95 95 0 0 1 178 305" fill="none" stroke="#c29a78" stroke-width="3" stroke-dasharray="5 5"/>
+<path d="M120 358 H355 V270 H485" fill="none" stroke="#a9d6bb" stroke-width="62" stroke-linecap="round" stroke-linejoin="round" opacity=".75"/>
+<path d="M120 358 H355 V270 H485" fill="none" stroke="#2d7155" stroke-width="4" stroke-dasharray="9 9" stroke-linecap="round"/>
+<rect x="395" y="340" width="185" height="66" rx="12" fill="#dfdfd3" stroke="#9eab9b" stroke-width="2"/>
+<text x="415" y="369" font-family="Arial" font-size="17" font-weight="700" fill="#36443c">WORK TABLE</text>
+<text x="416" y="389" font-family="Arial" font-size="13" fill="#465c51">Keep usable</text>
+<circle cx="550" cy="180" r="43" fill="#d9ab9d" stroke="#a56552" stroke-width="3"/>
+<path d="M550 146 l-11 20 h22 z M550 157 l-18 25 h36 z M550 171 l-22 28 h44 z" fill="#396d58"/>
+<text x="495" y="245" font-family="Arial" font-size="13" font-weight="700" fill="#7c463e">HOLIDAY DISPLAY</text>
+<text x="92" y="427" font-family="Arial" font-size="14" fill="#52605b">ENTRY</text>
+<rect x="678" y="141" width="226" height="85" rx="12" fill="#e4f1e9"/>
+<circle cx="706" cy="171" r="10" fill="#4b8e6a"/><text x="725" y="175" font-family="Arial" font-size="18" font-weight="700" fill="#254e39">Clear route</text><text x="703" y="200" font-family="Arial" font-size="14" fill="#315f4b">Doors + daily movement</text>
+<rect x="678" y="241" width="226" height="85" rx="12" fill="#f8e8e2"/>
+<circle cx="706" cy="271" r="10" fill="#c88b76"/><text x="725" y="275" font-family="Arial" font-size="18" font-weight="700" fill="#78473a">Festive point</text><text x="703" y="300" font-family="Arial" font-size="14" fill="#78473a">One feature, measured</text>
+<rect x="678" y="341" width="226" height="85" rx="12" fill="#eeeee7"/>
+<circle cx="706" cy="371" r="10" fill="#9fae9e"/><text x="725" y="375" font-family="Arial" font-size="18" font-weight="700" fill="#37443a">Working zone</text><text x="703" y="400" font-family="Arial" font-size="14" fill="#52605b">Keep everyday function</text>
+<text x="70" y="482" font-family="Arial" font-size="14" fill="#66766e">© Small Space Planner • original editorial diagram • 2026</text>
+</svg>

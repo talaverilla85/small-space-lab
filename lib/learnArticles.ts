@@ -1,4 +1,5 @@
 import { warmMinimalismArticle } from "./warmMinimalismArticle";
+import { holidayDecorArticle } from "./holidayDecorArticle";
 import { vintageFurnitureArticle } from "./vintageFurnitureArticle";
 import { studioLaundryArticle } from "./studioLaundryArticle";
 import { seasonalClosetArticle } from "./seasonalClosetArticle";
@@ -29,6 +30,7 @@ export const learnArticles: LearnArticle[] = [
   studioLaundryArticle,
   seasonalClosetArticle,
   warmMinimalismArticle,
+  holidayDecorArticle,
   {
     slug: "compare-two-studio-apartment-layouts",
     title: "How to compare two studio apartment layouts",

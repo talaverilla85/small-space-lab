@@ -1,0 +1,28 @@
+{
+  "article": "small-apartment-holiday-decor-no-floor-space-2026",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "verified_on": "2026-10-21",
+  "license_summary": "Free editorial/commercial website use and modification permitted; not for stock-site redistribution, standalone resale or implying endorsement. Photographer and source attributed inline. Photos are editorial illustrations, not IKEA campaign photography.",
+  "delivery": "Pexels image CDN with auto=compress, cs=tinysrgb, responsive w parameters (640/1000/1200 and 480/800/1100); lazy loading for gallery",
+  "photos": [
+    {
+      "id": 35224067,
+      "source": "https://www.pexels.com/photo/cozy-living-room-with-christmas-tree-and-lights-35224067/",
+      "photographer": "Catherine Chechun",
+      "cdn": "https://images.pexels.com/photos/35224067/pexels-photo-35224067.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": 36536229,
+      "source": "https://www.pexels.com/photo/festive-christmas-garland-over-classic-bookshelf-36536229/",
+      "photographer": "Liz Finnegan",
+      "cdn": "https://images.pexels.com/photos/36536229/pexels-photo-36536229.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": 35031763,
+      "source": "https://www.pexels.com/photo/cozy-apartment-window-with-holiday-lights-35031763/",
+      "photographer": "Damir K",
+      "cdn": "https://images.pexels.com/photos/35031763/pexels-photo-35031763.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    }
+  ]
+}
