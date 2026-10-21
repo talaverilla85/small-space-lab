@@ -1,3 +1,4 @@
+import { retractableHooksArticle } from "./retractableHooksArticle";
 import { floralPrintsArticle } from "./floralPrintsArticle";
 import { warmMinimalismArticle } from "./warmMinimalismArticle";
 import { holidayDecorArticle } from "./holidayDecorArticle";
@@ -27,6 +28,7 @@ export type LearnArticle = {
 };
 
 export const learnArticles: LearnArticle[] = [
+  retractableHooksArticle,
   vintageFurnitureArticle,
   studioLaundryArticle,
   seasonalClosetArticle,
