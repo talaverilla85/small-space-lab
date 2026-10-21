@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FloorPlan } from "@/components/FloorPlan";
 import { getLayoutVariant, layoutVariants } from "@/lib/layoutVariants";
+import { getLayoutVariantAudit } from "@/lib/layoutVariantAudits";
 
 type Props = { params: Promise<{ variant: string }> };
 
@@ -18,6 +19,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: item.title,
     description: item.description,
     alternates: { canonical: `/studio-apartment-layouts/${item.slug}` },
+    authors: [{ name: "Small Space Planner Editorial Team" }],
+    openGraph: { type: "article", title: item.title, description: item.description },
   };
 }
 
@@ -25,6 +28,7 @@ export default async function LayoutVariantPage({ params }: Props) {
   const { variant } = await params;
   const item = getLayoutVariant(variant);
   if (!item) notFound();
+  const audit = getLayoutVariantAudit(item.slug);
 
   const coreTitles: Record<string,string> = {
     "300-sq-ft": "300 Sq Ft Studio Apartment Layout Ideas",
@@ -41,7 +45,28 @@ export default async function LayoutVariantPage({ params }: Props) {
     };
   });
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: item.title,
+    description: item.description,
+    dateModified: "2026-10-21",
+    author: {
+      "@type": "Organization",
+      name: "Small Space Planner Editorial Team",
+      url: "https://smallspaceplanner.com/editorial-policy",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Small Space Planner",
+      url: "https://smallspaceplanner.com",
+    },
+    mainEntityOfPage: "https://smallspaceplanner.com/studio-apartment-layouts/" + item.slug,
+  };
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
     <article>
       <header className="container guide-hero flagship-hero">
         <div className="breadcrumb"><Link href="/">Home</Link> / <Link href="/studio-apartment-layouts">Layouts</Link> / {item.slug}</div>
@@ -78,6 +103,39 @@ export default async function LayoutVariantPage({ params }: Props) {
               </section>
             ))}
           </div>
+
+          {audit ? (
+            <section className="layout-reality-check">
+              <div className="kicker">WHY THIS PAGE EXISTS</div>
+              <h2>Reality check before you copy the plan</h2>
+              <p>{audit.purpose}</p>
+
+              <div className="layout-audit-grid">
+                <div className="layout-audit-panel">
+                  <span className="micro-label">MEASURE FIRST</span>
+                  <ul>{audit.measureFirst.map((entry) => <li key={entry}>{entry}</li>)}</ul>
+                </div>
+                <div className="layout-audit-panel">
+                  <span className="micro-label">GOOD FIT</span>
+                  <p>{audit.goodFit}</p>
+                  <span className="micro-label">WHEN TO USE ANOTHER APPROACH</span>
+                  <p>{audit.poorFit}</p>
+                </div>
+              </div>
+
+              <h3>What each choice costs you</h3>
+              <div className="layout-tradeoff-table">
+                {audit.tradeoffs.map((entry) => (
+                  <div key={entry.choice}>
+                    <strong>{entry.choice}</strong>
+                    <span>{entry.cost}</span>
+                  </div>
+                ))}
+              </div>
+
+              <p className="layout-deep-dive"><Link href={audit.deepDive.href}>{audit.deepDive.label} →</Link></p>
+            </section>
+          ) : null}
 
           <h2>What matters most at this size</h2>
           <div className="mistake-grid">
@@ -147,5 +205,6 @@ export default async function LayoutVariantPage({ params }: Props) {
         </aside>
       </section>
     </article>
+    </>
   );
 }
