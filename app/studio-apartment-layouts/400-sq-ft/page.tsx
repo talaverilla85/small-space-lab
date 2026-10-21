@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "400 Sq Ft Studio Apartment Layout Ideas: 5 Practical Plans",
   description: "Five original 400 sq ft studio apartment layout ideas for solo living, couples, work from home, storage and Murphy-bed setups.",
   alternates: { canonical: "/studio-apartment-layouts/400-sq-ft" },
+  authors: [{ name: "Small Space Planner Editorial Team" }],
 };
 
 const plans = [
@@ -173,6 +174,11 @@ export default function FourHundredSqFtPage() {
           <div className="sidebar-box">
             <strong>Before buying furniture</strong>
             Measure wall-to-wall dimensions, door swings, windows, built-ins, radiators and kitchen depth.
+          </div>
+          <div className="sidebar-box">
+            <strong>Editorial method</strong>
+            <Link href="/editorial-policy">How we research layouts →</Link><br />
+            <Link href="/learn/how-to-zone-a-studio-apartment">Learn how to zone a studio →</Link>
           </div>
           <div className="sidebar-box">
             <strong>Different dimensions?</strong>
