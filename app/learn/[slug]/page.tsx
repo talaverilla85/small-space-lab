@@ -6,6 +6,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { getEditorialPhoto } from "@/lib/editorialPhotoLibrary";
 import { getEditorialGallery } from "@/lib/editorialGallery";
 import { getLearnArticle, learnArticles } from "@/lib/learnArticles";
+import { getLearnArticleDepth } from "@/lib/learnArticleDepth";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -34,6 +35,7 @@ export default async function LearnArticlePage({ params }: Props) {
   const article = getLearnArticle(slug);
   if (!article) notFound();
   const coverPhoto = article.photo ?? getEditorialPhoto(article.slug);
+  const depth = getLearnArticleDepth(article.slug);
   const galleryPhotos = article.gallery ?? getEditorialGallery(article.slug);
 
   const related = (article.related || [])
@@ -105,6 +107,28 @@ export default async function LearnArticlePage({ params }: Props) {
                 ))}
               </ol>
             </section>
+
+            {depth ? (
+              <section className="learn-decision-lab">
+                <span className="micro-label">DECISION LAB</span>
+                <h2>Test the advice against your actual space</h2>
+                <p>{depth.purpose}</p>
+                <div className="learn-decision-grid">
+                  <div>
+                    <strong>Measure first</strong>
+                    <ul>{depth.measureFirst.map((item) => <li key={item}>{item}</li>)}</ul>
+                  </div>
+                  <div>
+                    <strong>Worked example</strong>
+                    <p>{depth.workedExample}</p>
+                  </div>
+                </div>
+                <div className="learn-decision-rule">
+                  <div><span>Decision rule</span><p>{depth.decisionRule}</p></div>
+                  <div><span>Avoid</span><p>{depth.avoid}</p></div>
+                </div>
+              </section>
+            ) : null}
 
             <AdSlot />
 
