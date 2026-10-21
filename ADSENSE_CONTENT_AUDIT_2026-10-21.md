@@ -79,3 +79,42 @@ Before any new article is indexed:
 6. Keep publisher content clearly more prominent than advertising.
 7. Check internal links, canonical, structured data, title, description, date and images.
 8. If the article is not materially useful after the trend fades, do not publish it as an SEO article.
+
+
+## Full 32-article review — final pass
+
+The current learning library contains 32 active articles. Checks completed:
+- 32/32 have unique titles.
+- 32/32 have unique meta descriptions.
+- 32/32 have valid update dates.
+- 32/32 related-article references resolve to active learning-library slugs.
+- No article pair showed a level of lexical overlap that by itself suggests a doorway-page duplicate; the closest topical overlaps still serve distinct reader intents.
+- The trend-derived articles contain explicit small-space use cases rather than acting as news summaries.
+- High-stakes claims in air-quality, e-bike, laundry, furniture safety, holiday electrical safety and compact-bathroom material use source-backed guidance.
+- Trend/product pages explicitly distinguish independent photographs from pictured/referenced products where relevant.
+- The learning template includes editorial-method disclosure and links to the site's Editorial & Research Policy.
+
+### Shorter evergreen guides
+
+Several concise evergreen guides were useful but less substantial than the researched trend guides. They now receive a unique Decision Lab module containing:
+- what to measure first;
+- a worked example;
+- a clear decision rule;
+- a specific failure mode or thing to avoid.
+
+This module is article-specific, not a keyword-swapped generic block.
+
+Additional Decision Labs were added to:
+- indoor-air-quality-in-a-small-apartment
+- vacuum-storage-in-a-small-apartment
+- how-to-measure-a-studio-apartment
+
+### Automation policy change
+
+Google Publisher guidance warns against serving ads on automatically generated content that has not been manually reviewed or curated. To reduce approval risk, the hourly trend workflow has been changed from automatic publishing to research-and-draft only. It may detect and prepare opportunities, but it must not commit, deploy or index a new trend article automatically. A human review is required before publication.
+
+### Current conclusion
+
+No active learning-library article is recommended for deletion or noindex solely because of low-value/content-spam concerns after this pass. The main residual risk is process risk: publishing too many trend-led pages too quickly or allowing automated publishing without real editorial review. The current workflow has been changed to address that risk.
+
+Do not reintroduce fully automatic article publishing while AdSense approval is the priority.
