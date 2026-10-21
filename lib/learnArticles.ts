@@ -1,3 +1,4 @@
+import { compactToiletArticle } from "./compactToiletArticle";
 import { retractableHooksArticle } from "./retractableHooksArticle";
 import { floralPrintsArticle } from "./floralPrintsArticle";
 import { warmMinimalismArticle } from "./warmMinimalismArticle";
@@ -28,6 +29,7 @@ export type LearnArticle = {
 };
 
 export const learnArticles: LearnArticle[] = [
+  compactToiletArticle,
   retractableHooksArticle,
   vintageFurnitureArticle,
   studioLaundryArticle,

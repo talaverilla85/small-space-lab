@@ -1,0 +1,62 @@
+{
+  "article": "compact-toilets-tiny-bathrooms-2026-measuring-guide",
+  "verified_on": "2026-10-21",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "license_summary": "Each selected Pexels page displays Free; license allows commercial editorial website use, resizing, and credited attribution. Photos are independent real bathrooms and not the Panasonic product. Do not imply brand endorsement or sell as stock.",
+  "delivery": "Responsive Pexels CDN w=480/640/800/1000/1100/1200 via existing LearnArticle template; auto=compress, cs=tinysrgb, lazy-loaded gallery, source links in captions.",
+  "photos": [
+    {
+      "id": 20864046,
+      "photographer": "Alexander F Ungerer",
+      "source": "https://www.pexels.com/photo/a-small-bathroom-with-a-toilet-and-a-window-20864046/",
+      "cdn": "https://images.pexels.com/photos/20864046/pexels-photo-20864046.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "role": "hero",
+      "camera": "SM-G930F",
+      "taken": "2018-11-23"
+    },
+    {
+      "id": 7031719,
+      "photographer": "Max Vakhtbovych",
+      "source": "https://www.pexels.com/photo/interior-of-modern-bathroom-with-ceramic-sink-and-toilet-bowl-7031719/",
+      "cdn": "https://images.pexels.com/photos/7031719/pexels-photo-7031719.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "role": "gallery",
+      "camera": "NIKON D800",
+      "taken": "2017-12-11"
+    },
+    {
+      "id": 6523295,
+      "photographer": "Max Vakhtbovych",
+      "source": "https://www.pexels.com/photo/wooden-door-of-contemporary-white-bathroom-6523295/",
+      "cdn": "https://images.pexels.com/photos/6523295/pexels-photo-6523295.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "role": "gallery",
+      "camera": "NIKON D810",
+      "taken": "2019-06-28"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Panasonic Housing Solutions — Arauno L-CLASS official announcement, corrected 15 October 2026",
+      "url": "https://panasonic.co.jp/phs/news/2026/pr20260902-01/"
+    },
+    {
+      "label": "Panasonic — L-CLASS specifications and Japan-only market context (Good Design announcement)",
+      "url": "https://prtimes.jp/main/html/rd/p/000000014.000179566.html"
+    },
+    {
+      "label": "International Code Council — 2024 International Plumbing Code, Section 405.3.1",
+      "url": "https://codes.iccsafe.org/content/IPC2024P1/chapter-4-fixtures-faucets-and-fixture-fittings"
+    },
+    {
+      "label": "National Kitchen & Bath Association — Bathroom Planning Guidelines",
+      "url": "https://media.nkba.org/uploads/2022/05/Bath-Planning-Guidelines.pdf"
+    }
+  ],
+  "competition_checked": [
+    "https://bathify.com/blogs/inspo/best-toilets-for-small-bathrooms",
+    "https://www.bativo.be/salle-de-bain/petite-salle-de-bain/",
+    "https://www.loftandco.fr/dimension-toilette-mesures-minimales-et-degagements-a-respecter/"
+  ],
+  "search_intent": "How do I choose a short-projection toilet for a tiny bathroom without misreading catalog dimensions or violating clearances?",
+  "editorial_distinction": "Uses corrected 2026 Panasonic announcement to explain installed envelope vs body depth, a worked 78 mm calculation, door/rough-in checks and code-context caution; not a product roundup or a hands-on review."
+}
