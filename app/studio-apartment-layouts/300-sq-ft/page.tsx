@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "300 Sq Ft Studio Apartment Layout Ideas: 4 Smart Plans",
   description: "Four original 300 sq ft studio apartment layout ideas for solo living, remote work, storage and flexible furniture.",
   alternates: { canonical: "/studio-apartment-layouts/300-sq-ft" },
+  authors: [{ name: "Small Space Planner Editorial Team" }],
 };
 
 const plans = [
@@ -96,6 +97,7 @@ export default function ThreeHundredSqFtPage(){
       <aside className="sidebar">
         <div className="sidebar-box"><strong>Best default</strong>Full bed + compact sofa + one shared work/dining surface.</div>
         <div className="sidebar-box"><strong>Biggest risk</strong>Too many deep pieces facing each other across the room.</div>
+        <div className="sidebar-box"><strong>Editorial method</strong><Link href="/editorial-policy">How we research layouts →</Link><br/><Link href="/learn/how-to-measure-a-studio-apartment">Measure a studio correctly →</Link></div>
         <div className="sidebar-box"><strong>Different dimensions?</strong><Link href="/studio-apartment-planner">Use the measured planner →</Link></div>
       </aside>
     </section>
