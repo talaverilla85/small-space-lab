@@ -54,6 +54,7 @@ export default function LearnPage() {
         </div>
       </section>
 
+      <section className="container" style={{paddingTop:32,paddingBottom:24}}><h2>New practical guides</h2><p><Link href="/learn/half-round-vs-round-drop-leaf-table-studio">Half-Round vs Round vs Drop-Leaf Table in a Studio: The Two-Mode Fit Test →</Link></p></section>
       <FeaturedIdeas />
 
       <section id="library" className="container learn-library">
