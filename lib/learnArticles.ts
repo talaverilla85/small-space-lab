@@ -1,3 +1,4 @@
+import { adjustableWallRailArticle } from "./adjustableWallRailArticle";
 import { compactToiletArticle } from "./compactToiletArticle";
 import { retractableHooksArticle } from "./retractableHooksArticle";
 import { floralPrintsArticle } from "./floralPrintsArticle";
@@ -29,6 +30,7 @@ export type LearnArticle = {
 };
 
 export const learnArticles: LearnArticle[] = [
+  adjustableWallRailArticle,
   compactToiletArticle,
   retractableHooksArticle,
   vintageFurnitureArticle,
