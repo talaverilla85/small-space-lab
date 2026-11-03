@@ -6,6 +6,22 @@ import { learnArticles } from "@/lib/learnArticles";
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = process.env.NEXT_PUBLIC_SITE_URL || "https://small-space-lab.vercel.app";
   const now = new Date();
+  const heldForEditorialReview = new Set([
+    "half-round-vs-round-drop-leaf-table-studio",
+    "deep-closet-narrow-door-storage",
+    "studio-apartment-with-toddler-layout",
+    "air-purifier-placement-studio-cooking",
+    "studio-apartment-senior-dog-layout",
+    "dehumidifier-placement-studio-laundry",
+    "window-insulation-film-studio-rental",
+    "rolling-tv-stand-vs-fixed-studio",
+    "fridge-outside-kitchen-small-apartment",
+    "bookshelves-drywall-small-rental-anchoring",
+    "offsite-storage-small-apartment-worth-it",
+    "check-ai-studio-apartment-layout",
+    "murphy-bed-drywall-floor-supported-small-apartment",
+  ]);
+
 
   const specialRoutes = new Set([
     "studio-apartment-layouts/300-sq-ft",
@@ -33,7 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: base + "/studio-apartment-planner", lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: base + "/learn", lastModified: now, changeFrequency: "weekly", priority: 0.88 },
     { url: base + "/editorial-policy", lastModified: now, changeFrequency: "yearly", priority: 0.35 },
-    ...learnArticles.map((article) => ({
+    ...learnArticles.filter((article) => !heldForEditorialReview.has(article.slug)).map((article) => ({
       url: base + "/learn/" + article.slug,
       lastModified: new Date(article.updated),
       changeFrequency: "monthly" as const,
