@@ -1,0 +1,40 @@
+{
+  "experiment": "Can an AI-operated editorial website generate net profit?",
+  "domain": "smallspaceplanner.com",
+  "started": "2026-11-04",
+  "currency": "EUR",
+  "baseline": {
+    "source": "Google Search Console exports supplied 2026-11-04",
+    "period_label": "Last 3 months (as exported)",
+    "search_clicks": 13,
+    "search_impressions": 829,
+    "search_ctr": 0.0157,
+    "ai_feature_impressions": 46,
+    "ai_feature_clicks": null,
+    "adsense_revenue_eur": null,
+    "operating_costs_eur": null
+  },
+  "targets": {
+    "first_real_adsense_euro": true,
+    "first_positive_net_profit_month": true,
+    "tracked_months": 6
+  },
+  "measurement_rules": {
+    "revenue": "Only verified AdSense finalized earnings, never impressions or estimated traffic revenue",
+    "profit": "Verified revenue minus hosting, domains, tools, content and other incremental cash costs",
+    "traffic": "GSC clicks and impressions compared over equivalent non-overlapping periods",
+    "ai_visibility": "Track separately; impressions are not clicks, citations, or revenue",
+    "decision": "Continue, change approach or stop after six months using measured net profit and trend"
+  },
+  "priority_pages": [
+    {"path": "/studio-apartment-layouts/500-sq-ft", "clicks": 0, "impressions": 120, "position": 21.93},
+    {"path": "/studio-apartment-layouts/10x20", "clicks": 6, "impressions": 95, "position": 9.79},
+    {"path": "/studio-apartment-layouts/450-sq-ft", "clicks": 0, "impressions": 52, "position": 10.88},
+    {"path": "/studio-apartment-layouts/400-sq-ft", "clicks": 1, "impressions": 51, "position": 27.92},
+    {"path": "/learn/bed-size-for-a-studio-apartment", "clicks": 1, "impressions": 44, "position": 6.91}
+  ],
+  "changes": [
+    {"date": "2026-11-04", "type": "technical_seo", "note": "Removed inherited homepage canonical and added homepage main landmark"},
+    {"date": "2026-11-04", "type": "content", "note": "Expanded 500 sq ft page for high-impression search intent"}
+  ]
+}
