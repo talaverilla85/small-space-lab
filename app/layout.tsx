@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   description,
   applicationName: siteName,
   category: "home",
-  alternates: { canonical: "/" },
   robots: allowIndexing
     ? { index: true, follow: true }
     : { index: false, follow: false, nocache: true },
