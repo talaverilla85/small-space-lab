@@ -4,8 +4,9 @@ import { layoutVariants } from "@/lib/layoutVariants";
 import { learnArticles } from "@/lib/learnArticles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || "https://small-space-lab.vercel.app";
-  const now = new Date();
+  const base = process.env.NEXT_PUBLIC_SITE_URL || "https://smallspaceplanner.com";
+  // Use a stable date for evergreen routes; do not claim every page changed on every sitemap request.
+  const siteUpdated = new Date("2026-11-04");
   const heldForEditorialReview = new Set([
     "half-round-vs-round-drop-leaf-table-studio",
     "deep-closet-narrow-door-storage",
@@ -45,10 +46,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   return [
-    { url: base, lastModified: now, changeFrequency: "weekly", priority: 1 },
-    { url: base + "/studio-apartment-planner", lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: base + "/learn", lastModified: now, changeFrequency: "weekly", priority: 0.88 },
-    { url: base + "/editorial-policy", lastModified: now, changeFrequency: "yearly", priority: 0.35 },
+    { url: base, lastModified: siteUpdated, changeFrequency: "weekly", priority: 1 },
+    { url: base + "/studio-apartment-planner", lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.9 },
+    { url: base + "/learn", lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.88 },
+    { url: base + "/editorial-policy", lastModified: siteUpdated, changeFrequency: "yearly", priority: 0.35 },
     ...learnArticles.filter((article) => !heldForEditorialReview.has(article.slug)).map((article) => ({
       url: base + "/learn/" + article.slug,
       lastModified: new Date(article.updated),
@@ -57,19 +58,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...toolRoutes.map((route,index) => ({
       url: base + route,
-      lastModified: now,
+      lastModified: siteUpdated,
       changeFrequency: "monthly" as const,
       priority: index === 0 ? 0.78 : 0.8,
     })),
     ...coreLayoutRoutes.map((route) => ({
       url: base + route,
-      lastModified: now,
+      lastModified: siteUpdated,
       changeFrequency: "monthly" as const,
       priority: 0.85,
     })),
     ...layoutVariants.map((item) => ({
       url: base + "/studio-apartment-layouts/" + item.slug,
-      lastModified: now,
+      lastModified: siteUpdated,
       changeFrequency: "monthly" as const,
       priority: 0.82,
     })),
@@ -77,7 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       .filter((guide) => !specialRoutes.has(guide.slug) && guide.slug !== "contact")
       .map((guide) => ({
         url: base + "/" + guide.slug,
-        lastModified: now,
+        lastModified: siteUpdated,
         changeFrequency: "monthly" as const,
         priority: guide.category === "Legal" ? 0.2 : 0.7,
       })),
