@@ -5,8 +5,6 @@ import { learnArticles } from "@/lib/learnArticles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = process.env.NEXT_PUBLIC_SITE_URL || "https://smallspaceplanner.com";
-  // Use a stable date for evergreen routes; do not claim every page changed on every sitemap request.
-  const siteUpdated = new Date("2026-11-04");
   const heldForEditorialReview = new Set([
     "half-round-vs-round-drop-leaf-table-studio",
     "deep-closet-narrow-door-storage",
@@ -46,10 +44,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   return [
-    { url: base, lastModified: siteUpdated, changeFrequency: "weekly", priority: 1 },
-    { url: base + "/studio-apartment-planner", lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.9 },
-    { url: base + "/learn", lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.88 },
-    { url: base + "/editorial-policy", lastModified: siteUpdated, changeFrequency: "yearly", priority: 0.35 },
+    { url: base, changeFrequency: "weekly", priority: 1 },
+    { url: base + "/studio-apartment-planner", changeFrequency: "monthly", priority: 0.9 },
+    { url: base + "/learn", changeFrequency: "weekly", priority: 0.88 },
+    { url: base + "/editorial-policy", changeFrequency: "yearly", priority: 0.35 },
     ...learnArticles.filter((article) => !heldForEditorialReview.has(article.slug)).map((article) => ({
       url: base + "/learn/" + article.slug,
       lastModified: new Date(article.updated),
