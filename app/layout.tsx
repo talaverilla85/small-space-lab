@@ -8,7 +8,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 const siteName = "Small Space Planner";
 const description = "Plan studio apartments and compact homes with practical layouts, storage guides and simple planning tools.";
 const allowIndexing = process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true";
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://small-space-lab.vercel.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://smallspaceplanner.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -45,7 +45,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
         {adsenseClient ? <Script async strategy="afterInteractive" src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`} crossOrigin="anonymous" /> : null}
         <SiteHeader />
-        <main>{children}</main>
+        {children}
         <SiteFooter />
       </body>
     </html>
