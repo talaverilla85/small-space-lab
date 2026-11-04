@@ -88,12 +88,12 @@ export const layoutVariants: LayoutVariant[] = [
   },
   {
     slug:"450-sq-ft",
-    title:"450 Sq Ft Studio Apartment Layout Ideas",
-    description:"Three practical 450 sq ft studio layouts with room for a queen bed, real lounge and useful work or dining zones.",
+    title:"450 Sq Ft Studio Apartment Floor Plans: 3 Layout Ideas",
+    description:"See three illustrated 450 sq ft studio apartment floor plans, with a queen bed, seating, storage and work zones. Compare what fits before buying furniture.",
     eyebrow:"450 SQ FT · 3 PRACTICAL CONCEPTS",
     intro:"Four hundred and fifty square feet gives a studio enough room to create real separation between sleep, living and work without needing solid walls. The strongest layouts spend the extra area on distance between zones rather than automatically buying larger furniture.",
     quickTitle:"What changes at 450 sq ft?",
-    quickAnswer:"A queen bed, comfortable sofa, dedicated desk and meaningful storage can coexist in many 450 sq ft studios. The main opportunity is to stop stacking functions on top of each other and let the room breathe.",
+    quickAnswer:"450 sq ft is about 41.8 m². A queen bed, compact sofa, desk and storage can coexist in some layouts, but the usable open room may be smaller once the kitchen and bathroom are included. Measure doors, chair movement and the main walking route before selecting a plan.",
     plans:[
       {
         title:"Balanced open layout",
@@ -218,12 +218,12 @@ export const layoutVariants: LayoutVariant[] = [
   },
   {
     slug:"10x20",
-    title:"10×20 Studio Apartment Layout Ideas",
-    description:"Layout ideas for a narrow 10 by 20 foot room, including sleep, lounge, work and storage strategies.",
+    title:"10×20 Studio Apartment Layout: 2 Narrow Floor Plans",
+    description:"Two illustrated 10×20 studio apartment floor plans for a 200 sq ft narrow room, with bed, desk, sofa, storage and a clear walking route.",
     eyebrow:"10 × 20 FT · NARROW-ROOM PLANNING",
     intro:"A 10×20 room is only 200 square feet, and the 10-foot width is the real constraint. The safest strategy is to organize furniture along the long axis and avoid placing deep pieces directly opposite each other.",
     quickTitle:"What is the main challenge in a 10×20 room?",
-    quickAnswer:"Width. A bed and sofa may both fit, but opposing deep furniture can leave an uncomfortable corridor between them. Long-axis placement and shallow storage are usually more important than total square footage.",
+    quickAnswer:"A 10×20 room is 200 sq ft (about 18.6 m²). Width is the main constraint: a bed and sofa may fit, but deep pieces facing each other can leave a cramped passage. Arrange furniture along the 20-foot axis and check door swings, bed access and actual product dimensions.",
     plans:[
       {
         title:"Long-axis everyday layout",
