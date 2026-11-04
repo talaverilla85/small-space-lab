@@ -1,10 +1,11 @@
 import React from "react";
 
 function inline(value: string): React.ReactNode[] {
-  const pattern = /(\*\*[^*]+\*\*|\*[^*]+\*\*?|\[[^\]]+\]\(https?:\/\/[^)]+\)|https?:\/\/[^\s)]+)/g;
+  const pattern = /(\*\*[^*]+\*\*|\*[^*]+\*|\x60[^\x60]+\x60|\[[^\]]+\]\(https?:\/\/[^)]+\)|https?:\/\/[^\s)]+)/g;
   return value.split(pattern).filter(Boolean).map((part,i) => {
     if (part.startsWith("**") && part.endsWith("**")) return <strong key={i}>{part.slice(2,-2)}</strong>;
     if (part.startsWith("*") && part.endsWith("*")) return <em key={i}>{part.slice(1,-1)}</em>;
+    if (part.startsWith("\x60") && part.endsWith("\x60")) return <code key={i}>{part.slice(1,-1)}</code>;
     const link = part.match(/^\[([^\]]+)\]\((https?:\/\/[^)]+)\)$/);
     if (link) return <a key={i} href={link[2]} rel="noopener noreferrer">{link[1]}</a>;
     if (/^https?:\/\//.test(part)) return <a key={i} href={part} rel="noopener noreferrer">{part}</a>;
