@@ -1,4 +1,7 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 import { FeaturedIdeas } from "@/components/FeaturedIdeas";
 import { LearnCardVisual } from "@/components/LearnCardVisual";
 import { FloorPlan } from "@/components/FloorPlan";
@@ -6,7 +9,7 @@ import { learnArticles } from "@/lib/learnArticles";
 
 export default function HomePage() {
   return (
-    <>
+    <main>
       <section className="home-hero warm-hero">
         <div className="container hero-editorial human-hero">
           <div className="hero-copy">
@@ -202,6 +205,6 @@ export default function HomePage() {
         <p>Less guessing.<br/><em>More room to live.</em></p>
         <Link href="/studio-apartment-planner">Start with your space <span>→</span></Link>
       </section>
-    </>
+    </main>
   );
 }
