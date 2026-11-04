@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run audit:editorial && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "audit:editorial": "node scripts/audit-editorial.cjs"
   },
   "dependencies": {
     "next": "^15.5.4",
