@@ -7,7 +7,7 @@
 - Never count AI-feature impressions as citations, visitors or revenue.
 - Do not publish mass-produced thin content or bypass ad-consent requirements.
 - Keep experimental editorial pages noindex until reviewed; preserve working canonical URLs.
-- Every production change needs a successful deployment and a dated change entry.
+- Every production change needs a successful deployment and a dated change entry. Run `npm run audit:editorial` separately before releasing held guides; the audit does not block ordinary production builds.
 
 ## Baseline (Google Search Console, exports supplied 2026-11-04)
 - Search: 13 clicks / 829 impressions / 1.57% CTR.
