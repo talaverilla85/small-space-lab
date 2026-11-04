@@ -3,8 +3,8 @@ import Link from "next/link";
 import { FloorPlan } from "@/components/FloorPlan";
 
 export const metadata: Metadata = {
-  title: "500 Sq Ft Studio Apartment Layout Ideas: 4 Spacious Plans",
-  description: "Four original 500 sq ft studio apartment layout ideas for separation, couples, work from home and storage.",
+  title: "500 Sq Ft Apartment Layout: 4 Studio Floor Plan Ideas",
+  description: "Explore four 500 sq ft apartment floor plan ideas with illustrated studio layouts for couples, a home office, storage and a separated sleeping zone.",
   alternates: { canonical: "/studio-apartment-layouts/500-sq-ft" },
   authors: [{ name: "Small Space Planner Editorial Team" }],
 };
@@ -69,6 +69,20 @@ export default function FiveHundredSqFtPage(){
     <section className="container guide-layout flagship-layout">
       <div className="prose">
         <div className="quick-answer"><div className="kicker">Quick answer</div><h2>What does 500 sq ft change?</h2><p>Compared with a smaller studio, 500 sq ft can support a queen bed, comfortable sofa, meaningful storage and a more independent work or dining zone. The improvement comes from separation and clearance — not just larger furniture.</p></div>
+
+        <section aria-labelledby="five-hundred-size">
+          <h2 id="five-hundred-size">How big is a 500 sq ft apartment?</h2>
+          <p><strong>500 square feet is approximately 46.5 square meters.</strong> A simple 20 × 25 ft rectangle has 500 sq ft of floor area, but a real apartment may include the bathroom, kitchen, hall and closets within its advertised area. The usable open living zone can therefore be substantially smaller.</p>
+          <p>Before choosing furniture, sketch the actual room boundaries and subtract fixed areas. Measure the clear space between the bed, sofa and dining chairs with doors and drawers open. An attractive floor plan is not evidence that the furniture will fit your particular apartment.</p>
+          <h3>Choose the layout by your main priority</h3>
+          <ul>
+            <li><strong>One person, flexible living:</strong> start with the balanced open studio.</li>
+            <li><strong>More sleeping privacy:</strong> compare the soft-separated bedroom concept, while checking daylight and access.</li>
+            <li><strong>Two people:</strong> prioritize two usable seats, wardrobe access and a shared dining surface.</li>
+            <li><strong>Working from home:</strong> protect a dedicated desk zone and its chair clearance.</li>
+          </ul>
+          <p>For a tighter footprint, compare our <Link href="/studio-apartment-layouts/450-sq-ft">450 sq ft layouts</Link> and <Link href="/studio-apartment-layouts/400-sq-ft">400 sq ft layouts</Link>. If you are starting with a long narrow room, the <Link href="/studio-apartment-layouts/10x20">10 × 20 studio layout</Link> shows how circulation changes the plan.</p>
+        </section>
 
         <h2 id="plans">4 ways to use the extra room</h2>
         <p>These are planning concepts for open studio living areas. Always map the actual fixed elements in your apartment before copying a layout.</p>
