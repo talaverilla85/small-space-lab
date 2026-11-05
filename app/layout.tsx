@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import "./globals.css";
 import "./editorial.css";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -25,8 +24,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  // Keep AdSense ownership verification metadata, but do not load ads until approved and consent is implemented.
-  const adsenseClient = "";
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -43,7 +40,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
-        {adsenseClient ? <Script async strategy="afterInteractive" src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`} crossOrigin="anonymous" /> : null}
         <SiteHeader />
         {children}
         <SiteFooter />
