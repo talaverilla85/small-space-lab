@@ -5,7 +5,8 @@ import { useEffect } from "react";
 declare global { interface Window { adsbygoogle?: unknown[]; } }
 
 export function AdSlot({ slot }: { slot?: string }) {
-  const client = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
+  // Do not render ad slots until approval and compliant consent handling are implemented.
+  const client = process.env.NEXT_PUBLIC_ADSENSE_APPROVED === "true" ? process.env.NEXT_PUBLIC_ADSENSE_CLIENT : undefined;
   useEffect(() => {
     if (!client || !slot) return;
     try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch {}
