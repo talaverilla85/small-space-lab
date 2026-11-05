@@ -25,7 +25,8 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT || "ca-pub-3617187484292577";
+  // Keep AdSense ownership verification metadata, but do not load ads until approved and consent is implemented.
+  const adsenseClient = "";
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
