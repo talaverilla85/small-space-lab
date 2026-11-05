@@ -1,11 +1,12 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { alternates: { canonical: "/" } };
 import { FeaturedIdeas } from "@/components/FeaturedIdeas";
 import { LearnCardVisual } from "@/components/LearnCardVisual";
 import { FloorPlan } from "@/components/FloorPlan";
 import { learnArticles } from "@/lib/learnArticles";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 export default function HomePage() {
   return (
