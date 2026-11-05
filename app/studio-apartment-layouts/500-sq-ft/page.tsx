@@ -85,8 +85,21 @@ export default function FiveHundredSqFtPage(){
         </section>
 
         <h2 id="plans">4 ways to use the extra room</h2>
-        <p>These are planning concepts for open studio living areas. Always map the actual fixed elements in your apartment before copying a layout.</p>
+        <p>These are schematic zone diagrams, not dimensioned or to-scale architectural floor plans. The boxes show relationships between activities, not the square footage assigned to each activity. Always map the actual fixed elements in your apartment before copying a layout.</p>
         <div className="flagship-plans">{plans.map(plan=><section className="plan-option" key={plan.title}><div className="plan-option-copy"><span className="eyebrow">{plan.bestFor}</span><h2>{plan.title}</h2><p>{plan.note}</p></div><FloorPlan title={plan.title} zones={plan.zones}/></section>)}</div>
+
+        <section aria-labelledby="five-hundred-fit-test">
+          <h2 id="five-hundred-fit-test">A measurable fit test before you buy furniture</h2>
+          <p>Use this example as a worksheet, not as a universal 500 sq ft plan. Suppose the advertised apartment is a 20 × 25 ft rectangle. If a bathroom occupies 8 × 7 ft and a fixed kitchenette occupies 10 × 6 ft, those two footprints account for 116 sq ft. That leaves 384 sq ft before subtracting any additional walls, closets or corridors. The numbers are illustrative: real kitchens, bathrooms and circulation can overlap or have irregular shapes, so measure your own plan rather than subtracting these examples from a listing.</p>
+          <ol>
+            <li><strong>Draw the fixed zones:</strong> mark the entry, bathroom, kitchen, windows, heating and every door swing. Record their actual dimensions.</li>
+            <li><strong>Place the largest item:</strong> a typical queen mattress is about 60 × 80 in, but the frame can be larger. Measure the actual bed frame and the side needed for access.</li>
+            <li><strong>Check the working footprint:</strong> a 48 × 24 in desk occupies 8 sq ft as furniture, but the usable setup also needs chair movement and access. Tape out the full operating area on the floor.</li>
+            <li><strong>Trace the walking route:</strong> walk from the entrance to the bathroom and kitchen, then to the bed. Open the drawers, chairs and doors in your sketch. If a route becomes obstructed, revise the layout.</li>
+            <li><strong>Compare two modes:</strong> test the apartment during everyday use and when a guest is seated, a sofa bed is open or a chair is pulled out. A plan that works only with everything folded away is not a comfortable daily plan.</li>
+          </ol>
+          <p><strong>Decision rule:</strong> choose the option that keeps essential routes and furniture access usable in both modes, even if it has fewer pieces. For a first-pass comparison, enter your actual room dimensions in the <Link href="/studio-apartment-planner">free studio planner</Link>; then verify the result against doors, fixed services and the furniture manufacturer's dimensions.</p>
+        </section>
 
         <h2>Where the extra square footage is best spent</h2>
         <ul>
