@@ -56,19 +56,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...toolRoutes.map((route,index) => ({
       url: base + route,
-      lastModified: siteUpdated,
       changeFrequency: "monthly" as const,
       priority: index === 0 ? 0.78 : 0.8,
     })),
     ...coreLayoutRoutes.map((route) => ({
       url: base + route,
-      lastModified: siteUpdated,
       changeFrequency: "monthly" as const,
       priority: 0.85,
     })),
     ...layoutVariants.map((item) => ({
       url: base + "/studio-apartment-layouts/" + item.slug,
-      lastModified: siteUpdated,
       changeFrequency: "monthly" as const,
       priority: 0.82,
     })),
@@ -76,8 +73,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       .filter((guide) => !specialRoutes.has(guide.slug) && guide.slug !== "contact")
       .map((guide) => ({
         url: base + "/" + guide.slug,
-        lastModified: siteUpdated,
-        changeFrequency: "monthly" as const,
+          changeFrequency: "monthly" as const,
         priority: guide.category === "Legal" ? 0.2 : 0.7,
       })),
   ];
