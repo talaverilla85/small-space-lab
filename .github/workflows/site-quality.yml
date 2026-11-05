@@ -26,3 +26,5 @@ jobs:
       - run: npm run build
       - name: Editorial release audit
         run: npm run audit:editorial
+      - name: AdSense preflight audit
+        run: node scripts/audit-adsense.cjs
