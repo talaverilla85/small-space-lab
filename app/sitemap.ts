@@ -71,7 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.82,
     })),
     ...guides
-      .filter((guide) => !specialRoutes.has(guide.slug) && guide.slug !== "contact")
+      .filter((guide) => !specialRoutes.has(guide.slug) && guide.slug !== "contact" && guide.slug !== "small-apartment-storage/vacuum")
       .map((guide) => ({
         url: base + "/" + guide.slug,
           changeFrequency: "monthly" as const,

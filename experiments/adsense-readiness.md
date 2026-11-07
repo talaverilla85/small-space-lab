@@ -1,45 +1,30 @@
-# AdSense second-application release gate
+# Final AdSense second-application audit — Small Space Planner
 
-Status: **NOT READY** until every check is verified against the live production site. A prior application was rejected for low-value content. No approval is guaranteed.
+**Final decision (2026-11-07): READY TO REQUEST A SECOND ADSENSE REVIEW.** This is a pre-application editorial and technical release decision, not an AdSense approval, an indexation report, or proof of future revenue.
 
-## 1. Production and crawlability
-- [x] Latest Vercel deployment is READY for commit `3540df7` and the production domain is verified; direct HTTP verification of all routes is still pending.
-- [ ] Run `npm run build` and `npm run audit:editorial` successfully; resolve any failures rather than bypassing them.
-- [ ] Verify homepage, planner, learning library, key article templates, tools, sitemap.xml, robots.txt and 404 page on mobile and desktop.
-- [ ] Check every indexable URL for self-referencing canonical, unique title/H1/description, working internal links, and useful body content.
-- [ ] Inspect Google Search Console for indexing errors, duplicates, soft 404s, and manual actions; resolve before application.
-- [ ] No thin, placeholder, duplicate, AI-generated filler, or unreviewed articles indexed.
+## Verified
+- GitHub `main` and Vercel production matched `6d05db16066bc13152d0e0d53618ad7f691d2c4c` at audit start; the next commit below consolidates the one duplicate-topic legacy route.
+- GitHub Actions workflow `site-quality.yml` run **42324985474** passed build, editorial audit and AdSense preflight for that starting commit.
+- Live HTTP: `robots.txt` = 200 and allows crawling; `sitemap.xml` = 200. **80/80 pre-fix sitemap URLs** returned 200, had self-referencing canonicals, SEO titles, descriptions, H1 tags and no accidental `noindex`; an unknown route returned 404.
+- The **13 held standalone learning articles** returned 200 with `noindex`, self canonicals and no sitemap entries. They must remain unindexed and excluded unless deliberately reviewed and released.
+- The existing studio planner and all four calculators were exercised in a real Chromium/Edge browser with changed inputs and expected output updates; mobile 390px pages had no horizontal overflow, and mobile menu links navigated. The planner was tested with narrow and larger room scenarios and its concept-only caveat was visible.
+- About, privacy, cookies, terms, editorial policy and contact pages were accessible. The contact page links to a public GitHub issue form and warns not to post private information.
+- AdSense account verification metadata and `ads.txt` are present. Runtime ads are gated off pending approval/consent; cookie/privacy pages describe that situation accurately.
+- Main indexable learning content was spot-checked for practical decision-making value, source/limitations language, and major topical overlap. An automated comparison identified the same vacuum-storage search intent in a short legacy guide and a fuller measured learning guide; it is consolidated by a permanent redirect and removed from the sitemap in this release.
 
-## 2. Demonstrable user value
-- [ ] Planner completes the main user journey on Android, iOS and desktop; test representative room sizes and error states.
-- [ ] Every public calculator gives accurate units, clear assumptions and useful results, not just a form.
-- [ ] Layout diagrams are genuinely helpful and distinguish concept plans from architectural plans.
-- [ ] Review highest-impression content for factual accuracy, originality, helpful illustrations, and realistic dimensions.
-- [ ] Review safety-related content for authoritative references and limitations.
-- [ ] Consolidate overlapping near-duplicate pages; remove or noindex pages that cannot provide distinct value.
-- [x] Source review: the 13 held standalone learning articles are explicitly excluded from the sitemap and have noindex metadata (live verification pending).
+## Explicit limits / not verified
+- **Google Search Console:** GSC Wizard refused access because its trial/subscription expired. Index coverage, exclusions as reported by Google, manual actions, impressions, clicks and organic visits could **not** be read. A URL being reachable or appearing in a sitemap is **not** proof that Google indexed it; impressions and clicks are **performance**, not index coverage. No Search Console figures are asserted.
+- **Browser coverage:** Real Edge/Chromium on desktop and emulated Android/iPhone-sized viewports were tested. Native Safari/iOS and physical mobile devices were not tested.
+- Automated similarity and spot checks do not prove that every paragraph is editorially perfect or that Google will approve the site.
 
-## 3. Trust, navigation and advertising
-- [ ] Clear About/editorial methodology, contact, privacy and cookies pages, linked from footer and accessible.
-- [ ] Privacy/cookie disclosure accurately matches actual analytics and advertising technologies.
-- [ ] Confirm consent management for applicable jurisdictions before activating personalized advertising.
-- [ ] Keep AdSense runtime disabled before approval unless needed solely for a documented verification method.
-- [ ] Review mobile layout, keyboard navigation, alt text, Core Web Vitals, loading and intrusive overlays.
-- [ ] Check no broken navigation, false claims of independent testing, misleading dates, or copied photos.
+## Release and scope
+- Technical release: permanent redirect from `/small-apartment-storage/vacuum` to the more developed `/learn/vacuum-storage-in-a-small-apartment`; remove redirected legacy URL from sitemap. Expected sitemap total after deployment: **79**.
+- All 13 held guides remain `noindex` and absent from sitemap.
+- Do **not** resume Small Space Trend Watch or Small Space Daily Publisher, create more articles or enable live ads.
+- Next human action: use the existing Google AdSense account to **request a new review**. If Search Console access is available to the owner, a quick manual-actions/indexing glance is useful, but it is not represented as a completed audit check. Maintain consent controls before activating advertising after approval.
+- No further speculative editorial cycles are in scope. Only fix a new, concrete defect if Google identifies one.
 
-## 4. Resubmission
-- [ ] Capture screenshots and test notes for the main user journeys.
-- [ ] Verify live site and indexing on the day of application.
-- [ ] Resubmit via the existing AdSense account only after all mandatory checks pass.
-- [ ] Record AdSense's actual decision; passing this checklist cannot guarantee approval.
-
-## 5. Experiment after approval
-- [ ] Confirm live ads and legal consent behavior.
-- [ ] Record finalized earnings, costs and monthly net profit.
-- [ ] Review Search Console traffic and AdSense earnings weekly, and monthly break-even.
-
-## Audit checkpoint — 2026-11-07
-
-Verified from connected project systems: Vercel deployment `3540df7` READY; production `NEXT_PUBLIC_ALLOW_INDEXING=true`; `NEXT_PUBLIC_SITE_URL=https://smallspaceplanner.com`; verified apex domain and 308 redirect from www; AdSense script removed and ad placements gated behind explicit approval. Both content-publishing automations are paused. Google-indexed results show the planner, learning library, about, editorial policy, layout library and calculator pages exist. The 500 sq ft article now distinguishes schematic diagrams from scale plans and includes a worked fit test.
-
-**Unverified blockers before resubmission:** direct HTTP/mobile interaction testing of production pages and robots/sitemap; successful GitHub Actions editorial/preflight job result (Vercel READY does not prove the workflow passed); actual Search Console coverage and manual-action status; editorial spot checks for all indexable articles and tools; public contact route (footer currently has no contact link). Search engine snippets can lag behind deployed content and must not be used to validate current legal copy. Do not mark the application ready or submit until blockers are closed.
+## Evidence
+- Workflow: https://github.com/talaverilla85/small-space-lab/actions/runs/42324985474
+- Domain: https://smallspaceplanner.com
+- Pre-fix deployment: https://vercel.com/noe-s-projects-deb823a5/small-space-lab/FWkjGjtAEqmNGCsGJjc43KA6RM2c
