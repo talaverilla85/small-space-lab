@@ -3,7 +3,7 @@
 Status: **NOT READY** until every check is verified against the live production site. A prior application was rejected for low-value content. No approval is guaranteed.
 
 ## 1. Production and crawlability
-- [ ] Latest production deployment is READY, serves `https://smallspaceplanner.com`, and matches the current main branch.
+- [x] Latest Vercel deployment is READY for commit `3540df7` and the production domain is verified; direct HTTP verification of all routes is still pending.
 - [ ] Run `npm run build` and `npm run audit:editorial` successfully; resolve any failures rather than bypassing them.
 - [ ] Verify homepage, planner, learning library, key article templates, tools, sitemap.xml, robots.txt and 404 page on mobile and desktop.
 - [ ] Check every indexable URL for self-referencing canonical, unique title/H1/description, working internal links, and useful body content.
@@ -17,7 +17,7 @@ Status: **NOT READY** until every check is verified against the live production 
 - [ ] Review highest-impression content for factual accuracy, originality, helpful illustrations, and realistic dimensions.
 - [ ] Review safety-related content for authoritative references and limitations.
 - [ ] Consolidate overlapping near-duplicate pages; remove or noindex pages that cannot provide distinct value.
-- [ ] Confirm the 13 held standalone learning articles remain noindex and outside sitemap until individually approved.
+- [x] Source review: the 13 held standalone learning articles are explicitly excluded from the sitemap and have noindex metadata (live verification pending).
 
 ## 3. Trust, navigation and advertising
 - [ ] Clear About/editorial methodology, contact, privacy and cookies pages, linked from footer and accessible.
@@ -37,3 +37,9 @@ Status: **NOT READY** until every check is verified against the live production 
 - [ ] Confirm live ads and legal consent behavior.
 - [ ] Record finalized earnings, costs and monthly net profit.
 - [ ] Review Search Console traffic and AdSense earnings weekly, and monthly break-even.
+
+## Audit checkpoint — 2026-11-07
+
+Verified from connected project systems: Vercel deployment `3540df7` READY; production `NEXT_PUBLIC_ALLOW_INDEXING=true`; `NEXT_PUBLIC_SITE_URL=https://smallspaceplanner.com`; verified apex domain and 308 redirect from www; AdSense script removed and ad placements gated behind explicit approval. Both content-publishing automations are paused. Google-indexed results show the planner, learning library, about, editorial policy, layout library and calculator pages exist. The 500 sq ft article now distinguishes schematic diagrams from scale plans and includes a worked fit test.
+
+**Unverified blockers before resubmission:** direct HTTP/mobile interaction testing of production pages and robots/sitemap; successful GitHub Actions editorial/preflight job result (Vercel READY does not prove the workflow passed); actual Search Console coverage and manual-action status; editorial spot checks for all indexable articles and tools; public contact route (footer currently has no contact link). Search engine snippets can lag behind deployed content and must not be used to validate current legal copy. Do not mark the application ready or submit until blockers are closed.
