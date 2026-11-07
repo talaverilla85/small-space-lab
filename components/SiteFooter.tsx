@@ -21,6 +21,7 @@ export function SiteFooter() {
         <div className="footer-nav-group">
           <span>PROJECT</span>
           <Link href="/about">About</Link>
+          <Link href="/contact">Contact & Corrections</Link>
           <Link href="/editorial-policy">Editorial Policy</Link>
           <Link href="/privacy">Privacy</Link>
           <Link href="/cookie-policy">Cookies</Link>
