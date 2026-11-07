@@ -48,6 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: base + "/studio-apartment-planner", changeFrequency: "monthly", priority: 0.9 },
     { url: base + "/learn", changeFrequency: "weekly", priority: 0.88 },
     { url: base + "/editorial-policy", changeFrequency: "yearly", priority: 0.35 },
+    { url: base + "/contact", changeFrequency: "yearly", priority: 0.3 },
     ...learnArticles.filter((article) => !heldForEditorialReview.has(article.slug)).map((article) => ({
       url: base + "/learn/" + article.slug,
       lastModified: new Date(article.updated),
